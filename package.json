@@ -1,0 +1,24 @@
+{
+   "name": "altocode-web",
+   "private": true,
+   "version": "0.0.0",
+   "description": "Homepage for altocode",
+   "dependencies": {
+      "cicek":     "3.4.0",
+      "cocholate": "2.3.0",
+      "dale":      "6.0.1",
+      "gotob":     "1.2.3",
+      "hitit":     "1.2.7",
+      "lith":      "6.0.3",
+      "recalc":    "4.0.3",
+      "redis":     "2.8.0",
+      "redmin":    "0.1.1",
+      "redport":   "0.1.2",
+      "teishi":    "5.0.2",
+      "nodemailer":               "6.4.2",
+      "nodemailer-ses-transport": "1.5.1"
+   },
+   "main": "server.js",
+   "author": "Federico Pereiro <fpereiro@gmail.com>",
+   "contributors": ["Federico Pereiro <fpereiro@gmail.com>"]
+}
