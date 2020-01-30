@@ -3,7 +3,12 @@
    // *** SETUP ***
 
    var dale  = window.dale, teishi = window.teishi, lith = window.lith, c = window.c, B = window.B;
-   var type = teishi.t, clog = console.log, time = teishi.time, media = lith.css.media, style = lith.style, last = teishi.last;
+   var type = teishi.t, clog = console.log, time = teishi.time, media = lith.css.media, last = teishi.last;
+
+   var style = function (attributes, prod) {
+      var result = lith.css.g (['', attributes], prod);
+      return result === false ? result : result.slice (1, -1);
+   }
 
    window.Data  = B.store.Data  = {};
    window.State = B.store.State = {};
@@ -32,14 +37,14 @@
    ];
 
    Views.base = function () {
-      return ['div', style ({'margin-left': 3}), [
+      return ['div', {style: style ({'margin-left': 3})}, [
          ['style', Views.baseCSS],
          B.view (['State', 'path'], {listen: [
              ['submit', 'email', function () {
                 var email = prompt ('The email address where we should send you an acpic invite:');
                 if (! email.match (/^(([a-zA-Z0-9_\.\-]+)@([\da-zA-Z\.\-]+)\.([a-zA-Z\.]{2,6}))$/)) {
                    alert ('Please enter a valid email address.');
-                   return B.say ('submit', 'email');
+                   return B.do ('submit', 'email');
                 }
                 c.ajax ('post', 'acpicinvite', {}, {email: email}, function (error) {
                    if (error) return alert ('Wow, we just experienced a connection error. Could you please try again?');
@@ -48,10 +53,10 @@
              }],
          ]}, function () {
             return [
-               ['div', style ({class: 'opaque'}, {'font-size': 36, 'font-weight': 'normal', 'font-family': '\'Fira Code\', monospace'}), [
-                  ['span', style ({color: 'red', 'font-weight': ''}), 'a'], 'lto;',
+               ['div', {class: 'opaque', style: style ({'font-size': 36, 'font-weight': 'normal', 'font-family': '\'Fira Code\', monospace'})}, [
+                  ['span', {style: style ({color: 'red', 'font-weight': ''})}, 'a'], 'lto;',
                   ['br'],
-                  ['LITERAL', '&nbsp;'], ['span', style ({color: 'red', 'font-weight': ''}), 'c'], 'o', ['span', style ({color: ''}), 'de'],
+                  ['LITERAL', '&nbsp;'], ['span', {style: style ({color: 'red', 'font-weight': ''})}, 'c'], 'o', ['span', {style: style ({color: ''})}, 'de'],
                ]],
                ['br'],
                ['p', [
