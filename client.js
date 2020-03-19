@@ -1,5 +1,7 @@
 (function () {
 
+   // TODO: remove iife, v2 style.
+
    // *** SETUP ***
 
    var dale  = window.dale, teishi = window.teishi, lith = window.lith, c = window.c, B = window.B;

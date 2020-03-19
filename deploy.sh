@@ -17,6 +17,7 @@ TAR="altocode.tar.gz"
 #ssh $HOST mkdir altocode/node_modules/gotob2
 #scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
 #exit 0
+
 cd ..
 tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" -czvf $TAR $FOLDER
 scp $TAR $HOST:
