@@ -77,6 +77,13 @@
                   ['li', [['a', {href: 'https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p'}, 'We work in the open.'], ' Our internal documents, inasmuch as they don\'t refer to particular individuals outside of our team, are public.']],
                   ['li', ['Our business model is that of a ', ['strong', 'digital utility'], '. Our users pay to use our products based on how much space they use on our servers. Besides covering the server cost, users are also contributing to the development and maintenance of quality applications.']],
                ]],
+               ['h3', 'Apps'],
+               ['ul', [
+                  ['li', [
+                     [['a', {target: '_blank', href: 'https://altocode.nl/pic'}, 'ac;pic'], ': '],
+                     'A digital home for your pictures'
+                  ]],
+               ]],
                ['h3', 'Team'],
                ['ul', [
                   ['li', [
