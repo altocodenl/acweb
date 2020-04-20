@@ -125,6 +125,10 @@ var sendmail = function (s, o) {
 
 var routes = [
 
+   // *** BLOG ***
+
+   ['get', 'blog', reply, 'Coming soon!'],
+
    ['get', '/', reply, lith.g ([
       ['!DOCTYPE HTML'],
       ['html', [
@@ -163,20 +167,6 @@ var routes = [
       return [];
       //return ['get', '(*)', cicek.file, ['node_modules/']];
    }),
-   ['post', 'acpicinvite', function (rq, rs) {
-      if (type (rq.body) !== 'object' || type (rq.body.email) !== 'string') return reply (rq, 400, {body: rq.body});
-      astop (rs, [
-         [sendmail, {
-            from1: 'User',
-            from2: 'fpereiro@gmail.com',
-            to1:   'Chef',
-            to2:   'fpereiro@gmail.com',
-            subject: 'ac/pic request for subscription',
-            message: ['p', [new Date ().toUTCString (), ' ', rq.body.email]],
-         }],
-         [reply, rs, 200],
-      ]);
-   }],
 ];
 
 // *** SERVER CONFIGURATION ***

@@ -66,7 +66,7 @@
                   ['a', {href: 'http://federicopereiro.com/manifesto'}, 'manifesto'],
                   '.',
                   ' And this is our ',
-                  ['a', {href: 'http://blog.altocode.nl'}, 'blog'],
+                  ['a', {href: 'http://altocode.nl/blog'}, 'blog'],
                   '.',
                ]],
                ['p', 'What is different about us?'],
