@@ -10,12 +10,16 @@ var CONFIG = require ('./config.js');
 var SECRET = require ('./secret.js');
 var ENV    = process.argv [2];
 
+var fs = require ('fs');
+
 var dale   = require ('dale');
 var teishi = require ('teishi');
 var lith   = require ('lith');
 var cicek  = require ('cicek');
 var hitit  = require ('hitit');
 var a      = require ('./astack.js');
+
+var showdown = new (require ('showdown')).Converter ();
 
 var type = teishi.type, clog = console.log, eq = teishi.eq, reply = function () {
    cicek.reply.apply (null, dale.fil (arguments, undefined, function (v, k) {
@@ -42,9 +46,6 @@ var type = teishi.type, clog = console.log, eq = teishi.eq, reply = function () 
       if (cb) cb (result);
    };
 }
-
-
-var mailer = require ('nodemailer').createTransport (require ('nodemailer-ses-transport') (SECRET.ses));
 
 // *** NOTIFICATIONS ***
 
@@ -90,7 +91,6 @@ SECRET.ping.send = function (payload, CB) {
 }
 
 var notify = function (s, message) {
-   clog (message);
    if (type (message) !== 'object') return clog ('NOTIFY: message must be an object but instead is', message, s);
    message.environment = ENV || 'local';
    if (! ENV) {
@@ -103,51 +103,89 @@ var notify = function (s, message) {
    });
 }
 
-// *** SENDMAIL ***
-
-var sendmail = function (s, o) {
-   o.from1 = o.from1 || SECRET.emailName;
-   o.from2 = o.from2 || SECRET.emailAddress;
-   mailer.sendMail ({
-      from:    o.from1 + ' <' + SECRET.emailAddress + '>',
-      to:      o.to1   + ' <' + o.to2 + '>',
-      replyTo: o.from2,
-      subject: o.subject,
-      html:    lith.g (o.message),
-   }, function (error, rs) {
-      if (! error) return s.next ();
-      a.stop (s, [notify, {type: 'mailer error', error: error, options: o}]);
-   });
-}
-
-
 // *** ROUTES ***
 
-var routes = [
-
-   // *** BLOG ***
-
-   ['get', 'blog', reply, 'Coming soon!'],
-
-   ['get', '/', reply, lith.g ([
+var makePage = function (body) {
+   return lith.g ([
       ['!DOCTYPE HTML'],
       ['html', [
          ['head', [
             ['meta', {charset: 'utf-8'}],
             ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
             ['title', 'Altocode'],
-            ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'}],
+            ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Code&display=swap'}],
          ]],
-         ['body', [
-            ['noscript', 'Javascript is deactivated in your browser. Please activate it in order to use this page.'],
-            dale.go ([
-               'gotob/gotoB.min.js',
-               'client.js'
-            ], function (v) {return ['script', {src: v}]})
-         ]]
-      ]],
+         ['body', body],
+      ]]
+   ]);
+}
+
+var blog = [];
+
+var routes = [
+
+   // *** BLOG ***
+
+   ['get', 'blog', reply, (function () {
+      var articles = fs.readdirSync ('blog');
+      articles = dale.go (articles, function (article) {
+         return {
+            date: article.slice (0, 8),
+            title: article.slice (8).slice (0, -3),
+            text: showdown.makeHtml (fs.readFileSync ('blog/' + article, 'utf8'))
+         }
+      });
+      articles.sort (function (a, b) {
+         return parseInt (b.date) - parseInt (a.date);
+      });
+      blog = articles;
+      return makePage ([
+         ['style', [
+            ['body', {
+               'font-family': '\'Montserrat Alternates\', sans-serif',
+               padding: 30,
+            }],
+            ['a.title', {'margin-left': 10}],
+            ['li', {'margin-top': 15}],
+         ]],
+         ['h1', 'Altocode\'s blog'],
+         ['br'],
+         ['ul', dale.go (articles, function (article) {
+            return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: '/blog/' + article.title}, article.title]]];
+         })],
+         ['br'],
+         ['a', {href: '/'}, 'Back to the home page.'],
+      ]);
+   }) ()],
+
+   ['get', 'blog*', function (rq, rs) {
+      var article = dale.stopNot (blog, undefined, function (article) {
+         if (article.title === rq.url.replace ('\/blog', '')) return article.text;
+      });
+      if (! article) return reply (rs, 404, 'Article not found!');
+      reply (rs, 200, makePage ([
+         ['style', [
+            ['body', {
+               'font-family': '\'Montserrat Alternates\', sans-serif',
+               padding: 30,
+               'max-width': 1000,
+               margin: 'auto',
+               'line-height': '1.5rem'
+            }],
+         ]],
+         ['LITERAL', article],
+         ['br'],
+         ['a', {href: '/blog'}, 'Back to the blog.'],
+      ]));
+   }],
+
+   ['get', '/', reply, makePage ([
+      ['noscript', 'Javascript is deactivated in your browser. Please activate it in order to use this page.'],
+      dale.go (['gotob/gotoB.min.js', 'client.js'], function (v) {
+         return ['script', {src: v}
+      ]})
    ])],
    ['get', 'client.js', cicek.file],
    ['get', 'json2.min.js', function (rq, rs) {
