@@ -187,6 +187,20 @@ var routes = [
       ]));
    }],
 
+   ['get', 'robots.txt', reply, (function () {
+      return 'Sitemap: https://altocode.nl/sitemap.xml';
+   }) ()],
+
+   ['get', 'sitemap.xml', reply, (function () {
+      // https://www.woorank.com/en/edu/seo-guides/xml-sitemaps
+      var output = '<?xml version="1.0" encoding="UTF-8"?>';
+      output += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http:www.w3.org/1999/xhtml">';
+      dale.go (['/', '/blog', '/pic'].concat (dale.go (blog, function (article) {return '/blog/' + encodeURIComponent (article.title)})), function (url) {
+         output += '<url><loc>https://altocode.nl' + url + '</loc></url>';
+      });
+      return output + '</urlset>';
+   }) ()],
+
    ['get', 'favicon.ico', cicek.file, 'favicon.ico'],
 
    ['get', '/', reply, makePage ([
