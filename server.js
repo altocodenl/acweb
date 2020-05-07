@@ -105,14 +105,14 @@ var notify = function (s, message) {
 
 // *** ROUTES ***
 
-var makePage = function (body) {
+var makePage = function (body, head) {
    return lith.g ([
       ['!DOCTYPE HTML'],
       ['html', [
          ['head', [
             ['meta', {charset: 'utf-8'}],
             ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
-            ['title', 'Altocode'],
+            head || [],
             ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Code&display=swap'}],
@@ -131,10 +131,13 @@ var routes = [
    ['get', 'blog', reply, (function () {
       var articles = fs.readdirSync ('blog');
       articles = dale.go (articles, function (article) {
+         var content = fs.readFileSync ('blog/' + article, 'utf8');
+         var description = content.split ('\n') [0];
          return {
+            description: description,
             date: article.slice (0, 8),
             title: article.slice (8).slice (0, -3),
-            text: showdown.makeHtml (fs.readFileSync ('blog/' + article, 'utf8'))
+            text: showdown.makeHtml (content.replace (description + '\n', '')),
          }
       });
       articles.sort (function (a, b) {
@@ -157,12 +160,12 @@ var routes = [
          })],
          ['br'],
          ['a', {href: '/'}, 'Back to the home page.'],
-      ]);
+      ], ['title', 'Altocode\'s blog']);
    }) ()],
 
    ['get', 'blog*', function (rq, rs) {
       var article = dale.stopNot (blog, undefined, function (article) {
-         if (article.title === rq.url.replace ('\/blog', '')) return article.text;
+         if (article.title === rq.url.replace ('\/blog', '')) return article;
       });
       if (! article) return reply (rs, 404, 'Article not found!');
       reply (rs, 200, makePage ([
@@ -175,9 +178,12 @@ var routes = [
                'line-height': '1.5rem'
             }],
          ]],
-         ['LITERAL', article],
+         ['LITERAL', article.text],
          ['br'],
          ['a', {href: '/blog'}, 'Back to the blog.'],
+      ], [
+         ['meta', {name: 'description', content: article.description}],
+         ['title', article.title + ' | Altocode\'s blog']
       ]));
    }],
 
@@ -188,7 +194,7 @@ var routes = [
       dale.go (['gotob/gotoB.min.js', 'client.js'], function (v) {
          return ['script', {src: v}
       ]})
-   ])],
+   ], ['title', 'Altocode'])],
    ['get', 'client.js', cicek.file],
    ['get', 'json2.min.js', function (rq, rs) {
       hitit.one ({}, {method: 'get', https: true, host: 'cdn.jsdelivr.net', path: 'gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', code: 200, apres: function (s, rq2, rs2) {
