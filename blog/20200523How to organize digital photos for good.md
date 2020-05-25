@@ -224,7 +224,7 @@ Now I have all these tags available to select:
 - My Mom
 - My in-laws
 <img src="img/mother tag - 1000x629.png" alt="mother tag" style="border-radius: 8px;max-width: 100%;height: auto;">
-What happened to the other tags? They disappeared because they’re no longer relevant: I’m in the Osaka pics, I’m not anywhere else (I’m not in Las Vegas). My aunt and cousins weren’t there, so the tags don’t appear. This was in 2019, so there’s no need to have 2010 as an option. I don’t need options that are empty, I want to see what is there, not what is not there.
+What happened to the other tags? They disappeared because they’re no longer relevant: I’m in the Osaka pics, I’m not anywhere else (I’m not in Las Vegas). My aunt and cousins weren’t there, so the tags don’t appear. This was in 2019, so there’s no need to have 2010 as an option. **I don’t need options that are empty, I want to see what is there, not what is not there.**
 
 I am here: 2019 + Vacations + Japan + Osaka.
 
