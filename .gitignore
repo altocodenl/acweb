@@ -1,2 +1,3 @@
 *.swp
 secret.js
+.DS_store

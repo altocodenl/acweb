@@ -14,8 +14,17 @@ fi
 FOLDER="altocode"
 TAR="altocode.tar.gz"
 
+if [ "$2" == "server" ] ; then
+   scp server.js $HOST:$FOLDER
+   ssh $HOST "cd $FOLDER && mg restart"
+   exit 0
+fi
+
 #ssh $HOST mkdir altocode/node_modules/gotob2
 #scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
+#exit 0
+
+#scp ../cocholate/* $HOST:~/altocode/node_modules/cocholate
 #exit 0
 
 cd ..
