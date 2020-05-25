@@ -15,7 +15,7 @@ A few months ago, a friend asked in our Whatsapp group <q style="font-style: ita
 We had to challenge fundamental assumptions on how photos are stored and organized. The result is a reliable process on how to organize digital photos and videos. We outlined the requirements, and these are the 7 steps we followed:
 
 ##1. Get a reliable cloud service and centralize your data.
-####Securely store all your photos and videos.  
+####Securely store all your photos and videos.
 <img src="img/cloud service -1000x300.png" alt="cloud service" style="border-radius: 8px;">
 
 A cloud service stores your data in servers - sometimes spread across multiple locations -, and you can access your data from multiple devices, anywhere in the world, as long as you have an internet connection. Servers and systems for cloud have replications and redundancies (in case a server breaks down, your data is also on other servers in other locations) **so you never lose any data.** Most of these systems are **secure and password protected for the user.**
@@ -34,22 +34,22 @@ Also, let’s weigh in on **keeping all your photos and videos in your device(s)
 
 What about storage space in your devices? Phones are coming with more and more space, but **somehow you always end up with your device full.** Better cameras means heavier (higher resolution) photos and videos. Nothing wrong with that. But in terms of space, it’s a killer. Also, there are more apps than ever. More apps need more space. All in all, it’s a fight over space. Just like the history of mankind.
 
-Speaking of apps and space, **your pics and videos are spread across all your devices.** Photos and videos you took with your phone or got from messages live in your phone. Folders you’ve backed up, or photos you’ve downloaded are in your computer. The same goes for your tablet. And there’s always a flash drive somewhere with more photos and videos. **It’s all over the place.**  
+Speaking of apps and space, **your pics and videos are spread across all your devices.** Photos and videos you took with your phone or got from messages live in your phone. Folders you’ve backed up, or photos you’ve downloaded are in your computer. The same goes for your tablet. And there’s always a flash drive somewhere with more photos and videos. **It’s all over the place.**
 
 As in the case with external hard drives, devices break, fall, get stolen or <a href="https://www.guitarworld.com/artists/kirk-hammett-consequences-losing-my-phone-have-been-immense" target="_blank" title="Kirk Hammett: “The Consequences of Losing My Phone Have Been Immense”">lost.</a> **It’s really not a good idea to keep sensitive data only in your devices. It’s not safe, it’s not practical and it’s not economical.**
 
 **Get a cloud storage service where you can centralize all your photos and videos. it’s the safe, smart and money-wise thing to do.**
 
 ##2. Make sure it’s cross-device and simple to use.
-####Simple is organized, complex doesn’t scale. 
+####Simple is organized, complex doesn’t scale.
 <img src="img/cloud cross device - 1000x300.png" alt="cloud service" style="border-radius: 8px;">
 
 **The cloud service must be cross-device.** It must work regardless of the Operating System (iOS, Windows, Android, Linux) and type of device (Desktop, Smartphone, Tablet, Smart TV, etc). If you have an Android phone today, you might have an iPhone tomorrow or vice versa. The same applies to PC or Mac. Since you can have a mix of all of the above (Android phone, Mac desktop and Windows tablet, for example), **you shouldn’t rely on a service that only works for a particular device or technology. It’s a bad investment of your time and money.**
 
-**You’re looking for a cross-device, cross-technology service. A service that works every time for all your devices, both present and future.** 
+**You’re looking for a cross-device, cross-technology service. A service that works every time for all your devices, both present and future.**
 
 
-<p style="font-style: italic;text-align: right;font-size: 20px;">Simplicity is the ultimate form of sophistication.</p> 
+<p style="font-style: italic;text-align: right;font-size: 20px;">Simplicity is the ultimate form of sophistication.</p>
 <p style="text-align: right;">—Leonardo da Vinci</p>
 
 
@@ -59,33 +59,33 @@ Also, whenever you choose a cloud service, **it has to be simple to use and desi
 
 <img src="img/how a simple service looks like - 1000x400.png" alt="how a simple service looks like" style="border-radius: 8px;">
 
-That’s how it would look. 
+That’s how it would look.
 
 ##3. Don’t use folders or albums.
 ####They made sense for paper photos, but not for digital.
 <img src="img/no folder - 1000x300.png" alt="don't use folders" style="border-radius: 8px;">
 
-I know this is a shock. But if you want to successfully organize your digital photos, **stop using albums.** 
+I know this is a shock. But if you want to successfully organize your digital photos, **stop using albums.**
 
 **Albums made sense when photos were made of paper,** you had to store them somewhere. Somewhere along the line, we forgot to make the switch from thinking we’re organizing physical goods (paper) to realizing we’re dealing with digital assets. We just kept the old method: things go in folders. And that's perhaps why most digital photo organizers fail: **digital pictures require a different organization method than analog pictures.**
 
 **Paper can only be in one place at a time (like in an album), but a digital asset can be accessed from many places at the same time.** Also, **we have more images and videos than ever before.** I have over 4,000 photos from my wedding - all digital. My parents have 200 of theirs - all paper, of course. There’s too much. **And yet we’re trying to force a solution from a time when this was not a problem.** If your photos and videos are all over the place, it’s not that you’re lazy or disorganized, the problem is that you’re sorting digital media as if it was paper, videos you recorded with your phone like old VHS tapes.
 
-<q style="font-size: 50px;font-style: italic;line-height: 1.6;">Photos and videos are triggers for memories, so we should use our natural flow when storing and organizing them.</q> 
+<q style="font-size: 50px;font-style: italic;line-height: 1.6;">Photos and videos are triggers for memories, so we should use our natural flow when storing and organizing them.</q>
 
 **A proper digital solution must use digital logic to handle multi accessibility and exponential growth in volume.**
 
-There has to be a way. 
+There has to be a way.
 
 After much thought we realized - as usual - **the solution was right under our noses.**
-  
-##4. Use tags. 
+
+##4. Use tags.
 ####Photos are your memories: they are in multiple places at the same time.
 <img src="img/use tags - 1000x300.png" alt="use tags" style="border-radius: 8px;">
 
-So, if we’re not using albums, how can we organize and make sense of all the pictures and videos? Let’s take a step back for a moment. **Let’s think about how we organize our memories.** Come down the rabbit hole with me for a while. We’ll be back, I promise. 
+So, if we’re not using albums, how can we organize and make sense of all the pictures and videos? Let’s take a step back for a moment. **Let’s think about how we organize our memories.** Come down the rabbit hole with me for a while. We’ll be back, I promise.
 <img src="img/alice in wonderland.png" alt="down the rabbit hole">
-How many vacations have you taken in your life? Myself, probably 20. Where did you go in 2010? I went to Las Vegas with my (then) fiancée, my mother, 2 of my aunts and cousins. And where did you go in 2019? Japan with my (now) wife, her parents and my mother. 
+How many vacations have you taken in your life? Myself, probably 20. Where did you go in 2010? I went to Las Vegas with my (then) fiancée, my mother, 2 of my aunts and cousins. And where did you go in 2019? Japan with my (now) wife, her parents and my mother.
 
 Let’s list what I associate with these 2 examples:
 - Vacations
@@ -103,11 +103,11 @@ My mind associates a place with a date, a person or group of people and the cont
 
 <q style="font-size: 50px;font-style: italic;line-height: 1.6;">We associate things, people, places, situations and the results are memories.</q>
 
-So, when I think “vacations with my wife” both “Las Vegas 2010” and “Japan 2019” come up, the same happens when I think “vacations with my mom”. “Vacations with my aunts” only return “Las Vegas 2010” while “vacations with my in-laws” only return “Japan 2019”. 
+So, when I think “vacations with my wife” both “Las Vegas 2010” and “Japan 2019” come up, the same happens when I think “vacations with my mom”. “Vacations with my aunts” only return “Las Vegas 2010” while “vacations with my in-laws” only return “Japan 2019”.
 
 If I think “where did we go on vacation in 2010?” then, that’s “Las Vegas 2010”. When I start asking myself questions or thinking about certain people, places or situations, then certain memories come back. Some of those memories are exclusive (only one), such as “vacations with my in-laws”; but some have more than one, like “vacations with my wife”. **That is how we organize our memories, by association.**
 
-**We associate things, people, places, situations and the results are memories.** 
+**We associate things, people, places, situations and the results are memories.**
 
 <img src="img/memories - 1000x300.png" alt="memories" style="border-radius: 8px;">
 
@@ -133,22 +133,22 @@ What about the trips I don’t remember, the birthday parties that are a blur no
 
 <a href="https://www.lifewire.com/tagging-advantages-3469879" target="_blank"><img src="img/what is a tag - 1000x200.png" alt="what is a tag?" style="border-radius: 8px;"></a>
 
-So, for the pictures of that dinner I could use the tags: Vacations, 2019, Japan, Tokyo, Wife, Food. As I mentioned before, if I couldn’t remember where that dinner was, I could use the tags Vacations, 2019, Japan, Wife, Food. The results would only bring back photos that meet that criteria, and from there it gets a lot easier.  
+So, for the pictures of that dinner I could use the tags: Vacations, 2019, Japan, Tokyo, Wife, Food. As I mentioned before, if I couldn’t remember where that dinner was, I could use the tags Vacations, 2019, Japan, Wife, Food. The results would only bring back photos that meet that criteria, and from there it gets a lot easier.
 
 What would happen if I wanted to see my vacation photos as the years went by? I would just put the tag “vacations” and see what comes back. Then I can select “2010” and see where that was, then “2011”, and the same. **I can move around unconstrained. I can drill down and then up again. I can easily add more pictures and have a logical and scalable organization system. I can actually enjoy looking at pictures, I can find memories quickly.**
 
-I know, **tagging pictures sounds like a lot of work, doesn’t it? That’s where auto tagging and interface design comes in to save the day.** 
+I know, **tagging pictures sounds like a lot of work, doesn’t it? That’s where auto tagging and interface design comes in to save the day.**
 
-##5. Take advantage of auto tagging. 
-####Simplify your life. 
+##5. Take advantage of auto tagging.
+####Simplify your life.
 
 <img src="img/efficient - 1000x300.png" alt="efficient" style="border-radius: 8px;">
 
-**Auto tagging is when the system automatically adds tags to your photos and videos.** And when you have thousands upon thousands of files, it helps. A lot. So what kind of tags can be automated and which one can’t? 
+**Auto tagging is when the system automatically adds tags to your photos and videos.** And when you have thousands upon thousands of files, it helps. A lot. So what kind of tags can be automated and which one can’t?
 
 Some tags can be simple to add, like “2019” or “Japan'', those are taken from the file’s <a href="https://iptc.org/standards/photo-metadata/photo-metadata/" target="_blank">metadata.</a> **With ac;pic, the year is automatically tagged. For geo data (city and country), we’ll ask you to opt-in.** Geographical data is sensitive info, and providing it must be a choice for the user.
 
-<q style="font-size: 50px;font-style: italic;line-height: 1.6;">Make sure that when you choose a photo organization system it actually helps you to be organized.</q>  
+<q style="font-size: 50px;font-style: italic;line-height: 1.6;">Make sure that when you choose a photo organization system it actually helps you to be organized.</q>
 
 What about tags to identify people automatically? <a href="https://www.google.com/photos/about/" target="_blank">Some cloud services use artificial intelligence</a> to run <a href="https://mylio.com/" target="_blank">facial recognition algorithms on your photos,</a> and that’s great. But you always have to be aware of the <a href="https://www.forbes.com/sites/nicolemartin1/2019/09/25/the-major-concerns-around-facial-recognition-technology/#5bf3909b4fe3" target="_blank">risks associated with artificial intelligence.</a> **“If it can’t be used for evil, it’s not a superpower.”** Under this definition, which I think is very accurate, face recognition AI is a superpower. So, in our case, we made a clear choice: **we won’t use AI on your photos and videos.** Allowing a cloud service to use AI to tag your pictures is a personal choice and might be the right thing for you - we just suggest that you make that choice consciously.
 
@@ -177,10 +177,10 @@ Then, since you can see the content of all the pics and videos right in front of
 
 **All your pictures tagged and done!**
 
-Make sure that when you choose a photo organization system it actually helps you to be organized. <bold>Auto-tagging and a good interface design are key.</bold>  
+Make sure that when you choose a photo organization system it actually helps you to be organized. <bold>Auto-tagging and a good interface design are key.</bold>
 
 ##6. Get duplicated photos eliminated.
-####Duplicated photos must be eliminated automatically. It saves space and eliminates clutter. 
+####Duplicated photos must be eliminated automatically. It saves space and eliminates clutter.
 <img src="img/no copies -1000x300.png" alt="no copies" style="border-radius: 8px;">
 
 One of the most annoying situations when trying to organize digital photos and videos is having duplicate files. Naming won’t help here, since systems include a “(1)” or “(2)” or other number depending on the amount of copies at the end of the filename, resulting in the same photo with different names. A messy scenario.
@@ -189,17 +189,17 @@ One of the most annoying situations when trying to organize digital photos and v
 
 **The solution is very straightforward: the service you choose to store and organize your photos must identify and delete duplicates automatically.** This is something that computers are very good at doing for you, so there's no reason for having to do it yourself.
 
-**With ac;pic we designed a system that identifies content duplicity of the image or video. We don’t look at the filenames or metadata.** We go for the simple, yet efficient solution: does this photo have the same <a href="https://en.wikipedia.org/wiki/Pixel" target="_blank">pixels</a> as any other picture in your account? If so, then it’s duplicated, and so you don’t need it. **It gets automatically deleted. Less clutter, less space used.** 
+**With ac;pic we designed a system that identifies content duplicity of the image or video. We don’t look at the filenames or metadata.** We go for the simple, yet efficient solution: does this photo have the same <a href="https://en.wikipedia.org/wiki/Pixel" target="_blank">pixels</a> as any other picture in your account? If so, then it’s duplicated, and so you don’t need it. **It gets automatically deleted. Less clutter, less space used.**
 
 **Whenever you choose a service make sure it helps you stay organized. Having copies upon copies of the same photos will only add to chaos.**
 
-##7. Get rid of empty spaces. 
+##7. Get rid of empty spaces.
 ####You wouldn’t store empty boxes in your house, why would you do it with your memories?
 <img src="img/empty - 1000x300.png" alt="empty" style="border-radius: 8px;">
 
-If you’re looking for the photos of your birthday party from 10 years ago and you keep opening empty folders or albums, or if they’re paper photos and you open empty boxes, it’s going to be a very frustrating business. **Empty is useless, is clutter, is frustration.** 
+If you’re looking for the photos of your birthday party from 10 years ago and you keep opening empty folders or albums, or if they’re paper photos and you open empty boxes, it’s going to be a very frustrating business. **Empty is useless, is clutter, is frustration.**
 
-**How to always get full search results? By using tags and interface design.** 
+**How to always get full search results? By using tags and interface design.**
 
 Let’s go to our previous example: my family vacations of 2010 and 2019.
 
@@ -211,20 +211,20 @@ Let’s say I want to see the pictures of my mom in Osaka. All the tags I have a
 - My Mom
 - My in-laws
 - My aunts
-- My cousins 
+- My cousins
 - Las Vegas
 - Japan
 - Tokyo
 - Osaka
 
 From there, I’ll go with the easy one: Osaka.
- 
+
 Now I have all these tags available to select:
 - My Wife
 - My Mom
 - My in-laws
 <img src="img/mother tag - 1000x629.png" alt="mother tag" style="border-radius: 8px;">
-What happened to the other tags? They disappeared because they’re no longer relevant: I’m in the Osaka pics, I’m not anywhere else (I’m not in Las Vegas). My aunt and cousins weren’t there, so the tags don’t appear. This was in 2019, so there’s no need to have 2010 as an option. I don’t need options that are empty, I want to see what is there, not what is not there. 
+What happened to the other tags? They disappeared because they’re no longer relevant: I’m in the Osaka pics, I’m not anywhere else (I’m not in Las Vegas). My aunt and cousins weren’t there, so the tags don’t appear. This was in 2019, so there’s no need to have 2010 as an option. I don’t need options that are empty, I want to see what is there, not what is not there.
 
 I am here: 2019 + Vacations + Japan + Osaka.
 
@@ -239,16 +239,16 @@ If I add the tag “My Mom”, then I will only see the pics that reflect: 2019 
 
 If I want to go back to a previous step, I just remove the tags I don’t want. Always full results.
 
-**When choosing a photo organizing service, make sure it makes it easy to find what you have stored. Organization is finding what you want when you want it. Is having full control.**   
-    
-##Find a picture in 30 seconds. 
+**When choosing a photo organizing service, make sure it makes it easy to find what you have stored. Organization is finding what you want when you want it. Is having full control.**
+
+##Find a picture in 30 seconds.
 ####If you can’t find it before that, then your photos are not organized.
 <img src="img/30 seconds - 1000x300.png" alt="30 seconds" style="border-radius: 8px;">
 
-A fun game I like to play sometimes is “can I find a particular picture in 30 seconds or less?”. It sounds strange, but that’s what makes a difference. How many times I’ve been with friends or family and something like “hey, remember that time when Joe was covered in mud during that camping trip?” comes up. “I remember we took a lot of pics, I have them somewhere”. You go to your social media platform of choice or go to where your backed up pics are, but you can’t find it. **If you can’t find it in a minute or so, the fun is gone.** You can’t be there for 30 minutes looking for the photo, the moment is gone. That’s what I want to avoid. That’s why you should have your digital photos organized. **That’s why we built ac;pic.** 
+A fun game I like to play sometimes is “can I find a particular picture in 30 seconds or less?”. It sounds strange, but that’s what makes a difference. How many times I’ve been with friends or family and something like “hey, remember that time when Joe was covered in mud during that camping trip?” comes up. “I remember we took a lot of pics, I have them somewhere”. You go to your social media platform of choice or go to where your backed up pics are, but you can’t find it. **If you can’t find it in a minute or so, the fun is gone.** You can’t be there for 30 minutes looking for the photo, the moment is gone. That’s what I want to avoid. That’s why you should have your digital photos organized. **That’s why we built ac;pic.**
 
 ##Make your memories justice.
 ####Photos make a moment last forever.
-<img src="img/taking pictures -1000X300.png" alt="taking pictures.png" style="border-radius: 8px;">
+<img src="img/taking pictures -1000x300.png" alt="taking pictures.png" style="border-radius: 8px;">
 
 If this makes sense to you, then you might <a href="https://altocode.nl/pic/#/pics" target="_blank">want to give ac;pic a try.</a> But in any case, never settle for less. <a href="https://fixthephoto.com/best-cloud-storage-for-photos.html">Get a cloud service with which you feel safe, it’s easy to use and it helps you to stay organized.</a> **Your photos and videos are your memories, they make a moment last forever. Make your memories justice. That’s what matters.**

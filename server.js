@@ -130,7 +130,8 @@ var routes = [
 
    ['get', 'blog', reply, (function () {
       var articles = fs.readdirSync ('blog');
-      articles = dale.go (articles, function (article) {
+      articles = dale.fil (articles, undefined, function (article) {
+         if (! article.match (/\.md/)) return;
          var content = fs.readFileSync ('blog/' + article, 'utf8');
          var description = content.split ('\n') [0];
          return {
@@ -162,6 +163,10 @@ var routes = [
          ['a', {href: '/'}, 'Back to the home page.'],
       ], ['title', 'Altocode\'s blog']);
    }) ()],
+
+   ['get', 'blogimg/(*)', function (rq, rs) {
+      cicek.file (rq, rs, 'blog/img/' + rq.data.params [0]);
+   }],
 
    ['get', 'blog*', function (rq, rs) {
       var article = dale.stopNot (blog, undefined, function (article) {
