@@ -171,7 +171,7 @@ var routes = [
    }) ()],
 
    ['get', 'blogimg/(*)', function (rq, rs) {
-      cicek.file (rq, rs, 'blog/img/' + rq.data.params [0]);
+      cicek.file (rq, rs, 'blog/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
    }],
 
    ['get', 'blog*', function (rq, rs) {
