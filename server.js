@@ -171,6 +171,7 @@ var routes = [
    }) ()],
 
    ['get', 'blogimg/(*)', function (rq, rs) {
+      // cache-control required by search engines to not be penalized, despite having etags already.
       cicek.file (rq, rs, 'blog/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
    }],
 
@@ -206,6 +207,8 @@ var routes = [
       // https://www.woorank.com/en/edu/seo-guides/xml-sitemaps
       var output = '<?xml version="1.0" encoding="UTF-8"?>';
       output += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http:www.w3.org/1999/xhtml">';
+      // TODO: add images to sitemap
+      // TODO: move ac;pic home here
       dale.go (['/', '/blog', '/pic'].concat (dale.go (blog, function (article) {return '/blog/' + encodeURIComponent (article.title)})), function (url) {
          output += '<url><loc>https://altocode.nl' + url + '</loc></url>';
       });
