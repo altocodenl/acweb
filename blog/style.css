@@ -4,5 +4,18 @@ body {
 	max-width: 1000px;
 	margin: auto;
 	line-height: 1.5rem;
-	margin-top: 30px;        
+	margin-top: 30px;
+   padding: 30px;
+}
+
+h1 {
+   line-height: normal;
+}
+
+a.title {
+   margin-left: 10px;
+}
+
+li {
+   margin-top: 15px;
 }

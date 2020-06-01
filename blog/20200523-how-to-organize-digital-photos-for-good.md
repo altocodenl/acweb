@@ -1,5 +1,6 @@
 We outlined a reliable 7 step process on how to organize digital photos and videos. Here it is. Now I can find whatever I want in 30 seconds or less.
-<h1 style="line-height: normal;">How to organize digital photos for good</h1>
+# How to organize digital photos for good
+
 <a href="https://altocode.nl/pic/" target="_blank"><img loading="lazy" src="img/how to organize digital photos - main image - 1000x400.png" alt="how to organize your digital photos for good" style="border-radius: 8px;max-width: 100%;height: auto;"></a>
 
 I had over 93GB of digital photos and videos in Google Drive. Years of memories in folders, subfolders, and many lost in between those. Finding something could take from 10 to 30 minutes, if I ever found it. As I took and saved more pics and videos, the chaos was growing. Too late to organize, I couldn’t catch up. I just kept backing up my phone. If the pics were already in folders, great, if not, they would be floating around in “the big folder”. That was what “backing up my photos” meant. Maybe someday I’d take the time to organize them.

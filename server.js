@@ -112,10 +112,10 @@ var makePage = function (body, head) {
          ['head', [
             ['meta', {charset: 'utf-8'}],
             ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
-            head || [],
             ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Code&display=swap'}],
+            head || [],
          ]],
          ['body', body],
       ]]
@@ -134,16 +134,19 @@ var routes = [
 
    // *** BLOG ***
 
-   ['get', 'blog', reply, (function () {
+   // TODO: strip trailing slash in cicek
+   ['get', /^\/blog\/$/, reply, (function () {
       var articles = fs.readdirSync ('blog');
       articles = dale.fil (articles, undefined, function (article) {
          if (! article.match (/\.md/)) return;
          var content = fs.readFileSync ('blog/' + article, 'utf8');
          var description = content.split ('\n') [0];
          return {
+            filename: article.slice (9).slice (0, -3),
             description: description,
             date: article.slice (0, 8),
-            title: article.slice (8).slice (0, -3),
+            // Second line contains the title
+            title: content.split ('\n') [1].replace (/#\s+/, ''),
             text: showdown.makeHtml (content.replace (description + '\n', '')),
          }
       });
@@ -152,48 +155,37 @@ var routes = [
       });
       blog = articles;
       return makePage ([
-         ['style', [
-            ['body', {
-               'font-family': '\'Montserrat Alternates\', sans-serif',
-               padding: 30,
-            }],
-            ['a.title', {'margin-left': 10}],
-            ['li', {'margin-top': 15}],
-         ]],
          ['h1', 'Altocode\'s blog'],
          ['br'],
          ['ul', dale.go (articles, function (article) {
-            return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: '/blog/' + article.title}, article.title]]];
+            return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: '/blog/' + article.filename}, article.title]]];
          })],
          ['br'],
          ['a', {href: '/'}, 'Back to the home page.'],
-      ], ['title', 'Altocode\'s blog']);
+      ], [
+         ['link', {rel: 'stylesheet', href: '/blog/style.css'}],
+         ['title', 'Altocode\'s blog']
+      ]);
    }) ()],
 
-   ['get', 'blogimg/(*)', function (rq, rs) {
+   ['get', 'blog/img/(*)', function (rq, rs) {
       // cache-control required by search engines to not be penalized, despite having etags already.
       cicek.file (rq, rs, 'blog/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
    }],
 
+   ['get', 'blog/style.css', cicek.file, 'blog/style.css'],
+
    ['get', 'blog*', function (rq, rs) {
       var article = dale.stopNot (blog, undefined, function (article) {
-         if (article.title === rq.url.replace ('\/blog', '')) return article;
+         if (article.filename === rq.url.replace (/\/blog\//, '')) return article;
       });
       if (! article) return reply (rs, 404, 'Article not found!');
       reply (rs, 200, makePage ([
-         ['style', [
-            ['body', {
-               'font-family': '\'Montserrat Alternates\', sans-serif',
-               padding: 30,
-               'max-width': 1000,
-               margin: 'auto',
-               'line-height': '1.5rem'
-            }],
-         ]],
          ['LITERAL', article.text],
          ['br'],
          ['a', {href: '/blog'}, 'Back to the blog.'],
       ], [
+         ['link', {rel: 'stylesheet', href: '/blog/style.css'}],
          ['meta', {name: 'description', content: article.description}],
          ['title', article.title + ' | Altocode\'s blog']
       ]));
@@ -206,11 +198,34 @@ var routes = [
    ['get', 'sitemap.xml', reply, (function () {
       // https://www.woorank.com/en/edu/seo-guides/xml-sitemaps
       var output = '<?xml version="1.0" encoding="UTF-8"?>';
-      output += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http:www.w3.org/1999/xhtml">';
-      // TODO: add images to sitemap
+      output += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http:www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">';
       // TODO: move ac;pic home here
-      dale.go (['/', '/blog', '/pic'].concat (dale.go (blog, function (article) {return '/blog/' + encodeURIComponent (article.title)})), function (url) {
+      // TODO: rest of the SEO
+      dale.go (['/', '/blog'], function (url) {
          output += '<url><loc>https://altocode.nl' + url + '</loc></url>';
+      });
+      dale.go (['/pic'], function (url) {
+         // TODO /images -> /img
+         var images = ['https://altocode.nl/pic/images/acpic-demo.gif'];
+         output += '<url><loc>https://altocode.nl' + url + '</loc>';
+         dale.go (images, function (image) {
+            output += '<image:image><image:loc>' + image + '</image:loc></image:image>';
+         });
+         output += '</url>';
+      });
+      dale.go (blog, function (article) {
+         var images = article.text.match (/<img[^>]+/g);
+         if (images !== null) {
+            images = dale.go (images, function (image) {
+               return 'https://altocode.nl/blog/img/' + encodeURIComponent (image.replace ('img/', '').match (/src="[^"]+/) [0].replace ('src="', ''));
+            });
+         }
+         output += '<url>';
+         output += '<loc>https://altocode.nl/blog/' + encodeURIComponent (article.filename) + '</loc>';
+         if (images) dale.go (images, function (image) {
+            output += '<image:image><image:loc>' + image + '</image:loc></image:image>';
+         });
+         output += '</url>';
       });
       return output + '</urlset>';
    }) ()],
