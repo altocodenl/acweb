@@ -196,17 +196,19 @@ var routes = [
    }) ()],
 
    ['get', 'sitemap.xml', reply, (function () {
-      // https://www.woorank.com/en/edu/seo-guides/xml-sitemaps
       var output = '<?xml version="1.0" encoding="UTF-8"?>';
       output += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http:www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">';
-      // TODO: move ac;pic home here
       // TODO: rest of the SEO
       dale.go (['/', '/blog'], function (url) {
          output += '<url><loc>https://altocode.nl' + url + '</loc></url>';
       });
       dale.go (['/pic'], function (url) {
-         // TODO /images -> /img
-         var images = ['https://altocode.nl/pic/images/acpic-demo.gif'];
+         var images = fs.readFileSync ('pic/index.html', 'utf8').match (/<img[^>]+/g);
+         if (images !== null) {
+            images = dale.go (images, function (image) {
+               return 'https://altocode.nl/pic/img/' + encodeURIComponent (image.replace ('img/', '').match (/src="[^"]+/) [0].replace ('src="', ''));
+            });
+         }
          output += '<url><loc>https://altocode.nl' + url + '</loc>';
          dale.go (images, function (image) {
             output += '<image:image><image:loc>' + image + '</image:loc></image:image>';
@@ -230,6 +232,18 @@ var routes = [
       return output + '</urlset>';
    }) ()],
 
+   // *** AC;PIC HOME ***
+
+   // TODO: strip trailing slash in cicek
+   ['get', /^\/pic\/$/, cicek.file, 'pic/index.html'],
+   ['get', 'pic/style.css', cicek.file, 'pic/style.css'],
+   ['get', 'pic/img/(*)', function (rq, rs) {
+      // cache-control required by search engines to not be penalized, despite having etags already.
+      cicek.file (rq, rs, 'pic/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
+   }],
+
+   // *** STATIC ASSETS ***
+
    ['get', 'favicon.ico', cicek.file, 'favicon.ico'],
 
    ['get', '/', reply, makePage ([
@@ -239,6 +253,9 @@ var routes = [
       ]})
    ], ['title', 'Altocode'])],
    ['get', 'client.js', cicek.file],
+
+   // *** LIBRARIES ***
+
    ['get', 'json2.min.js', function (rq, rs) {
       hitit.one ({}, {method: 'get', https: true, host: 'cdn.jsdelivr.net', path: 'gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', code: 200, apres: function (s, rq2, rs2) {
          reply (rs, 200, rs2.body, 'js');
