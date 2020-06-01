@@ -129,7 +129,7 @@ var routes = [
    // *** UPTIME ROBOT ***
 
    ['head', '*', function (rq, rs) {
-      reply (rs, ['/', '/blog'].indexOf (rq.url) !== -1 ? 200 : 404);
+      reply (rs, ['/', '/blog', '/pic'].indexOf (rq.url) !== -1 ? 200 : 404);
    }],
 
    // *** BLOG ***
