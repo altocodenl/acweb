@@ -105,7 +105,7 @@ var notify = function (s, message) {
 
 // *** ROUTES ***
 
-var makePage = function (body, head) {
+var makePage = function (body, head, params) {
    return lith.g ([
       ['!DOCTYPE HTML'],
       ['html', [
@@ -115,9 +115,71 @@ var makePage = function (body, head) {
             ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap'}],
             ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Code&display=swap'}],
+            ['link', {rel: 'canonical', href: 'https://altocode.nl' + params.url}],
+            dale.go (['robots', 'googlebot', 'bingbot'], function (v) {
+               return ['meta', {name: v, content: 'index, follow'}];
+            }),
+            // Open Graph Protocol
+            ['meta', {property: 'og:locale', content: 'en_US'}],
+            ['meta', {property: 'og:type', content: params.type}],
+            ['meta', {property: 'og:title', content: params.title}],
+            ['meta', {property: 'og:description', content: params.description}],
+            ['meta', {property: 'og:url', content: 'https://altocode.nl' + params.url}],
+            ['meta', {property: 'og:site_name', content: 'Altocode'}],
+            params.images && params.images [0] ? [
+               ['meta', {property: 'og:image', content: params.images [0]}],
+               ['meta', {property: 'og:image:alt', content: params.title}],
+            ] : [],
             head || [],
          ]],
-         ['body', body],
+         ['body', [
+            body,
+            ['script', {type: 'application/ld+json'}, JSON.stringify ({
+               '@context': "http://schema.org",
+               '@type': 'WebPage',
+               name: params.title,
+               description: params.description,
+               publisher: {
+                  '@type': 'ProfilePage',
+                  name: 'Altocode - We create applications to empower humans.'
+               }
+            }, null, '   ')],
+            ! params.breadcrumbs ? [] : ['script', {type: 'application/ld+json'}, JSON.stringify ({
+               '@context': "http://schema.org",
+               '@type': 'BreadCrumbList',
+               itemListElement: dale.go (params.breadcrumbs, function (v, k) {
+                  return {
+                     '@type': 'ListItem',
+                     position: k + 1,
+                     name: v [0],
+                     item: 'https://altocode.nl' + v [1]
+                  };
+               }),
+            }, null, '   ')],
+            ! params.articleDate ? [] : ['script', {type: 'application/ld+json'}, JSON.stringify ({
+               '@context': "http://schema.org",
+               '@type': 'Article',
+                mainEntityOfPage: {
+                   '@type': 'WebPage',
+                   '@id': 'https://altocode.nl/'
+                },
+                name: params.title,
+                headline: params.title,
+                author: {
+                   '@type': 'Organization',
+                   name: 'Altocode',
+                },
+                publisher: {
+                   '@type': 'Organization',
+                   name: 'Altocode',
+                },
+                image: params.images && params.images [0] ? params.images [0] : undefined,
+                datePublished: params.articleDate,
+                dateModified: params.articleDate,
+                articleSection: 'blog',
+                url: 'https://altocode.nl/' + params.breadcrumbs [1],
+             }, null, '   ')],
+         ]],
       ]]
    ]);
 }
@@ -148,6 +210,7 @@ var routes = [
             // Second line contains the title
             title: content.split ('\n') [1].replace (/#\s+/, ''),
             text: showdown.makeHtml (content.replace (description + '\n', '')),
+            images: []
          }
       });
       articles.sort (function (a, b) {
@@ -165,7 +228,7 @@ var routes = [
       ], [
          ['link', {rel: 'stylesheet', href: '/blog/style.css'}],
          ['title', 'Altocode\'s blog']
-      ]);
+      ], {url: '/blog', description: 'Altocode\'s blog', title: 'Altocode', type: 'website', breadcrumbs: [['Blog', '/blog']]});
    }) ()],
 
    ['get', 'blog/img/(*)', function (rq, rs) {
@@ -188,7 +251,7 @@ var routes = [
          ['link', {rel: 'stylesheet', href: '/blog/style.css'}],
          ['meta', {name: 'description', content: article.description}],
          ['title', article.title + ' | Altocode\'s blog']
-      ]));
+      ], {title: article.title, description: article.description, url: rq.url, images: article.images, type: 'article', breadcrumbs: [['Blog', '/blog'], [article.title, '/blog/' + article.filename]], articleDate: [article.date.slice (0, 4), article.date.slice (4, 6), article.date.slice (6, 8)].join ('-')}));
    }],
 
    ['get', 'robots.txt', reply, (function () {
@@ -221,6 +284,7 @@ var routes = [
             images = dale.go (images, function (image) {
                return 'https://altocode.nl/blog/img/' + encodeURIComponent (image.replace ('img/', '').match (/src="[^"]+/) [0].replace ('src="', ''));
             });
+            article.images = images;
          }
          output += '<url>';
          output += '<loc>https://altocode.nl/blog/' + encodeURIComponent (article.filename) + '</loc>';
@@ -251,7 +315,7 @@ var routes = [
       dale.go (['gotob/gotoB.min.js', 'client.js'], function (v) {
          return ['script', {src: v}
       ]})
-   ], ['title', 'Altocode'])],
+   ], ['title', 'Altocode'], {url: '/', description: 'We create simple applications that everyone can understand and use. We focus on quality, not features.', title: 'Altocode', type: 'website'})],
    ['get', 'client.js', cicek.file],
 
    // *** LIBRARIES ***

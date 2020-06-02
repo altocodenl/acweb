@@ -253,3 +253,55 @@ A fun game I like to play sometimes is “can I find a particular picture in 30 
 <img loading="lazy" src="img/taking pictures -1000x300.png" alt="taking pictures.png" style="border-radius: 8px;max-width: 100%;height: auto;">
 
 If this makes sense to you, then you might <a href="https://altocode.nl/pic/#/pics" target="_blank">want to give ac;pic a try.</a> But in any case, never settle for less. <a href="https://fixthephoto.com/best-cloud-storage-for-photos.html">Get a cloud service with which you feel safe, it’s easy to use and it helps you to stay organized.</a> **Your photos and videos are your memories, they make a moment last forever. Make your memories justice. That’s what matters.**
+
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "HowTo",
+   "name": "How to organize digital photos for good",
+   "description": "We outlined a reliable 7 step process on how to organize digital photos and videos. Here it is. Now I can find whatever I want in 30 seconds or less.",
+   "image": {
+      "@type": "ImageObject",
+      "url": "https://altocode.nl/blog/img/how%20to%20organize%20digital%20photos%20-%20main%20image%20-%201000x400.png",
+      "height": "400",
+      "width": "1000"
+   },
+   "step": [
+      {
+         "@type": "HowToStep",
+         "text": "Get a reliable cloud service and centralize your data.",
+         "image": "https://altocode.nl/blog/img/cloud%20service%20-1000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+          "text": "Make sure it’s cross-device and simple to use.",
+          "image": "https://altocode.nl/blog/img/cloud%20cross%20device%20-%201000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+         "text": "Don’t use folders or albums.",
+         "image": "https://altocode.nl/blog/img/no%20folder%20-%201000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+         "text": "Use tags.",
+         "image": "https://altocode.nl/blog/img/use%20tags%20-%201000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+         "text": "Take advantage of auto tagging.",
+         "image": "https://altocode.nl/blog/img/efficient%20-%201000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+         "text": "Get duplicated photos eliminated.",
+         "image": "https://altocode.nl/blog/img/no%20copies%20-1000x300.png"
+      },
+      {
+         "@type": "HowToStep",
+         "text": "Get rid of empty spaces.",
+         "image": "https://altocode.nl/blog/img/empty%20-%201000x300.png"
+      }
+   ]
+}
+</script>
