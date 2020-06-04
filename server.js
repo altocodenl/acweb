@@ -131,9 +131,6 @@ var makePage = function (body, head, params) {
                ['meta', {property: 'og:image:alt', content: params.title}],
             ] : [],
             head || [],
-         ]],
-         ['body', [
-            body,
             ['script', {type: 'application/ld+json'}, JSON.stringify ({
                '@context': "http://schema.org",
                '@type': 'WebPage',
@@ -179,6 +176,9 @@ var makePage = function (body, head, params) {
                 articleSection: 'blog',
                 url: 'https://altocode.nl/' + params.breadcrumbs [1],
              }, null, '   ')],
+         ]],
+         ['body', [
+            body,
          ]],
       ]]
    ]);
