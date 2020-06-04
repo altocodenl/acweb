@@ -20,6 +20,14 @@ if [ "$2" == "server" ] ; then
    exit 0
 fi
 
+if [ "$2" == "blog" ] ; then
+   ssh $HOST "cd $FOLDER && rm -r blog/*"
+   scp -r blog/* $HOST:$FOLDER/blog
+   scp server.js $HOST:$FOLDER
+   ssh $HOST "cd $FOLDER && mg restart"
+   exit 0
+fi
+
 #ssh $HOST mkdir altocode/node_modules/gotob2
 #scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
 #exit 0
