@@ -1,5 +1,6 @@
 Organizing your old digital photos and videos shouldn't require work or time. The software you use should solve that, not you. It should be fast and easy. 
 #Organizing old digital photos should be fast and easy
+<img src="img/Organizing-old-digital photos-should-be-fast-and-easy-1000x300.png" alt="old photos" style="border-radius: 8px;max-width: 100%;height: auto;">
 
 ##The problem
 
