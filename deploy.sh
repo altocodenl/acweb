@@ -28,6 +28,11 @@ if [ "$2" == "blog" ] ; then
    exit 0
 fi
 
+if [ "$2" == "dale" ] ; then
+   scp ../dale/* $HOST:~/altocode/node_modules/dale
+   exit 0
+fi
+
 #ssh $HOST mkdir altocode/node_modules/gotob2
 #scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
 #exit 0
