@@ -11,7 +11,7 @@
       "hitit":     "1.2.7",
       "lith":      "6.0.4",
       "recalc":    "4.1.0",
-      "teishi":    "5.0.2",
+      "teishi":    "5.0.3",
       "showdown":  "1.9.1"
    },
    "main": "server.js",

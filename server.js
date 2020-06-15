@@ -326,9 +326,7 @@ var routes = [
       }});
    }],
 
-   ['get', 'testall.html', reply, '<script>window.onerror = function () {alert (\'There was an error!\'); console.log (\'ERROR\', arguments);}</script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="lith/lith.js"></script><script src="recalc/recalc.js"></script><script src="dale/test.js"></script><script src="teishi/test.js"></script><script src="lith/test.js"></script><script src="recalc/test.js"></script><iframe src="cocholate/test.html"></iframe>', 'html'],
-   ['get', 'testallbc.html', reply, '<script>window.onerror = function () {}</script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="lith/lith.js"></script><script src="recalc/recalc.js"></script><script src="dale/test.js"></script><script src="teishi/test.js"></script><script src="lith/test.js"></script><script src="recalc/test.js"></script>', 'html'],
-   ['get', 'dale', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="dale/test.js"></script>'],
+   ['get', 'dale',   reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="dale/test.js"></script>'],
    ['get', 'teishi', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="teishi/test.js"></script>'],
    ['get', 'lith', reply, '<!DOCTYPE HTML><html><head><meta charset="utf-8"><title>lith test</title><style>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}body{line-height:1;}ol, ul{list-style:none;}blockquote, q{quotes:none;}blockquote:before, blockquote:after, q:before, q:after{content:\'\';}blockquote:before, blockquote:after, q:before, q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}body{padding:10px;}textarea{padding:5px;width:90%;height:150px;font-family:"Lucida Console", Monaco, monospace;line-height:2em;}div.main{width:50%;float:left;}label{font-weight:bold;display:block;margin-top:10px;margin-bottom:10px;}div#output{border:solid 1px;padding:10px;}textarea#outputText{background-color:#DDDDDD;}</style></head><body><div class="main"><label>lith input - insert a valid lith below</label><textarea id="inputLith" onchange="window.recalc ()" onkeydown="window.recalc ()" onkeyup="window.recalc ()"></textarea><label>litc input - insert a valid litc below</label><textarea id="inputLitc" onchange="window.recalc ()" onkeydown="window.recalc ()" onkeyup="window.recalc ()"></textarea><label>Output (will only change if you wrote a valid lith + litc above)</label><textarea readonly="readonly" id="outputText"></textarea></div><div class="main"><label>Div containing HTML output (will only change if you wrote a valid lith + litc)</label><div id="output"></div></div><script>window.noBenchmark = true</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="lith/lith.js"></script><script src="lith/test.js"></script></body></html>'],
    ['get', 'recalc', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="recalc/recalc.js"></script><script src="recalc/test.js"></script>'],
@@ -373,3 +371,13 @@ cicek.listen ({port: CONFIG.port}, routes);
 if (cicek.isMaster) setTimeout (function () {
    notify (a.creat (), {type: 'server start'});
 }, 1500);
+
+process.on ('uncaughtException', function (error, origin) {
+   a.seq ([
+      [notify, {priority: 'critical', type: 'server error', error: error, stack: error.stack, origin: origin}],
+      function () {
+         process.exit (1);
+      }
+   ]);
+});
+
