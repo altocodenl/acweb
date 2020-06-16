@@ -22,6 +22,11 @@ var a      = require ('./astack.js');
 var showdown = new (require ('showdown')).Converter ();
 
 var type = teishi.type, clog = console.log, eq = teishi.eq, reply = function () {
+   var rs = dale.stopNot (arguments, undefined, function (arg) {
+      if (arg && type (arg.log) === 'object') return arg;
+   });
+   // TODO remove this when fixed in cicek
+   if (! rs.connection.writable) return notify (a.creat (), {type: 'client dropped connection', method: rs.log.method, url: rs.log.url, headers: rs.log.requestHeaders});
    cicek.reply.apply (null, dale.fil (arguments, undefined, function (v, k) {
       if (k === 0 && v && v.path && v.last && v.vars) return;
       return v;
@@ -328,7 +333,18 @@ var routes = [
 
    ['get', 'dale',   reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="dale/test.js"></script>'],
    ['get', 'teishi', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="teishi/test.js"></script>'],
-   ['get', 'lith', reply, '<!DOCTYPE HTML><html><head><meta charset="utf-8"><title>lith test</title><style>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}body{line-height:1;}ol, ul{list-style:none;}blockquote, q{quotes:none;}blockquote:before, blockquote:after, q:before, q:after{content:\'\';}blockquote:before, blockquote:after, q:before, q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}body{padding:10px;}textarea{padding:5px;width:90%;height:150px;font-family:"Lucida Console", Monaco, monospace;line-height:2em;}div.main{width:50%;float:left;}label{font-weight:bold;display:block;margin-top:10px;margin-bottom:10px;}div#output{border:solid 1px;padding:10px;}textarea#outputText{background-color:#DDDDDD;}</style></head><body><div class="main"><label>lith input - insert a valid lith below</label><textarea id="inputLith" onchange="window.recalc ()" onkeydown="window.recalc ()" onkeyup="window.recalc ()"></textarea><label>litc input - insert a valid litc below</label><textarea id="inputLitc" onchange="window.recalc ()" onkeydown="window.recalc ()" onkeyup="window.recalc ()"></textarea><label>Output (will only change if you wrote a valid lith + litc above)</label><textarea readonly="readonly" id="outputText"></textarea></div><div class="main"><label>Div containing HTML output (will only change if you wrote a valid lith + litc)</label><div id="output"></div></div><script>window.noBenchmark = true</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="lith/lith.js"></script><script src="lith/test.js"></script></body></html>'],
+   ['get', 'lith', reply, (function () {
+      var test = require ('./node_modules/lith/test.js');
+      var html = fs.readFileSync ('test.html', 'utf8');
+      setTimeout (function () {
+         try {
+            fs.unlinkSync ('test.html');
+         }
+         catch (error) {}
+      }, 1000);
+      html = html.replace (/<script.+/g, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script>' + lith.g (dale.go (['json2.min.js', 'dale/dale.js', 'teishi/teishi.js', 'lith/lith.js', 'lith/test.js'], function (v) {return ['script', {src: v}]})));
+      return html;
+   }) ()],
    ['get', 'recalc', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="recalc/recalc.js"></script><script src="recalc/test.js"></script>'],
    ['get', '(*)', cicek.file, ['node_modules/']],
    dale.go (['dale', 'dale2', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {

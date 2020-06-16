@@ -38,6 +38,11 @@ if [ "$2" == "teishi" ] ; then
    exit 0
 fi
 
+if [ "$2" == "lith" ] ; then
+   scp ../lith/* $HOST:~/altocode/node_modules/lith
+   exit 0
+fi
+
 #ssh $HOST mkdir altocode/node_modules/gotob2
 #scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
 #exit 0
