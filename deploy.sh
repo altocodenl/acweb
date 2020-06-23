@@ -43,12 +43,21 @@ if [ "$2" == "lith" ] ; then
    exit 0
 fi
 
-#ssh $HOST mkdir altocode/node_modules/gotob2
-#scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
-#exit 0
+if [ "$2" == "recalc" ] ; then
+   scp ../recalc/* $HOST:~/altocode/node_modules/recalc
+   exit 0
+fi
 
-#scp ../cocholate/* $HOST:~/altocode/node_modules/cocholate
-#exit 0
+if [ "$2" == "cocholate" ] ; then
+   scp ../cocholate/* $HOST:~/altocode/node_modules/cocholate
+   exit 0
+fi
+
+if [ "$2" == "gotob" ] ; then
+   ssh $HOST mkdir altocode/node_modules/gotob2
+   scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
+   exit 0
+fi
 
 cd ..
 tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" -czvf $TAR $FOLDER

@@ -26,7 +26,7 @@ var type = teishi.type, clog = console.log, eq = teishi.eq, reply = function () 
       if (arg && type (arg.log) === 'object') return arg;
    });
    // TODO remove this when fixed in cicek
-   if (! rs.connection.writable) return notify (a.creat (), {type: 'client dropped connection', method: rs.log.method, url: rs.log.url, headers: rs.log.requestHeaders});
+   if (! rs.connection || ! rs.connection.writable) return notify (a.creat (), {type: 'client dropped connection', method: rs.log.method, url: rs.log.url, headers: rs.log.requestHeaders});
    cicek.reply.apply (null, dale.fil (arguments, undefined, function (v, k) {
       if (k === 0 && v && v.path && v.last && v.vars) return;
       return v;
@@ -346,15 +346,15 @@ var routes = [
       return html;
    }) ()],
    ['get', 'recalc', reply, '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="recalc/recalc.js"></script><script src="recalc/test.js"></script>'],
-   /*
    ['get', 'cocholate', reply, (function () {
-      var test = require (
-      '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script><script src="json2.min.js"></script><script src="dale/dale.js"></script><script src="teishi/teishi.js"></script><script src="recalc/recalc.js"></script><script src="recalc/test.js"></script>'],
-      */
-   ['get', '(*)', cicek.file, ['node_modules/']],
-   dale.go (['dale', 'dale2', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {
-      return [];
-      //return ['get', '(*)', cicek.file, ['node_modules/']];
+      var test = fs.readFileSync ('node_modules/cocholate/test.html', 'utf8');
+      test = test.replace (/<script src.+><\/script>/g, '');
+      test = test.replace ('<body>', '<body>\n' + '<script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script>' + lith.g (dale.go (['json2.min.js', 'dale/dale.js', 'teishi/teishi.js', 'lith/lith.js', 'cocholate/cocholate.js'], function (v) {return ['script', {src: v}]})));
+      test = test.replace ('\'cocholate.js', '\'cocholate/cocholate.js');
+      return test;
+   }) ()],
+   dale.go (['dale', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {
+      return ['get', lib + '/(*)', cicek.file, ['node_modules/' + lib]];
    }),
 ];
 
