@@ -60,7 +60,7 @@ if [ "$2" == "gotob" ] ; then
 fi
 
 cd ..
-tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" -czvf $TAR $FOLDER
+tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" --exclude="$FOLDER/._*" -czvf $TAR $FOLDER
 ssh $HOST rm -r altocode/blog
 scp $TAR $HOST:
 ssh $HOST tar xzvf $TAR
