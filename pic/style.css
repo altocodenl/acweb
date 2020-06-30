@@ -114,7 +114,7 @@ font-weight: 600;
 
 @media screen and (min-width: 1024px){
   .demo img {
-    width: 50%;
+    width: 80%;
   }
 }
 .log-in-button {
