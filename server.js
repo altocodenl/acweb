@@ -354,10 +354,15 @@ var routes = [
       return test;
    }) ()],
    ['get', 'gotob2', reply, (function () {
-      var test = fs.readFileSync ('node_modules/gotob2/test.html', 'utf8');
-      test = test.replace ('https://cdn.jsdelivr.net/gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', 'json2.min.js');
-      test = test.replace ('gotoB.min.js', 'gotob2/gotoB.min.js');
-      return test;
+      try {
+         var test = fs.readFileSync ('node_modules/gotob2/test.html', 'utf8');
+         test = test.replace ('https://cdn.jsdelivr.net/gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', 'json2.min.js');
+         test = test.replace ('gotoB.min.js', 'gotob2/gotoB.min.js');
+         return test;
+      }
+      catch (error) {
+         return 'not found';
+      }
    }) ()],
    dale.go (['dale', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {
       return ['get', lib + '/(*)', cicek.file, ['node_modules/' + lib]];
