@@ -29,12 +29,15 @@
 
    Views.baseCSS = [
       ['body', {
-         'font-family': '\'Montserrat Alternates\', sans-serif',
+         'font-family': '\'Montserrat\', sans-serif',
          padding: 30,
          'max-width': 1000,
       }],
       ['p, li', {
          'line-height': '1.6em',
+      }],
+      ['strong', {
+        'font-weight': '600',
       }],
    ];
 
