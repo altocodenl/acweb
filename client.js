@@ -58,10 +58,10 @@
              }],
          ]}, function () {
             return [
-               ['div', {class: 'opaque', style: style ({'font-size': 36, 'font-weight': 'normal', 'font-family': '\'Fira Code\', monospace'})}, [
-                  ['span', {style: style ({color: 'red', 'font-weight': ''})}, 'a'], 'lto;',
+               ['div', {class: 'opaque', style: style ({'font-size': 36, 'font-weight': 'normal', 'font-family': '\'Montserrat\', monospace'})}, [
+                  ['span', {style: style ({color: '#5b6eff', 'font-weight': ''})}, 'a'], 'lto;',
                   ['br'],
-                  ['LITERAL', '&nbsp;'], ['span', {style: style ({color: 'red', 'font-weight': ''})}, 'c'], 'o', ['span', {style: style ({color: ''})}, 'de'],
+                  ['LITERAL', '&nbsp;'], ['span', {style: style ({color: '#5b6eff', 'font-weight': ''})}, 'c'], 'o', ['span', {style: style ({color: ''})}, 'de'],
                ]],
                ['br'],
                ['p', [
