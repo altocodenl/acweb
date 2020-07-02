@@ -40,6 +40,8 @@ fi
 
 if [ "$2" == "lith" ] ; then
    scp ../lith/* $HOST:~/altocode/node_modules/lith
+   scp server.js $HOST:$FOLDER
+   ssh $HOST "cd $FOLDER && mg restart"
    exit 0
 fi
 
@@ -50,17 +52,21 @@ fi
 
 if [ "$2" == "cocholate" ] ; then
    scp ../cocholate/* $HOST:~/altocode/node_modules/cocholate
+   scp server.js $HOST:$FOLDER
+   ssh $HOST "cd $FOLDER && mg restart"
    exit 0
 fi
 
 if [ "$2" == "gotob" ] ; then
    ssh $HOST mkdir altocode/node_modules/gotob2
    scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
+   scp server.js $HOST:$FOLDER
+   ssh $HOST "cd $FOLDER && mg restart"
    exit 0
 fi
 
 cd ..
-COPYFILE_DISABLE=true tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" --exclude="$FOLDER/._*" -czvf $TAR $FOLDER 
+COPYFILE_DISABLE=true tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" --exclude="$FOLDER/._*" -czvf $TAR $FOLDER
 ssh $HOST rm -r altocode/blog
 scp $TAR $HOST:
 ssh $HOST tar xzvf $TAR
