@@ -1,4 +1,4 @@
-Focus on doing one thing well. That's the only focus we should have. 
+Focus on doing one thing well. That's what matters. 
 #One thing well
 
 *"Customers don’t want your product or what it does; they want help making themselves better (i.e., they want to transform a life-situation, make progress)."* (1) 
