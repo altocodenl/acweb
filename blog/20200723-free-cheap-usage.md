@@ -9,7 +9,7 @@ Making a free or cheap product won’t make it more used or popular.
 
 --
 
-**Making a free or cheap product won’t make it more used or popular. A good, helpful product will.**
+**Making a product cheap (or free) won’t make it more popular. A good, helpful product will.**
 
 ---
 
