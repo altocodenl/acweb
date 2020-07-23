@@ -1,5 +1,5 @@
 Making a free or cheap product won’t make it more used or popular.
-# Price: product strength
+# Price = product strength
 
 > “If your product doesn’t help customers make progress, price doesn’t matter.” [1]
 
@@ -9,7 +9,7 @@ Making a free or cheap product won’t make it more used or popular.
 
 --
 
-Making a free or cheap product won’t make it more used or popular. A good, helpful product will. **A good, helpful product shouldn’t have problems with a fair price.** 
+Making a free or cheap product won’t make it more used or popular. A good, helpful product will. **A good, helpful product shouldn’t have problems with a fair, profitable price.** 
 
 ---
 
