@@ -3,15 +3,25 @@ Focus on doing one thing well. That's what matters.
 
 > "Customers don’t want your product or what it does; they want help making themselves better (i.e., they want to transform a life-situation, make progress)." [1]
 
+--
+
 > "I decided to make a project that did only one thing and did it well, with the goal instead of succeeding being to not fail. Anything is better than never shipping. The result was BitTorrent." [2]
+
+--
 
 > “Once you’ve built something of value, your marketing isn’t telling people what it is; they’re smart enough to figure that out, telling them how they can use it.” [3]
 
+--
+
 > “What we call profit being the reward for understanding an aspect of human nature ahead of the competition." [4]
+
+--
 
 Focus on solving one thing well. Focus on helping people become better versions of themselves. Tell them how they can use it. 
 
 That's the focus.
+
+---
 
 - [1] Klement, Alan. <a href="https://www.amazon.com/When-Coffee-Kale-Compete-products-ebook/dp/B07C7HH662" target="_blank">When Coffee and Kale Compete: Become great at making products people will buy.</a> NYC Press. Kindle Edition.
 - [2]: Bram Cohen. Ferriss, Timothy. <a href="https://www.amazon.com/dp/B071KJ7PTB" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books. Kindle Edition. 
