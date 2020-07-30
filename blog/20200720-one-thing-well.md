@@ -23,8 +23,8 @@ That's the focus.
 
 ---
 
-- [1] Klement, Alan. <a href="https://www.amazon.com/When-Coffee-Kale-Compete-products-ebook/dp/B07C7HH662" target="_blank">When Coffee and Kale Compete: Become great at making products people will buy.</a> NYC Press. Kindle Edition.
-- [2]: Bram Cohen. Ferriss, Timothy. <a href="https://www.amazon.com/dp/B071KJ7PTB" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books. Kindle Edition. 
+- [1] Klement, Alan. <a href="http://www.whencoffeeandkalecompete.com/" target="_blank">When Coffee and Kale Compete: Become great at making products people will buy.</a> NYC Press. Kindle Edition.
+- [2]: Bram Cohen. Ferriss, Timothy. <a href="https://tribeofmentors.com/" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books. Kindle Edition. 
 - [3]: Bourke, Daniel. <a href="https://medium.com/the-post-grad-survival-guide/building-a-business-from-a-bedroom-98-130-and-11-months-in-7a55774b2a0" target="_blank">Building a Business From a Bedroom, $98,130 and 11-Months In.</a>  
 - [4]: <a href="https://www.theschooloflife.com/thebookoflife/how-could-a-working-life-be-meaningful/" target="_blank">How Could a Working Life Be Meaningful?</a>, The School of Life.
 

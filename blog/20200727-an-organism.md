@@ -22,4 +22,4 @@ You’ll be doing more good than you can imagine.
 ---
 
 - [1] Heinemeier Hansson, David. <a href="https://m.signalvnoise.com/reconsider/" target="_blank">Reconsider.</a> SIGNAL V. NOISE.
-- [2] Tim O’Reilly. Ferriss, Timothy. <a href="https://www.amazon.com/dp/B071KJ7PTB" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books.
+- [2] Tim O’Reilly. Ferriss, Timothy. <a href="https://tribeofmentors.com/" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books.

@@ -16,5 +16,5 @@ What if we think of ourselves not as an ‘entrepreneur’, ‘founder’, ‘de
 
 ---
 
-- [1] [2] [3] Eyal, Nir. <a href="https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products-ebook/dp/B00LMGLXTS" target="_blank">Hooked: How to Build Habit-Forming Products.</a> Penguin Publishing Group.
+- [1] [2] [3] Eyal, Nir. <a href="https://www.nirandfar.com/hooked/" target="_blank">Hooked: How to Build Habit-Forming Products.</a> Penguin Publishing Group.
 

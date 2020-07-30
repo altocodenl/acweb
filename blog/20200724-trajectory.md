@@ -16,6 +16,6 @@ Trajectory is what matters. The trajectory is what takes you to a destination.
 ---
 
 - [1] Rao, Srikumar. <a href="https://www.inc.com/srikumar-rao/a-navy-seal-technique-can-help-you-survive-entrepreneur-terror.html" target="_blank">A Navy SEAL Technique Can Help You Survive Entrepreneur Terror.</a> inc.com 
-- [2] Mathew Fraser. Ferriss, Timothy. <a href="https://www.amazon.com/dp/B071KJ7PTB" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> (p. 427). HMH Books.
+- [2] Mathew Fraser. Ferriss, Timothy. <a href="https://tribeofmentors.com/" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> (p. 427). HMH Books.
 
 

@@ -21,7 +21,7 @@ That’s in front of us. That’s the point of impact.
 
 ---
 
-- [1] Ferriss, Timothy. <a href="https://www.amazon.com/dp/B071KJ7PTB" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books.
-- [2] Eyal, Nir. <a href="https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products-ebook/dp/B00LMGLXTS" target="_blank">Hooked: How to Build Habit-Forming Products.</a> Penguin Publishing Group.
+- [1] Ferriss, Timothy. <a href="https://tribeofmentors.com/" target="_blank">Tribe of Mentors: Short Life Advice from the Best in the World.</a> HMH Books.
+- [2] Eyal, Nir. <a href="https://www.nirandfar.com/hooked/" target="_blank">Hooked: How to Build Habit-Forming Products.</a> Penguin Publishing Group.
 
 
