@@ -5,11 +5,7 @@ Sometimes the solution to a problem is not fixing it, but making it irrelevant.
 
 --
 
-> “Customers know only what the system tells them.” [2]
-
---
-
-> “Customers can tell you of their struggles, how they expect life to be better, and how they interact with the products they use. But they cannot tell you what to do about it.” [3]
+> “Customers can tell you of their struggles, how they expect life to be better, and how they interact with the products they use. But they cannot tell you what to do about it.” [2]
 
 --
 
@@ -23,6 +19,6 @@ Think like a doctor.
 
 ---
 
-- [1] [2] [3] Klement, Alan. <a href="http://www.whencoffeeandkalecompete.com/" target="_blank">When Coffee and Kale Compete: Become great at making products people will buy.</a> NYC Press.
+- [1] [2] Klement, Alan. <a href="http://www.whencoffeeandkalecompete.com/" target="_blank">When Coffee and Kale Compete: Become great at making products people will buy.</a> NYC Press.
 
 
