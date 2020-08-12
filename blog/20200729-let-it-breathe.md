@@ -1,19 +1,19 @@
 If we’re in this for the long run, then we have to take care of the engine so that it lasts the entire race. 
 # Let it breathe
 
-> “(...) **Working too hard is actually the easy way out.** For entrepreneurs, it’s often easier to keep working than to take a break, even when you know you should.”
+> "(...) **Working too hard is actually the easy way out.** For entrepreneurs, it’s often easier to keep working than to take a break, even when you know you should."
 
-> “Yet the spacing effect is really tough to put into practice because **taking pauses and stretching timelines out feels like idleness, like you’re not being productive.** Why relax when you could be doing something, anything, to improve the business? It feels more logical to keep pushing yourself even though you don’t feel like you’re moving forward anymore.” 
+> "Yet the spacing effect is really tough to put into practice because **taking pauses and stretching timelines out feels like idleness, like you’re not being productive.** Why relax when you could be doing something, anything, to improve the business? It feels more logical to keep pushing yourself even though you don’t feel like you’re moving forward anymore."
 
-> “This is the psychological trap that’s absolutely essential for you to avoid, where the patience and perseverance to rest comes in. Without rest, you not only risk decreased productivity, you’re increasing your vulnerability to long-term burnout.” [1]
+> "This is the psychological trap that’s absolutely essential for you to avoid, where the patience and perseverance to rest comes in. Without rest, you not only risk decreased productivity, you’re increasing your vulnerability to long-term burnout." [1]
 
 --
 
-> “Lately, I’ve been hearing something that disturbs me. A lot of entrepreneurs onstage have been bragging about not sleeping, telling their audiences about their 16-hour days, and making it sound like hustle-at-all-costs is the way ahead. Rest be damned, they say — there’s an endless amount of work to do.” 
+> "Lately, I’ve been hearing something that disturbs me. A lot of entrepreneurs onstage have been bragging about not sleeping, telling their audiences about their 16-hour days, and making it sound like hustle-at-all-costs is the way ahead. Rest be damned, they say — there’s an endless amount of work to do." 
 
-> “ I think this message is one of the most harmful in all of business. Sustained exhaustion is not a rite of passage. It’s a mark of stupidity. Literally. Scientists have suggested that scores on IQ tests decline on each successive day you sleep less than you naturally would. It doesn’t take long before the difference is telling.”
+> "I think this message is one of the most harmful in all of business. Sustained exhaustion is not a rite of passage. It’s a mark of stupidity. Literally. Scientists have suggested that scores on IQ tests decline on each successive day you sleep less than you naturally would. It doesn’t take long before the difference is telling."
 
-> “People pulling 16-hour days on a regular basis are exhausted. They’re just too tired to notice that their work has suffered because of it.” [2]
+> "People pulling 16-hour days on a regular basis are exhausted. They’re just too tired to notice that their work has suffered because of it." [2]
 
 --
 

@@ -15,9 +15,14 @@ h1 {
 	text-align: center;
 	font-size: 2.5em;
 	font-weight: 900;
+	line-height: normal;
+   	color: #11191a;
+   	margin-top: 0.5em;
+	margin-bottom: 1em;
+   	letter-spacing: -1px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
    line-height: normal;
    color: #11191a;
    margin: 0 0 20px;

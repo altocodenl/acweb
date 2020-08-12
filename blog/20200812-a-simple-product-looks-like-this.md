@@ -1,7 +1,7 @@
 Simple is organized, complex doesn’t scale.
 # ac;pic: a simple product looks like this
 
-> “Simplicity is the ultimate form of sophistication.” [1]
+> "Simplicity is the ultimate form of sophistication." [1]
 
 --
 

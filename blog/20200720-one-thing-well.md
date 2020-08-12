@@ -9,11 +9,11 @@ Focus on doing one thing well. That's what matters.
 
 --
 
-> “Once you’ve built something of value, your marketing isn’t telling people what it is; they’re smart enough to figure that out, telling them how they can use it.” [3]
+> "Once you’ve built something of value, your marketing isn’t telling people what it is; they’re smart enough to figure that out, telling them how they can use it." [3]
 
 --
 
-> “What we call profit being the reward for understanding an aspect of human nature ahead of the competition." [4]
+> "What we call profit being the reward for understanding an aspect of human nature ahead of the competition." [4]
 
 --
 

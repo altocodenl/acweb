@@ -1,18 +1,18 @@
 Competitors don’t matter. Competition does. 
 # Competitor ≠ Competition
 
-> “A quick word about competitors: competitors are a startup ghost story. First-time founders think they are what kill 99% of startups. But 99% of startups die from suicide, not murder. Worry instead about all of your internal problems. If you fail, it will very likely be because you failed to make a great product and/or failed to make a great company.” 
+> "A quick word about competitors: competitors are a startup ghost story. First-time founders think they are what kill 99% of startups. But 99% of startups die from suicide, not murder. Worry instead about all of your internal problems. If you fail, it will very likely be because you failed to make a great product and/or failed to make a great company."
 
 > In the words of Henry Ford: "The competitor to be feared is one who never bothers about you at all, but goes on making his own business better all the time." [1]
 
 --
 
-> “Competition is defined in the minds of customers, and they use progress as their criterion. What do consumers consider as competition? How do you understand what customers do and don’t value in a solution?” [2]
+> "Competition is defined in the minds of customers, and they use progress as their criterion. What do consumers consider as competition? How do you understand what customers do and don’t value in a solution?" [2]
 
 --
 
-- *“I just found a product that is also for [insert problem you’re solving]”.* 
-- *"Your product is like [insert other product name], right?”*
+- *"I just found a product that is also for [insert problem you’re solving]."* 
+- *"Your product is like [insert other product name], right?"*
 
 That will sting. At least for a brief moment. But it will. 
 
