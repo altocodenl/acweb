@@ -5,7 +5,7 @@ Simple is organized, complex doesn’t scale.
 
 --
 
-With <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a>, we decided on a simple product that does <a href="https://altocode.nl/blog/one-thing-well" target="_blank">one thing well</a>: to have photos and videos organized. Designed with the user in mind - <a href="https://altocode.nl/blog/facilitator" target="_blank">ourselves.</a>  
+With <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a>, we decided to build a simple product that does <a href="https://altocode.nl/blog/one-thing-well" target="_blank">one thing well</a>: to have photos and videos organized. Designed with the user in mind - <a href="https://altocode.nl/blog/facilitator" target="_blank">ourselves.</a>  
 
 What does a simple product look like? 
 - Filenames don’t matter. 
