@@ -224,7 +224,6 @@ var routes = [
       blog = articles;
       return makePage ([
          ['h1', 'Altocode\'s blog'],
-         ['br'],
          ['ul', dale.go (articles, function (article) {
             return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: '/blog/' + article.filename}, article.title]]];
          })],
