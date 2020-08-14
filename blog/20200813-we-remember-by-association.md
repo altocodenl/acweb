@@ -7,7 +7,7 @@ Photos are triggers for memories. To organize memories we have to follow how the
 
 --
 
-Photos are triggers for memories. To organize memories we have to follow how the brain does it. 
+Photos are triggers for memories. To organize memories we have to do it the way brain does it. 
 
 Let’s analyze how we organize memories. 
 
@@ -29,7 +29,7 @@ My mind associates a place with a date, a person or group of people and the cont
 
 When I think “vacations with my wife” both “Las Vegas 2010” and “Japan 2019” come up, as with “vacations with my mom”. “Vacations with my aunts” only return “Las Vegas 2010” while “vacations with my in-laws” only return “Japan 2019”.
 
-If I think “where did we go on vacation in 2010?” that’s “Las Vegas 2010”. When I ask myself questions or think about specific people, places or situations; certain memories come back.
+If I think “where did we go on vacation in 2010?” that’s “Las Vegas”. When I ask myself questions or think about specific people, places or situations; certain memories come back.
 
 Some of those memories are unique, such as “vacations with my in-laws”; but some have more than one, like “vacations with my wife”. 
 
@@ -66,7 +66,8 @@ It only made sense to work with this principle when building <a href="https://al
 ---
 
 ## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a> 
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a> 
 
 ---
 
