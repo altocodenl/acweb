@@ -7,7 +7,7 @@ Photos are triggers for memories. To organize memories we have to follow how the
 
 --
 
-Photos are triggers for memories. To organize memories we have to do it the way brain does it. 
+Photos are triggers for memories. To organize memories we have to do it the way the brain does it.
 
 Let’s analyze how we organize memories. 
 
