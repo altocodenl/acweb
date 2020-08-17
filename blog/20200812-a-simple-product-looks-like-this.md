@@ -22,7 +22,8 @@ Simple is organized, complex doesn’t scale.
 
 ## Other posts about ac;pic
 - <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a> 
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a> 
 
 ---
 

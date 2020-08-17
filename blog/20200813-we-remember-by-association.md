@@ -49,7 +49,7 @@ This past example was for 2 particular instances. But what about the other 18 va
 
 What about the trips I don’t remember, the birthday parties that are a blur now because it happened so long ago, what about the photos of that fun night with friends that I can’t remember when it was?
 
-**I can’t create albums for moments I can’t remember. I can’t put memories to an arbitrary method. It won’t work. Albums don’t work.** 
+**I can’t create albums for moments I can’t remember. I can’t put memories to an arbitrary method. It won’t work. <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">Albums don’t work.</a>** 
 
 But tags can do the job. 
 
@@ -67,7 +67,8 @@ It only made sense to work with this principle when building <a href="https://al
 
 ## Other posts about ac;pic
 - <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a> 
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a> 
 
 ---
 
