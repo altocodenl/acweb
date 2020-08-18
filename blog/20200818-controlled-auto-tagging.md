@@ -1,11 +1,11 @@
 Photos and videos are personal memories. They are important. They must be treated as such.
 # ac;pic: controlled auto-tagging
 
-With auto-tagging a system automatically adds tags to your photos and videos. When there are thousands of files, it helps. A lot. What kind of tags can be automated and which ones can’t?
+With auto-tagging a system automatically adds tags to your photos and videos. When there are thousands of files, it helps. A lot. But, what kind of tags can be automated and which ones can’t?
 
 Some tags can be simple to add, like '2019' or 'Japan', which are taken from the file’s metadata. In <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a>, the year is automatically tagged. For geo data (city and country), we ask you to opt-in. Geographical data is sensitive info, and providing it must be a choice for the user.
 
-What about tags to identify people automatically? Some cloud services use artificial intelligence (AI) to run facial recognition on your photos, and that’s great - if that’s what you want. But you have to be aware of the risks associated with face recognition. “If it can’t be used for evil, it’s not a superpower.” Face recognition is a superpower. In ac;pic we don’t use it. Allowing a cloud service to use AI to tag your pictures is a personal choice and might be the right thing for you - we just suggest that you make that choice consciously.
+What about tags to identify people automatically? Some cloud services use artificial intelligence (AI) to run facial recognition on your photos, and that’s great - if that’s what you want. But you have to be aware of the risks associated with face recognition. “If it can’t be used for evil, it’s not a superpower.” Face recognition is a superpower. And in ac;pic we don’t use it. Allowing a cloud service to use AI to tag your pictures is a personal choice and might be the right thing for you - we just suggest that you make that choice consciously.
 
 What about situational tags like 'vacations'? In those instances the classification is purely contextual - only you and the people who were there know you were on vacation -, no algorithm can be accurate enough.
 
@@ -19,7 +19,7 @@ Why?
 - Language inclusion. Full auto-tagging leaves out languages not considered by the system. You may want your family overseas to tag photos, why would they be forced to use English?
 - Complexity. How many tags are enough? That’s for you to decide, not a system. 
 
-Photos and videos are personal memories. They are important. They must be treated as such. Just as it is important to find your memories when you want it, and share them when you want it, it’s also important to protect them.
+Photos and videos are personal memories. They are important and must be treated as such. Just as it is important to find your memories when you want it, and share them when you want it, it’s also important to protect them.
 
 Organization is also protection.
 
