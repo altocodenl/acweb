@@ -24,7 +24,8 @@ Simple is organized, complex doesn’t scale.
 - <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
 - <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
 - <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a> 
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a> 
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>  
 
 ---
 
