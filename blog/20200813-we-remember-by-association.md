@@ -61,7 +61,7 @@ For the pictures of that dinner I could use the tags: Vacations, 2019, Japan, To
 
 What would happen if I wanted to see my vacation photos as the years went by? I could just put the tag “vacations” and see what comes back. Then I can select “2010” and see where that was, or “2011”, and the same. I can move around unconstrained. I can drill down and then up again. I can easily add more pictures and have a logical and scalable organization system. I can find memories quickly.
 
-Tagging pictures sounds like a lot of work. That’s when <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">auto-tagging</a> and interface design come in.
+Tagging pictures sounds like a lot of work. That’s when <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">auto-tagging</a> and <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">interface design</a> come in.
 
 The brain organizes memories by association. Association of places, people, context, moments. It only makes sense to have an organizational method for photos and videos - triggers for memories - similar to the brains’ method. 
 
@@ -74,7 +74,8 @@ It only made sense to work with this principle when building <a href="https://al
 - <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
 - <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
 - <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>  
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>    
 
 ---
 

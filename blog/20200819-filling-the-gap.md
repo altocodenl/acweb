@@ -31,12 +31,12 @@ Attaching tags on upload makes organizing a lot easier:
 
 Then, since you can see the pics and play the videos right in front of you, just select the ones with your friends or family and add the names or classification you want (like “cousins”, “aunts” or “mom).
 
-Every time you click a tag, only positive options are returned. No dead-ends. 
+Every time you click a tag, only positive options are returned. <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">No dead-ends.</a>  
 
 If you don’t feel like adding tags, it's OK, you don’t have to. What doesn't have a manual tag is in ‘untagged’. Anything in ‘untagged’ can be mixed with the ‘year’ and ‘geo’ tags. You can ask ‘what things are untagged from 2015?’ And it will be in front of you. 
 
 Or, you can create tags later on and re tag all you want:
-<img loading="lazy" src="img/tagging process.gif" alt="tagging process" style="border-radius: 8px;max-width: 100%;height: auto;">
+<img loading="lazy" src="img/tagging process.gif" alt="tagging process" style="max-width: 100%;height: auto;">
 
 You can do it for 20, 2,000 or 20,000 photos or videos. It doesn’t matter. 
 
@@ -58,4 +58,5 @@ All your pictures organized, tagged and done.
 - <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
 - <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
 - <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a> 
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>   
