@@ -17,13 +17,17 @@ Let’s list what I associate with these 2 examples:
 - Vacations
 - 2010
 - 2019
-- My Wife
-- My Mom
+- My wife
+- My mom
 - My in-laws
 - My aunts
 - My cousins
+- United States
 - Las Vegas
 - Japan
+- Tokyo
+- Osaka
+- Kyoto
 
 My mind associates a place with a date, a person or group of people and the context (in this case, “vacations”). “Japan 2019“ has certain things in common with “Las Vegas 2010” - those were vacations, and my wife and mother were there -, but other things are different - different countries, my in-laws were in one of them, but not in the other; same with my aunts and cousins.
 
