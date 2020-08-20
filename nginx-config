@@ -30,6 +30,15 @@ server {
    location '/blog/How to organize digital photos for good' {
       return 301 https://altocode.nl/blog/how-to-organize-digital-photos-for-good;
    }
+   location '/blog/organizing-old-digital-photos-should-be-fast-and-easy' {
+      return 301 https://altocode.nl/blog;
+   }
+   location '/blog/how-to-organize-digital-photos-for-good' {
+      return 301 https://altocode.nl/blog;
+   }
+   location '/blog/remove-duplicate-photos-online' {
+      return 301 https://altocode.nl/blog;
+   }
 
 	location / {
       proxy_pass http://127.0.0.1:4040/;
