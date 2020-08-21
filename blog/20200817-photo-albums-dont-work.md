@@ -41,18 +41,18 @@ If you want to increase organization, the only way to filter down a small box is
 You’re trapped. 
 
 ## Simple is organized
-The way to solve this is not by creating a better album system. Is by <a href="https://altocode.nl/blog/think-like-a-doctor" target="_blank">making it irrelevant</a> (ie: the solution to ‘expensive fuel’ is not ‘cheaper fuel’, but ‘electric car’).
+The way to solve this is not by creating a better album system. It's by <a href="https://altocode.nl/blog/think-like-a-doctor" target="_blank">making it irrelevant</a> (ie: the solution to ‘expensive fuel’ is not ‘cheaper fuel’, but ‘electric car’).
 
 Organization has to be simple, otherwise it won’t work. With <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a> we asked ‘what does a <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">simple</a> product look like?’  
 - Filenames don’t matter.
-- You can see the photos and play the videos every time.
+- No lists. Photos are meant to be seen and videos to be played. 
 - No dead-ends (empty albums), nor ronin files (loose photos or videos that don’t belong to any place).
 - You can see where images are saved, change the organization and placement without having to remember where things are. Everything is in front of you.
 - Scalable. Whether you have 20 photos, 2,000 or 20,000 these same principles apply.
 
 Simple is natural. The brain organizes memories by association. Association of places, people, context, moments. It only makes sense to have an organizational method for photos and videos - triggers for memories - <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">similar to the brains’ method.</a> 
 
-Organization is finding what you want when you want it. Photos and videos are memories, they make a moment last forever. Memories don't deserve boxes. 
+Organization is finding what you want when you want it. Photos and videos are memories, they make a moment last forever. Memories deserve better than boxes. 
 
 ---
 

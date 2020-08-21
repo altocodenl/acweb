@@ -3,7 +3,7 @@ You wouldn’t store empty boxes in your house, why would you do it with your me
 
 You wouldn’t store empty boxes in your house, why would you do it with your memories?
 
-Empty is clutter.
+Empty boxes are clutter.
 
 If you’re looking for the photos of your birthday party from 10 years ago and keep opening empty folders or albums, or if they’re paper photos and you open empty boxes, it’s going to be very frustrating. 
 
@@ -42,7 +42,7 @@ If I add the tag “My mom”, then I will only see the pics that reflect: Osaka
 
 If I want to go back to a previous step, I just remove the tags I don’t want. Always full results.
 
-Organization is finding what you want when you want it. Is having full control.
+Organization is finding what you want when you want it. It's having full control.
 
 ---
 
