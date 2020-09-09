@@ -75,7 +75,8 @@ It only made sense to work with this principle when building <a href="https://al
 - <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
 - <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
 - <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>    
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>    
 
 ---
 
