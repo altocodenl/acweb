@@ -2,10 +2,10 @@ How much should you charge for your product? What's the price model that makes s
 # How we calculated the price of ac;pic
 
 How much should we charge for our product? What's the price model that makes sense to our users? We had a long discussion about it and we looked to consider all the important aspects:
-1. [What price makes our product sustainable?](#1.-What-price-makes-our-product-sustainable?)
-2. [What price are users willing to pay?](#2.-Is-this-a-price-our-users-will-be-willing-to-pay?)
-3. [What price model best serves our users?](#3.-This-model-serves-our-users)
-4. [Are there disadvantages to this model?](#4.-Are-there-disadvantages-to-this-model?)
+1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('1whatpricemakesourproductsustainable').scrollIntoView ()">What price makes our product sustainable?</a>
+2. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('2isthisapriceouruserswillbewillingtopay').scrollIntoView ()">What price are users willing to pay?</a>
+3. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('3thismodelservesourusers').scrollIntoView ()">What price model best serves our users?</a>
+4. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('4aretheredisadvantagestothismodel').scrollIntoView ()">Are there disadvantages to this model?</a>
 
 By answering these questions, we'll be better equipped to have a solid pricing model to begin ac;pic's journey.
 
@@ -16,8 +16,8 @@ Here's the entire process we went through.
 There's one inescapable fact: if the product is not profitable, we can't pay ourselves and cover the costs. If that happens, there's no company, no product, no team.
 
 We began with 2 straightforward questions:
-  1. [How much do we need to pay ourselves?](#1.-How-much-do-we-need-to-pay-ourselves?)
-  2. [How much does it cost to maintain the service and the company?](#2.-How-much-does-it-cost-to-maintain-the-service-and-the-company?)
+  1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('1howmuchdoweneedtopayourselves').scrollIntoView ()">How much do we need to pay ourselves?</a>
+  1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('2howmuchdoesitcosttomaintaintheserviceandthecompany').scrollIntoView ()">How much does it cost to maintain the service and the company?</a>
 
 ### 1. How much do we need to pay ourselves?
 If we can't support ourselves, we can't make any of this happen. Conversely, if a project that we love and believe in can pay our salaries, it will grow and prosper with our full attention.
@@ -64,7 +64,7 @@ Let's go through each of these points in more detail.
 Altocode is based in The Netherlands (this is mainly for 2 reasons: one of the founders lives there, and the EU is a great place to start a company to steward users' data). Income taxes in The Netherlands are anywhere between 30 and 50%, depending on the tax bracket. 40% is a realistic estimation for the first stage of the business.
 
 2. Infrastructure costs.
-Our service is fully based on the cloud and our main providers are <a href="https://www.hetzner.com/" target="_blank">Hetzner</a> and <a href="https://aws.amazon.com/" target="_blank">Amazon AWS.</a> There's a very small fixed component to this (hosting, email), but most of this cost is proportional to the amount of space used by our users. This cost will be divided in two parts: that corresponding to free accounts (which will be covered by the company) and that to paid accounts (which is paid by the users themselves as a variable cost; [see below](#What-about-the-storage?)).
+Our service is fully based on the cloud and our main providers are <a href="https://www.hetzner.com/" target="_blank">Hetzner</a> and <a href="https://aws.amazon.com/" target="_blank">Amazon AWS.</a> There's a very small fixed component to this (hosting, email), but most of this cost is proportional to the amount of space used by our users. This cost will be divided in two parts: that corresponding to free accounts (which will be covered by the company) and that to paid accounts (which is paid by the users themselves as a variable cost; <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('whataboutthestorage').scrollIntoView ()">see below</a>).
 
 2. Product-related services: design, security.
 Neither of us is a designer or a security expert. Those skills (among others) are crucial to further develop a world-class product. We will be very happy to develop close relationships with design and security experts in the future, hence we need to account for them.
