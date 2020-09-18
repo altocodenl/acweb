@@ -7,7 +7,7 @@ How much should we charge for our product? What's the price model that makes sen
 3. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('3thismodelservesourusers').scrollIntoView ()">What price model best serves our users?</a>
 4. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('4aretheredisadvantagestothismodel').scrollIntoView ()">Are there disadvantages to this model?</a>
 
-By answering these questions, we'll be better equipped to have a solid pricing model to begin ac;pic's journey.
+By answering these questions, we'll be better equipped to have a solid pricing model to begin <a href="https://altocode.nl/pic/" target="_blank"> ac;pic</a>'s journey.
 
 Here's the entire process we went through.
 
@@ -19,7 +19,7 @@ We began with 2 straightforward questions:
   1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('1howmuchdoweneedtopayourselves').scrollIntoView ()">How much do we need to pay ourselves?</a>
   1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('2howmuchdoesitcosttomaintaintheserviceandthecompany').scrollIntoView ()">How much does it cost to maintain the service and the company?</a>
 
-### 1. How much do we need to pay ourselves?
+#### 1. How much do we need to pay ourselves?
 If we can't support ourselves, we can't make any of this happen. Conversely, if a project that we love and believe in can pay our salaries, it will grow and prosper with our full attention.
 
 Altocode works in full transparency, which means everybody can see everything we <a href="https://github.com/altocodenl" target="_blank">do,</a> we <a href="https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p" target="_blank">think,</a> and how much we earn. The market shall know our salaries.
@@ -45,48 +45,48 @@ It can't be very high, otherwise it might take too long to get there and - as a 
 
 In the spirit of <a href="https://kk.org/thetechnium/1000-true-fans/" target="_blank">Kevin Kelly's '1,000 true fans' article,</a> we feel that around 1,500 to 2,000 paying users should allow us to reach our first milestone. If we can't get that amount of paying users in a few months, we have bigger issues than pricing. Still, we needed to continue our analysis to get to a price.
 
-### 2. How much does it cost to maintain the service and the company?
+#### 2. How much does it cost to maintain the service and the company?
 
 This is where most companies make mistakes and later on experience a rude awakening. If we don't understand our costs well, our pricing could be way off (either too cheap or too expensive).
 
-What things do we need to account for besides our net salaries?
-1. Income taxes on our salaries.
-2. Infrastructure costs.
-3. Product-related services: design, security.
-4. Business-related services: accountants, lawyers, banking.
-5. Working capital.
-6. Value Added Tax.
-7. Credit Card processing and payments.
+What things do we need to account for besides our net salaries?  
+a. Income taxes on our salaries.  
+b. Infrastructure costs.  
+c. Product-related services: design, security.  
+d. Business-related services: accountants, lawyers, banking.  
+e. Working capital.  
+f. Value Added Tax.  
+g. Credit Card processing and payments.  
 
 Let's go through each of these points in more detail.
 
-1. Income taxes on our salaries.
+a. Income taxes on our salaries:  
 Altocode is based in The Netherlands (this is mainly for 2 reasons: one of the founders lives there, and the EU is a great place to start a company to steward users' data). Income taxes in The Netherlands are anywhere between 30 and 50%, depending on the tax bracket. 40% is a realistic estimation for the first stage of the business.
 
-2. Infrastructure costs.
+b. Infrastructure costs:  
 Our service is fully based on the cloud and our main providers are <a href="https://www.hetzner.com/" target="_blank">Hetzner</a> and <a href="https://aws.amazon.com/" target="_blank">Amazon AWS.</a> There's a very small fixed component to this (hosting, email), but most of this cost is proportional to the amount of space used by our users. This cost will be divided in two parts: that corresponding to free accounts (which will be covered by the company) and that to paid accounts (which is paid by the users themselves as a variable cost; <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('whataboutthestorage').scrollIntoView ()">see below</a>).
 
-2. Product-related services: design, security.
+c. Product-related services: design, security:  
 Neither of us is a designer or a security expert. Those skills (among others) are crucial to further develop a world-class product. We will be very happy to develop close relationships with design and security experts in the future, hence we need to account for them.
 
-3. Business-related services: accountants, lawyers, banking.
+d. Business-related services: accountants, lawyers, banking:  
 We have a basic company set up, but we will definitely need to invest in accountants & lawyers to set up a larger company structure as soon as we scale to thousands of users. Same goes for upgrading our type of bank account, as well as opening additional accounts for salaries, setting up processes to deal with invoices, etc. While these costs are somewhat fixed, it is reasonable to consider that they will grow based on the size of the business, but we expect that growth to be less than proportional.
 
-5. Working capital
+e. Working capital:  
 Any company, and particularly a bootstrapped startup, needs to have working capital (ie: extra money in the bank) in order to grow and withstand crises. Although we're not a profit-maximizing company (in short: we cannot sell the company, we cannot get rich from the company and, as we grow in paid accounts, we'll reduce the price per user), we need to be smart and have enough working capital to invest in the company's growth or cover any hiccups that might happen along the way. You either plan this ahead and have a good chance of overcoming most problems or deal with it later in a do-or-die situation. We rather have the former than the latter, for our own sake and our users' sake.
 
 How do we take into account the infrastructure cost, product-related services, business-related services and working capital? **We set a cost budget per paid user**. Since all these costs are positively correlated to the size of the business, we can infer that the more users we have - especially in the beginning - the more costs we'll have to account for. Of course, these won't be linear, but in the early stages these costs can add up quickly and halt growth. As we grow we'll have to review this cost item, but now we have to ensure a solid service and business survival.
 
 We concluded that these items combined add €2 per paid user.
 
-An heuristic way to think about this is the following: if we have 100 paying users, it is reasonable to have about €200 of monthly expenses; at 1,000 paying users, it is reasonable to have a budget of €2,000.
+An heuristic way to think about this is the following: if we have 100 paying users, it is reasonable to have about €200 of monthly expenses; at 1,000 paying users, it is reasonable to have a budget of €2,000.  
 
-6. Value Added Tax.
+f. Value Added Tax:  
 We have to make a differentiation here.
 - For our European Union paid users, Value Added Tax must be added to the price. A 21% uptick. Nothing to do here.
-- For our non-European Union users, great news. No Value Added Tax. No changes here.
-
-7. Credit card processing and payments.
+- For our non-European Union users, great news. No Value Added Tax. No changes here.     
+    
+g. Credit Card processing and payments:  
 We'll use Stripe. It's easy to use, reliable, and has great international coverage.
 
 From Stripe we'll use 2 services:
@@ -103,7 +103,7 @@ On top of the Value Added Tax (VAT) differentiation between European and non-Eur
 
 Lastly, we decided that **we'll only bill in euros**. Our wages are in euros, our costs are in euros, as well as taxes. Having other currencies would complicate things for no good reason.
 
-### The price calculation
+#### The price calculation
 
 With all this information we built another table, and built the price from the net income per user, adding all the costs and taxes. We built the price from the bottom up.
 
@@ -115,13 +115,13 @@ An interesting observation (that took us a while to figure out) is that we shoul
 
 Previously, we had circled between 1,500 and 2,000 paying users to reach our initial goal. That meant a net income per user between €3 and €4. With the numbers more clear, we concluded that our best choice is to go with €3 of net income per user.
 
-The fixed part of ac;pic's price will be:
+The fixed part of ac;pic's price will be:  
 - €9 a month for European Union users.
 - €7.50 for non-European Union users.
 
 **We need 2,000 monthly paying users to reach the first milestone.**
 
-### What about the storage?
+#### What about the storage?
 If you followed the cost breakdown you might have noticed that we haven't considered the storage cost for the paid accounts. We accounted for servers to keep the service up & running and the storage cost for free accounts, but the bulk of the cost for a photo and video organization service comes from storage.
 
 The cost we have as of today is €0.05 per GB. **We won't make any profit from storage cost. ac;pic's users will pay storage at cost.** If it's cheaper for us, it will be cheaper for our users.
