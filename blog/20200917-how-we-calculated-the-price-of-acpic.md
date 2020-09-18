@@ -7,7 +7,7 @@ How much should we charge for our product? What's the price model that makes sen
 3. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('3thismodelservesourusers').scrollIntoView ()">What price model best serves our users?</a>
 4. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('4aretheredisadvantagestothismodel').scrollIntoView ()">Are there disadvantages to this model?</a>
 
-By answering these questions, we'll be better equipped to have a solid pricing model to begin <a href="https://altocode.nl/pic/" target="_blank"> ac;pic</a>'s journey.
+By answering these questions, we’ll be better equipped to have a solid pricing model to begin the journey of our first product: <a href="https://altocode.nl/pic/" target="_blank"> ac;pic</a>, a photo and video organization service.
 
 Here's the entire process we went through.
 
@@ -56,7 +56,7 @@ c. Product-related services: design, security.
 d. Business-related services: accountants, lawyers, banking.  
 e. Working capital.  
 f. Value Added Tax.  
-g. Credit Card processing and payments.  
+g. Credit card processing and payments.  
 
 Let's go through each of these points in more detail.
 
@@ -73,9 +73,9 @@ d. Business-related services: accountants, lawyers, banking:
 We have a basic company set up, but we will definitely need to invest in accountants & lawyers to set up a larger company structure as soon as we scale to thousands of users. Same goes for upgrading our type of bank account, as well as opening additional accounts for salaries, setting up processes to deal with invoices, etc. While these costs are somewhat fixed, it is reasonable to consider that they will grow based on the size of the business, but we expect that growth to be less than proportional.
 
 e. Working capital:  
-Any company, and particularly a bootstrapped startup, needs to have working capital (ie: extra money in the bank) in order to grow and withstand crises. Although we're not a profit-maximizing company (in short: we cannot sell the company, we cannot get rich from the company and, as we grow in paid accounts, we'll reduce the price per user), we need to be smart and have enough working capital to invest in the company's growth or cover any hiccups that might happen along the way. You either plan this ahead and have a good chance of overcoming most problems or deal with it later in a do-or-die situation. We rather have the former than the latter, for our own sake and our users' sake.
+Any company, and particularly a bootstrapped startup, needs to have working capital (ie: extra money in the bank) in order to grow and withstand crises. Although <a href="https://altocode.nl/blog/our-how" target="_blank">we're not a profit-maximizing company</a> (in short: we cannot sell the company, we cannot get rich from the company and, as we grow in paid accounts, we'll reduce the price per user), we need to be smart and have enough working capital to invest in the company's growth or cover any hiccups that might happen along the way. You either plan this ahead and have a good chance of overcoming most problems or deal with it later in a do-or-die situation. We rather have the former than the latter, for our own sake and our users' sake.
 
-How do we take into account the infrastructure cost, product-related services, business-related services and working capital? **We set a cost budget per paid user**. Since all these costs are positively correlated to the size of the business, we can infer that the more users we have - especially in the beginning - the more costs we'll have to account for. Of course, these won't be linear, but in the early stages these costs can add up quickly and halt growth. As we grow we'll have to review this cost item, but now we have to ensure a solid service and business survival.
+So, how do we take into account the infrastructure cost, product-related services, business-related services and working capital? **We set a cost budget per paid user**. Since all these costs are positively correlated to the size of the business, we can infer that the more users we have - especially in the beginning - the more costs we'll have to account for. Of course, these won't be linear, but in the early stages these costs can add up quickly and halt growth. As we grow we'll have to review this cost item, but now we have to ensure a solid service and business survival.
 
 We concluded that these items combined add €2 per paid user.
 
@@ -84,9 +84,9 @@ An heuristic way to think about this is the following: if we have 100 paying use
 f. Value Added Tax:  
 We have to make a differentiation here.
 - For our European Union paid users, Value Added Tax must be added to the price. A 21% uptick. Nothing to do here.
-- For our non-European Union users, great news. No Value Added Tax. No changes here.     
+- For our non-European Union users, great news. No Value Added Tax. No changes.     
     
-g. Credit Card processing and payments:  
+g. Credit card processing and payments:  
 We'll use Stripe. It's easy to use, reliable, and has great international coverage.
 
 From Stripe we'll use 2 services:
