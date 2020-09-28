@@ -355,6 +355,7 @@ var routes = [
    ['get', 'gotob2', reply, (function () {
       try {
          var test = fs.readFileSync ('node_modules/gotob2/test.html', 'utf8');
+         test = test.replace ('<body>', '<body><script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script>');
          test = test.replace ('https://cdn.jsdelivr.net/gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', 'json2.min.js');
          test = test.replace ('gotoB.min.js', 'gotob2/gotoB.min.js');
          return test;
