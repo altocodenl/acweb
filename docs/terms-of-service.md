@@ -72,7 +72,7 @@ Altocode's policies are open source, licensed under [CC BY 4.0](https://creative
 1. All content posted on the Services must comply with European Union's copyright law. 
 2. We claim no intellectual property rights over the material you provide to the Services. All materials uploaded remain yours.
 3. We do not pre-screen content, but reserve the right (but not the obligation) in our sole discretion to refuse or remove any content that is available via the Service.
-4. The names, look, and feel of the Services are property of Altocode. All rights reserved. But, you may duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from Altocode. All code and methodologies are open-source and can be used by the community. If you're going to use Altocode's logo or a Service logo for promotional purposes, you must request permission. Please [email us]({{info@altocode.com}}) requests to use logos. We reserve the right to rescind this permission if you violate these Terms of Service.
+4. The names, look, and feel of the Services are property of Altocode. All rights reserved. But, you may duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from Altocode. All code and methodologies are open-source and can be used by the community. If you're going to use Altocode's logo or a Service logo for promotional purposes, you must request permission. Please [email us]({{info@altocode.nl}}) requests to use logos. We reserve the right to rescind this permission if you violate these Terms of Service.
 5. You must not modify another website so as to falsely imply that it is associated with the Services or Altocode.
 
 ## Features and Bugs
@@ -97,4 +97,4 @@ We mention liability throughout these Terms but to put it all in one section:
 
 In other words: choosing to use our Services does mean you are making a bet on us. If the bet does not work out, that's on you, not us. We do our darnedest to be as safe a bet as possible through careful management of the business; investments in security, infrastructure, and talent; and in general [giving a damn](https://altocode.nl/blog/our-why). If you choose to use our Services, thank you for betting on us.
 
-If you have a question about any of the Terms of Service, please [us]({{info@altocode.com}}).
+If you have a question about any of the Terms of Service, please [us]({{info@altocode.nl}}).
