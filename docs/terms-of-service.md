@@ -33,8 +33,8 @@ Altocode's policies are open source, licensed under [CC BY 4.0](https://creative
    * **Spamming**: No one wants unsolicited commercial emails. We don’t tolerate folks (including their bots) using Altocode's products for spamming purposes. If your emails don’t pass muster with [CAN-SPAM](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) or any other anti-spam law, it’s not allowed.
    * **Cybersquatting**: We don’t like username extortionists. If you purchase an Altocode's product account in someone else’s name and then try to sell that account to them, you are [cybersquatting](https://www.law.cornell.edu/uscode/text/15/1125). Cybersquatting accounts are subject to immediate cancelation.
    * **Violence, or threats thereof**: If an activity qualifies as violent crime in the European Union or where you live, you may not use Altocode's products to plan, perpetrate, or threaten that activity.
-3. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who either: (a) have access to your login credentials; or (b) have their own logins under your account.
-4. You must be a human. Accounts registered by “bots” or other automated methods are not permitted.
+   3. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who either: (a) have access to your login credentials; or (b) have their own logins under your account.
+   4. You must be a human. Accounts registered by “bots” or other automated methods are not permitted.
 
 ## Payment, Refunds, and Plan Changes
 

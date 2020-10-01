@@ -59,7 +59,7 @@ Our default practice is to not access your information. The only times we’ll e
 
 **To help you troubleshoot or squash a software bug, with your permission.** If at any point we need to access your account to help you with a Support case, we will ask for your consent before proceeding.
 
-**To investigate, prevent, or take action regarding [restricted uses](../abuse/index.md).** Accessing a customer’s account when investigating potential abuse is a measure of last resort. We have an obligation to protect the privacy and safety of both our customers and the people reporting issues to us. We do our best to balance those responsibilities throughout the process. If we do discover you are using our products for a restricted purpose, we will report the incident to the appropriate authorities.
+**To investigate, prevent, or take action regarding restricted uses.** Accessing a customer’s account when investigating potential abuse is a measure of last resort. We have an obligation to protect the privacy and safety of both our customers and the people reporting issues to us. We do our best to balance those responsibilities throughout the process. If we do discover you are using our products for a restricted purpose, we will report the incident to the appropriate authorities.
 
 **When required under applicable law.**
 
