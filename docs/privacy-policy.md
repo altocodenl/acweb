@@ -23,7 +23,7 @@ When you sign up for an Altocode product, we typically ask for identifying infor
 
 ### Billing information
 
-When you pay for an Altocode product, we ask for your credit card and billing address. That’s so we can charge you for service, calculate taxes due, and send you invoices. Your credit card is passed directly to our payment processor and doesn't ever go through our servers. We store a record of the payment transaction, including the last 4 digits of the credit card number and as-of billing address, for account history, invoicing, and billing support. We store your billing address to calculate any sales tax due in the United States or VAT in the EU, to detect fraudulent credit card transactions, and to print on your invoices.
+When you pay for an Altocode product, we ask for your credit card and billing address. That’s so we can charge you for service, calculate taxes due, and send you invoices. Your credit card is passed directly to our payment processor and doesn't ever go through our servers. We store a record of the payment transaction, including the last 4 digits of the credit card number and as-of billing address, for account history, invoicing, and billing support. We store your billing address to calculate any VAT in the European Union, to detect fraudulent credit card transactions, and to print on your invoices.
 
 ### Geolocation data
 
@@ -51,7 +51,7 @@ We also store any information you volunteer like surveys. Sometimes when we do c
 
 We don’t collect any characteristics of protected classifications including age, race, gender, religion, sexual orientation, gender identity, gender expression, or physical and mental abilities or disabilities. You may provide these data voluntarily, such as if you include a pronoun preference in your email signature when writing into our Support team.
 
-We also do not collect any biometric data. You are given the option to add a picture to your user profile, which could be a real picture of you or a picture of something else that represents you best. We do not extract any information from profile pictures: they are for your use alone.
+We also do not collect any biometric data. For products like ac;pic, where you store and organize photos and videos, we do not extract any information from the images, nor we run any Artificial Intelligence algorithm or methodologies. We do collect metadata from the files to provide organizational benefits, such as the year the image or video was taken or the geolocalization in order to provide shortcuts to access such images. In the case of geolocalization you can turn it on and off at any point. When turned off all geolocalization data collected is destroyed. For image duplication detection we compare pixels of files but do not interpret, collect nor run the content of these in a third party service. For Altocode services you are given the option to add a picture to your user profile, which could be a real picture of you or a picture of something else that represents you best. We do not extract any information from profile pictures: they are for your use alone.
 
 ## When we access or share your information
 
@@ -65,7 +65,7 @@ Our default practice is to not access your information. The only times we’ll e
 
 Altocode is a Dutch company and all data infrastructure are located in the EU.
 
-* If EU law enforcement authorities have the necessary warrant, criminal subpoena, or court order requiring we share data, we have to comply. Otherwise, we flat-out reject requests from local and federal law enforcement when they seek data. And unless we’re legally prevented from it, we’ll always inform you when such requests are made. In the event a government authority outside the EU approaches Altocode with a request, our default stance is to refuse unless the Dutch government compels us to comply through procedures outlined in a mutual legal assistance treaty or agreement.
+* If EU law enforcement authorities have the necessary warrant or court order requiring we share data, we have to comply. Otherwise, we flat-out reject requests from local and federal law enforcement when they seek data. And unless we’re legally prevented from it, we’ll always inform you when such requests are made. In the event a government authority outside the EU approaches Altocode with a request, our default stance is to refuse unless the Dutch government compels us to comply through procedures outlined in a mutual legal assistance treaty or agreement.
 * If we get an informal request from any person, organization, or entity, we do not assist. If you are an account owner who wants to export data from their accounts, you can do so directly from inside our applications.
 
 Altocode is built to never be sold, so there should be no changes to our privacy policy stemming from a merger or acquisition.
