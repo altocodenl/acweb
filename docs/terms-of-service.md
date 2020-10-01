@@ -1,8 +1,3 @@
----
-title: Terms of Service
-description: All the terms that you agree to when you sign up for an Altocode product.
----
-
 # Terms of Service
 
 *Last updated: October 1, 2020*
