@@ -199,6 +199,30 @@ var routes = [
       reply (rs, ['/', '/blog', '/pic'].indexOf (rq.url) !== -1 ? 200 : 404);
    }],
 
+   // *** DOCS ***
+
+   dale.go (['privacy-policy', 'terms-of-service'], function (v) {
+      var html = lith.g ([
+         ['!DOCTYPE HTML'],
+         ['html', [
+            ['head', [
+               ['meta', {charset: 'utf-8'}],
+               ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
+               ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'}],
+               ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap'}],
+               ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Code&display=swap'}],
+               ['link', {rel: 'canonical', href: 'https://altocode.nl/' + v}],
+            ]],
+            ['body', [
+               ['LITERAL', showdown.makeHtml (fs.readFileSync ('docs/' + v + '.md', 'utf8'))]
+            ]],
+         ]],
+      ]);
+      return ['get', v, function (rq, rs) {
+         reply (rs, 200, html, 'html');
+      }];
+   }),
+
    // *** BLOG ***
 
    // TODO: strip trailing slash in cicek
