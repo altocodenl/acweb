@@ -19,7 +19,9 @@ Altocode's policies are open source, licensed under [CC BY 4.0](https://creative
 ## Account Terms
 
 1. You are responsible for maintaining the security of your account and password. The Company cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.
-2. You may not use the Services for the following purposes:
+2. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who either: (a) have access to your login credentials; or (b) have their own logins under your account.
+3. You must be a human. Accounts registered by “bots” or other automated methods are not permitted.
+4. You may not use the Services for the following purposes:
    * **Child exploitation, sexualization, or abuse**: We don’t tolerate any activities that create, disseminate, or otherwise cause child abuse. Keep away and stop. Just stop.
    * **Doxing**: If you are using Altocode products to share other peoples’ private personal information for the purposes of harassment, we don’t want anything to do with you.
    * **Infringing on intellectual property**: You can’t use Altocode's products to make or disseminate work that uses the intellectual property of others beyond the bounds of [fair use](https://www.copyright.gov/fair-use/more-info.html).
@@ -28,22 +30,20 @@ Altocode's policies are open source, licensed under [CC BY 4.0](https://creative
    * **Spamming**: No one wants unsolicited commercial emails. We don’t tolerate folks (including their bots) using Altocode's products for spamming purposes. If your emails don’t pass muster with [CAN-SPAM](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) or any other anti-spam law, it’s not allowed.
    * **Cybersquatting**: We don’t like username extortionists. If you purchase an Altocode's product account in someone else’s name and then try to sell that account to them, you are [cybersquatting](https://www.law.cornell.edu/uscode/text/15/1125). Cybersquatting accounts are subject to immediate cancelation.
    * **Violence, or threats thereof**: If an activity qualifies as violent crime in the European Union or where you live, you may not use Altocode's products to plan, perpetrate, or threaten that activity.
-3. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who either: (a) have access to your login credentials; or (b) have their own logins under your account.
-4. You must be a human. Accounts registered by “bots” or other automated methods are not permitted.
 
 ## Payment, Refunds, and Plan Changes
 
 1. If you are using a free version of one of our Services, it is really free: we do not ask you for your credit card and — just like for customers who pay for our Services — we do not sell your data.
-2. For paid Services that offer a free trial, we explain the length of trial when you sign up. After the trial period, you need to pay in advance to keep using the Service. If you do not pay, we will freeze your account and it will be inaccessible until you make payment. If your account has been frozen for a while, we will queue it up for auto-cancellation. 
+2. For paid Services that offer a free trial, we explain the length of trial when you sign up. After the trial period, you need to pay in advance to keep using the Service. If you do not pay, we will freeze your account and it will be inaccessible until you make payment. If your account has been frozen for a while, we will queue it up for auto-cancellation.
 3. If you are upgrading from a free plan to a paid plan, we will charge your card immediately and your billing cycle starts on the day of upgrade. For other upgrades or downgrades in plan level, the new rate starts from the next billing cycle.
-4. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities. Where required, we will collect those taxes on behalf of the taxing authority and remit those taxes to taxing authorities. 
+4. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities. Where required, we will collect those taxes on behalf of the taxing authority and remit those taxes to taxing authorities.
 
 ## Cancellation and Termination
 
-1. You are solely responsible for properly canceling your account. Within each of our Services, we provide a simple no-questions-asked cancellation link. You can find instructions for how to cancel your account in your 'Account' in each Service. An email or phone request to cancel your account is not automatically considered cancellation. If you need help cancelling your account, you can always contact us. 
+1. You are solely responsible for properly canceling your account. Within each of our Services, we provide a simple no-questions-asked cancellation link. You can find instructions for how to cancel your account in your 'Account' in each Service. An email or phone request to cancel your account is not automatically considered cancellation. If you need help cancelling your account, you can always contact us.
 2. All of your content will be inaccessible from the Services immediately upon cancellation. Within 30 days, all content will be permanently deleted from active systems and logs. Within 60 days, all content will be permanently deleted from our backups. We cannot recover this information once it has been permanently deleted. If you want to keep a copy of your data, please export it before cancelling your account.
-3. If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again. We do not automatically prorate unused time in the last billing cycle. 
-4. We have the right to suspend or terminate your account and refuse any and all current or future use of our Services for any reason at any time. Suspension means you and any other users on your account will not be able to access the account or any content in the account. Termination will furthermore result in the deletion of your account or your access to your account, and the forfeiture and relinquishment of all content in your account. We also reserve the right to refuse the use of the Services to anyone for any reason at any time. There are some things we staunchly stand against and this clause is how we exercise that stance. 
+3. If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again. We do not automatically prorate unused time in the last billing cycle.
+4. We have the right to suspend or terminate your account and refuse any and all current or future use of our Services for any reason at any time. Suspension means you and any other users on your account will not be able to access the account or any content in the account. Termination will furthermore result in the deletion of your account or your access to your account, and the forfeiture and relinquishment of all content in your account. We also reserve the right to refuse the use of the Services to anyone for any reason at any time. There are some things we staunchly stand against and this clause is how we exercise that stance.
 5. Verbal, physical, written or other abuse (including threats of abuse or retribution) of Company employee or officer will result in immediate account termination.
 
 ## Modifications to the Service and Prices
@@ -53,18 +53,18 @@ Altocode's policies are open source, licensed under [CC BY 4.0](https://creative
 
 ## Uptime, Security, and Privacy
 
-1. Your use of the Services is at your sole risk. We provide these Services on an “as is” and “as available” basis. We do not offer service-level agreements for most of our Services, but do take uptime of our applications seriously. 
-2. We take many measures to protect and secure your data through backups, redundancies, and encryption. We enforce encryption for data transmission from the public Internet. 
+1. Your use of the Services is at your sole risk. We provide these Services on an “as is” and “as available” basis. We do not offer service-level agreements for most of our Services, but do take uptime of our applications seriously.
+2. We take many measures to protect and secure your data through backups, redundancies, and encryption. We enforce encryption for data transmission from the public Internet.
 3. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that Altocode may process your data as described in our [Privacy Policy](../privacy-policy) and for no other purpose. We as humans can access your data for the following reasons:
   - **To help you with support requests you make.** We'll ask for express consent before accessing your account.
   - **To safeguard Altocode.** We'll look at logs and metadata as part of our work to ensure the security of your data and the Services as a whole. If necessary, we may also access accounts as part of an abuse report investigation.
   - **To the extent required by applicable law.** As a Dutch company with all data infrastructure located in the European Union, we only preserve or share customer data if compelled by a Dutch government authority with a legally binding order or proper request under the Stored Communications Act. If a foreign authority approaches Altocode for assistance, our default stance is to refuse unless the order has been approved by the Dutch government, which compels us to comply through procedures outlined in an established mutual legal assistance treaty or agreement mechanism.
-5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services. 
+5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services.
 6. Under the California Consumer Privacy Act (“CCPA”), Altocode is a “service provider”, not a “business” or “third party”, with respect to your use of the Services. That means we process any data you share with us only for the purpose you signed up for and as described in these Terms of Service and [Privacy policy](../privacy-policy). We do not retain, use, disclose, or sell any of that information for any other commercial purposes unless we have your explicit permission. And on the flip-side, you agree to comply with your requirements under the CCPA and not use Altocode’s Services in a way that violates the regulations.
 
 ## Copyright and Content Ownership
 
-1. All content posted on the Services must comply with European Union's copyright law. 
+1. All content posted on the Services must comply with European Union's copyright law.
 2. We claim no intellectual property rights over the material you provide to the Services. All materials uploaded remain yours.
 3. We do not pre-screen content, but reserve the right (but not the obligation) in our sole discretion to refuse or remove any content that is available via the Service.
 4. The names, look, and feel of the Services are property of Altocode. All rights reserved. But, you may duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from Altocode. All code and methodologies are open-source and can be used by the community. If you're going to use Altocode's logo or a Service logo for promotional purposes, you must request permission. Please [email us]({{info@altocode.nl}}) requests to use logos. We reserve the right to rescind this permission if you violate these Terms of Service.

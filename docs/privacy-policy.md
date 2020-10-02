@@ -94,9 +94,7 @@ Most data are not encrypted while they live in our database (since it needs to b
 
 ## What happens when you delete data in your product accounts
 
-In many of our applications, we give you the option to trash data. Anything you trash on your product accounts while they are active will be kept in an accessible trash can for up to 30 days (it varies a little by product). After that, the trashed data are no longer accessible via the application and are deleted from our active servers within the next 30 days. We also have some backups of our application databases, which are kept for up to another 30 days. In total, when you trash things in our applications, they are purged within 90 days from all of our systems and logs. Retrieving data for a single account from a backup is cost-prohibitive and unduly burdensome so if you change your mind you’ll need to do so before your data are deleted from our active servers.
-
-We also delete your data after an account is cancelled. In this case, there is no period of data being kept in an accessible trash can so your data are purged within 60 days. This applies both for cases when an account owner directly cancels and for auto-cancelled accounts.
+We have some backups of our application databases, which are kept for up 30 days. We also have application logs of errors where there might be user information present - these logs will be purged every 30 days as well.
 
 ## Location of site and data
 
