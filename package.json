@@ -5,7 +5,7 @@
    "description": "Homepage for altocode",
    "dependencies": {
       "cicek":     "3.4.1",
-      "cocholate": "3.0.1",
+      "cocholate": "3.0.2",
       "dale":      "6.0.2",
       "gotob":     "1.2.5",
       "hitit":     "1.2.7",
