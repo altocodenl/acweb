@@ -28,6 +28,19 @@ We also log full IP addresses used to sign up a product account. We keep this re
 
 We do not use any third party web analytics software.
 
+### Google data
+
+In Services like [ac;pic](https://altocode.nl/pic/) users can import their images and videos from Google Drive. 
+- In all cases importing and liking between the Service and Google Drive is opt-in. If you don't actively choose to do it there's no process happening. 
+- When listing contents, our API interacts with Google's to find all pictures/videos. We store a small amount of metainformation about them.
+- We summarize this metainformation to let you decide what pictures/videos to import.
+- In the case you decide to import certain paths, we read the corresponding pictures/videos and store them on our own servers. No other paths or assets are read. 
+- The pictures/videos are merely stored; we do not perform any scans of the pictures for AI or data collection purposes.
+- You may share some of these pictures and videos at a later time, with other users that you choose. Barring this, the data remains secured and publicly unaccessible.
+- Our Services are reasonably secure: we hash user passwords, implement CSRF tokens and use HttpOnly session cookies. We're very responsive regarding security issues and intend to further invest in this area.
+- Altocode does not rely on advertising or any other form of business model that involves selling, trading or using user's data to target, perform profiling or understand user's preferences or behaviors. Hence, no such data is captured by us. 
+
+
 ### Cookies and Do Not Track
 
 We do use persistent first-party cookies to store certain preferences, make it easier for you to use our applications, and support some in-house analytics. A cookie is a piece of text stored by your browser to help it remember your login information, site preferences, and more. This cookie, however, only exists if you're logged in. If you're not logged in, we do not store cookies in your browser.
