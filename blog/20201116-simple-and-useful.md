@@ -11,8 +11,8 @@ Many of us spend perhaps a majority of our waking life interacting with software
 
 Simplicity is hard for two reasons:
 
-It is more challenging to design something simple than something complex.
-It is always tempting to add more to make something more useful or formidable.
+1. It is more challenging to design something simple than something complex.
+2. It is always tempting to add more to make something more useful or formidable.
 
 We are aware of both the challenge and temptation that stand in the way of simplicity. We embrace the challenge and openly resist the temptation.
 
