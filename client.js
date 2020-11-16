@@ -65,7 +65,7 @@
                ]],
                ['br'],
                ['p', [
-                  'We create applications to empower humans. This is our ',
+                  'We create simple & useful software to empower humans. This is our ',
                   ['a', {href: 'http://federicopereiro.com/manifesto'}, 'manifesto'],
                   '.',
                   ' And this is our ',
@@ -74,7 +74,7 @@
                ]],
                ['p', 'What is different about us?'],
                ['ul', [
-                  ['li', 'We create simple applications that everyone can understand and use. We focus on quality, not features.'],
+                  ['li', 'We create simple software that everyone can understand and use. We focus on quality, not features.'],
                   ['li', 'We treat our users as we like to be treated ourselves: we defend their privacy to the outmost; our users own their own data; and we only make money through charging reasonable fees for application usage.'],
                   ['li', [['a', {href: 'https://github.com/altocodenl'}, 'Our applications are 100% open source'], '. Anyone can see our source code, contribute their own, or start a competing product using it. We\'d rather share our knowledge instead of hoarding it in the hopes of preventing competition.']],
                   ['li', [['a', {href: 'https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p'}, 'We work in the open.'], ' Our internal documents, inasmuch as they don\'t refer to particular individuals outside of our team, are public.']],
