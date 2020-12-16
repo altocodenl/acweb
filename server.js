@@ -196,7 +196,7 @@ var routes = [
    // *** UPTIME ROBOT ***
 
    ['head', '*', function (rq, rs) {
-      reply (rs, ['/', '/blog', '/pic'].indexOf (rq.url) !== -1 ? 200 : 404);
+      reply (rs, ['/', '/blog', '/blog/', '/pic', '/pic/'].indexOf (rq.url) !== -1 ? 200 : 404);
    }],
 
    // *** DOCS ***
@@ -389,6 +389,18 @@ var routes = [
          return 'not found';
       }
    }) ()],
+   ['get', dale.go (['app', 'examples', 'cart', '7guis', 'todomvc'], function (v) {
+      return 'gotob2/examples/' + v + '.html';
+   }), function (rq, rs) {
+      try {
+         var test = fs.readFileSync ('node_modules/' + rq.url, 'utf8');
+         test = test.replace ('https://cdn.jsdelivr.net/gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', '../../json2.min.js');
+         reply (rs, 200, test);
+      }
+      catch (error) {
+         reply (rs, 404);
+      }
+   }],
    dale.go (['dale', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {
       return ['get', lib + '/(*)', cicek.file, ['node_modules/' + lib]];
    }),

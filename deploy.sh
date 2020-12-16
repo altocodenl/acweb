@@ -59,7 +59,9 @@ fi
 
 if [ "$2" == "gotob" ] ; then
    ssh $HOST mkdir altocode/node_modules/gotob2
-   scp ../gotoB/* $HOST:~/altocode/node_modules/gotob2
+   ssh $HOST mkdir altocode/node_modules/gotob2/examples
+   ssh $HOST mkdir altocode/node_modules/gotob2/tutorial
+   scp -r ../gotoB/* $HOST:~/altocode/node_modules/gotob2
    scp server.js $HOST:$FOLDER
    ssh $HOST "cd $FOLDER && mg restart"
    exit 0
