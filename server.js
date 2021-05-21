@@ -416,7 +416,7 @@ cicek.apres = function (rs) {
    }
 
    if (rs.log.code >= 400) {
-      if (['/lib/normalize.min.css.map'].indexOf (rs.log.url) === -1) notify (a.creat (), {rs.log.code >= 500 ? 'critical' : 'important', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, ua: rs.log.requestHeaders ['user-agent'], body: rs.log.requestBody, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
+      if (['/lib/normalize.min.css.map'].indexOf (rs.log.url) === -1) notify (a.creat (), {priority: rs.log.code >= 500 ? 'critical' : 'important', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, ua: rs.log.requestHeaders ['user-agent'], body: rs.log.requestBody, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
    }
 
    cicek.Apres (rs);
