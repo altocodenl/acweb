@@ -70,7 +70,7 @@ server {
       client_max_body_size 2000M;
 	}
 
-	location /cells/ {
+	location /aclog/ {
       proxy_pass http://116.203.118.26:1121/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
