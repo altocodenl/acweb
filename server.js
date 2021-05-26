@@ -416,7 +416,9 @@ cicek.apres = function (rs) {
    }
 
    if (rs.log.code >= 400) {
-      if (['/lib/normalize.min.css.map'].indexOf (rs.log.url) === -1) notify (a.creat (), {priority: rs.log.code >= 500 ? 'critical' : 'important', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, ua: rs.log.requestHeaders ['user-agent'], body: rs.log.requestBody, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
+      var priority = 'normal';
+      if (rs.log.code >= 500) priority = 'critical';
+      if (['/lib/normalize.min.css.map'].indexOf (rs.log.url) === -1) notify (a.creat (), {priority: priority, type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, ua: rs.log.requestHeaders ['user-agent'], body: rs.log.requestBody, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
    }
 
    cicek.Apres (rs);
@@ -425,6 +427,7 @@ cicek.apres = function (rs) {
 cicek.log = function (message) {
    if (type (message) !== 'array' || message [0] !== 'error') return;
    if (message [1] === 'Invalid signature in cookie') return;
+   if (message [1] === 'client error' && message [2] === 'Error: read ECONNRESET') return;
    notify (a.creat (), {
       priority: 'critical',
       type:    'server error',
