@@ -429,7 +429,7 @@ cicek.log = function (message) {
    if (message [1] === 'Invalid signature in cookie') return;
    if (message [1] === 'client error') {
       if (message [2] === 'Error: read ECONNRESET') return;
-      if (message [2] === 'Error: Parse Error: Invalid method encountered') return;
+      if (message [2].match ('Error: Parse Error:')) return;
    }
    notify (a.creat (), {
       priority: 'critical',
