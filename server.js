@@ -377,12 +377,12 @@ var routes = [
       test = test.replace ('\'cocholate.js', '\'cocholate/cocholate.js');
       return test;
    }) ()],
-   ['get', 'gotob2', reply, (function () {
+   ['get', 'gotob', reply, (function () {
       try {
-         var test = fs.readFileSync ('node_modules/gotob2/test.html', 'utf8');
+         var test = fs.readFileSync ('node_modules/gotob/test.html', 'utf8');
          test = test.replace ('<body>', '<body><script>window.onerror = function () {alert (arguments [0] + " " + arguments [1] + " " + arguments [2])}</script>');
          test = test.replace ('https://cdn.jsdelivr.net/gh/douglascrockford/JSON-js@aef828bfcd7d5efaa41270f831f8d27d5eef3845/json2.min.js', 'json2.min.js');
-         test = test.replace ('gotoB.min.js', 'gotob2/gotoB.min.js');
+         test = test.replace ('gotoB.min.js', 'gotob/gotoB.min.js');
          return test;
       }
       catch (error) {
@@ -390,7 +390,7 @@ var routes = [
       }
    }) ()],
    ['get', dale.go (['app', 'examples', 'cart', '7guis', 'todomvc'], function (v) {
-      return 'gotob2/examples/' + v + '.html';
+      return 'gotob/examples/' + v + '.html';
    }), function (rq, rs) {
       try {
          var test = fs.readFileSync ('node_modules/' + rq.url, 'utf8');
@@ -401,7 +401,7 @@ var routes = [
          reply (rs, 404);
       }
    }],
-   dale.go (['dale', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob', 'gotob2'], function (lib) {
+   dale.go (['dale', 'teishi', 'lith', 'recalc', 'cocholate', 'gotob'], function (lib) {
       return ['get', lib + '/(*)', cicek.file, ['node_modules/' + lib]];
    }),
 ];

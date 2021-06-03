@@ -14,6 +14,11 @@ fi
 FOLDER="altocode"
 TAR="altocode.tar.gz"
 
+if [ "$2" == "client" ] ; then
+   scp client.js $HOST:$FOLDER
+   exit 0
+fi
+
 if [ "$2" == "server" ] ; then
    scp server.js $HOST:$FOLDER
    ssh $HOST "cd $FOLDER && mg restart"
@@ -58,10 +63,10 @@ if [ "$2" == "cocholate" ] ; then
 fi
 
 if [ "$2" == "gotob" ] ; then
-   ssh $HOST mkdir altocode/node_modules/gotob2
-   ssh $HOST mkdir altocode/node_modules/gotob2/examples
-   ssh $HOST mkdir altocode/node_modules/gotob2/tutorial
-   scp -r ../gotoB/* $HOST:~/altocode/node_modules/gotob2
+   ssh $HOST mkdir altocode/node_modules/gotob
+   ssh $HOST mkdir altocode/node_modules/gotob/examples
+   ssh $HOST mkdir altocode/node_modules/gotob/tutorial
+   scp -r ../gotoB/* $HOST:~/altocode/node_modules/gotob
    scp server.js $HOST:$FOLDER
    ssh $HOST "cd $FOLDER && mg restart"
    exit 0
