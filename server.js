@@ -444,9 +444,7 @@ cicek.cluster ();
 
 cicek.listen ({port: CONFIG.port}, routes);
 
-if (cicek.isMaster) setTimeout (function () {
-   notify (a.creat (), {priority: 'important', type: 'server start'});
-}, 1500);
+if (cicek.isMaster) notify (a.creat (), {priority: 'important', type: 'server start'});
 
 process.on ('uncaughtException', function (error, origin) {
    a.seq ([
