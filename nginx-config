@@ -70,6 +70,12 @@ server {
       client_max_body_size 2000M;
 	}
 
+	location /pictest/ {
+      proxy_pass http://127.0.0.1:8000/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+	}
+
 	location /aclog/ {
       proxy_pass http://127.0.0.1:1121/;
       proxy_set_header X-Forwarded-For $remote_addr;
