@@ -107,6 +107,48 @@ var notify = function (s, message) {
    });
 }
 
+// *** KABOOT ***
+
+var k = function (s) {
+
+   var command = [].slice.call (arguments, 1);
+
+   var output = {stdout: '', stderr: '', command: command};
+
+   var options = {};
+   var commands = dale.fil (command.slice (1), undefined, function (command) {
+      if (type (command) !== 'object' || ! command.env) return command;
+      options.env = command.env;
+   });
+
+   var proc = require ('child_process').spawn (command [0], commands, options);
+
+   var wait = 3;
+
+   var done = function () {
+      if (--wait > 0) return;
+      if (output.code === 0) s.next (output);
+      else                   s.next (0, output);
+   }
+
+   dale.go (['stdout', 'stderr'], function (v) {
+      proc [v].on ('data', function (chunk) {
+         output [v] += chunk;
+      });
+      proc [v].on ('end', done);
+   });
+
+   proc.on ('error', function (error) {
+      output.err += error + ' ' + error.stack;
+      done ();
+   });
+   proc.on ('exit',  function (code, signal) {
+      output.code = code;
+      output.signal = signal;
+      done ();
+   });
+}
+
 // *** ROUTES ***
 
 var makePage = function (body, head, params) {
