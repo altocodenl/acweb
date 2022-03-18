@@ -21,88 +21,87 @@ var a      = require ('./astack.js');
 
 var showdown = new (require ('showdown')).Converter ();
 
-var type = teishi.type, clog = console.log, eq = teishi.eq, reply = function () {
-   var rs = dale.stopNot (arguments, undefined, function (arg) {
-      if (arg && type (arg.log) === 'object') return arg;
-   });
-   // TODO remove this when fixed in cicek
-   if (! rs.connection || ! rs.connection.writable) return notify (a.creat (), {priority: 'normal', type: 'client dropped connection', method: rs.log.method, url: rs.log.url, headers: rs.log.requestHeaders});
+var type = teishi.type, clog = console.log, eq = teishi.eq, inc = function (a, v) {return a.indexOf (v) > -1}, reply = function () {
    cicek.reply.apply (null, dale.fil (arguments, undefined, function (v, k) {
-      if (k === 0 && v && v.path && v.last && v.vars) return;
-      return v;
+      // We ignore the astack stack if it's there. Note that this means that reply will also interrupt the asynchronous sequences. This is on purpose, since replying is usually the last thing to be done.
+      if (! (k === 0 && v && v.path && v.last && v.vars)) return v;
    }));
 }, stop = function (rs, rules) {
    return teishi.stop (rules, function (error) {
       reply (rs, 400, {error: error});
-   });
+   }, true);
 }, astop = function (rs, path) {
    a.stop (path, function (s, error) {
       reply (rs, 500, {error: error});
    });
 }, mexec = function (s, multi) {
    multi.exec (function (error, data) {
-      if (error) return s.next (0, error);
+      if (error) return s.next (null, error);
       s.next (data);
    });
-}, cbreply = function (rs, cb) {
-   return function (error, result) {
-      if (error)       return reply (rs, 500, {error: error});
-      if (cb === true) return reply (rs, 200);
-      if (cb) cb (result);
-   };
 }
 
 // *** NOTIFICATIONS ***
 
-SECRET.ping.send = function (payload, CB) {
-   CB = CB || clog;
-   var login = function (cb) {
-      hitit.one ({}, {
-         host:   SECRET.ping.host,
-         port:   SECRET.ping.port,
-         https:  SECRET.ping.https,
-         method: 'post',
-         path:   require ('path').join (SECRET.ping.path || '', 'auth/login'),
-         body: {username: SECRET.ping.username, password: SECRET.ping.password, tz: new Date ().getTimezoneOffset ()}
-      }, function (error, data) {
-         if (error) return CB (error);
-         SECRET.ping.cookie = data.headers ['set-cookie'] [0];
-         cb ();
-      });
+var aclog = {
+   initialize: function (logProcessingFunction) {
+      aclog.send = function (log, CB) {
+         CB = CB || clog;
+         var freshCookie;
+         var login = function (cb) {
+            freshCookie = true;
+            hitit.one ({}, {
+               host:   SECRET.aclog.host,
+               https:  SECRET.aclog.https,
+               method: 'post',
+               path:   SECRET.aclog.basepath + '/auth/login',
+               body: {username: SECRET.aclog.username, password: SECRET.aclog.password, timezone: new Date ().getTimezoneOffset ()}
+            }, function (error, data) {
+               if (error) return CB (error);
+               aclog.cookie = data.headers ['set-cookie'] [0];
+               aclog.csrf   = data.body.csrf;
+               cb ();
+            });
+         }
+         var send = function () {
+            if (type (log) !== 'object') return CB ({error: 'Log must be an object but instead is of type ' + type (log), log: log});
+            hitit.one ({}, {
+               host:   SECRET.aclog.host,
+               https:  SECRET.aclog.https,
+               method: 'post',
+               path:   SECRET.aclog.basepath + '/data',
+               headers: {cookie: aclog.cookie},
+               body:    {csrf: aclog.csrf, log: logProcessingFunction ? logProcessingFunction (log) : log}
+            }, function (error) {
+               if (error && error.code === 403 && ! freshCookie) return login (send);
+               if (error) return CB (error);
+               CB ();
+            });
+         }
+         if (! aclog.cookie) login (send);
+         else                send ();
+      }
    }
-   var send = function (retry) {
-      hitit.one ({}, {
-         host:   SECRET.ping.host,
-         port:   SECRET.ping.port,
-         https:  SECRET.ping.https,
-         method: 'post',
-         path: require ('path').join (SECRET.ping.path || '', 'data'),
-         headers: {cookie: SECRET.ping.cookie},
-         body:    payload,
-      }, function (error) {
-         if (error && error.code === 403 && ! retry) return login (function () {send (true)});
-         if (error) return CB (error);
-         CB ();
-      });
-   }
-   if (SECRET.ping.cookie) {
-      payload.cookie = SECRET.ping.cookie;
-      send ();
-   }
-   else login (function () {
-      payload.cookie = SECRET.ping.cookie;
-      send (true);
-   });
 }
 
+aclog.initialize (function (log) {
+   log = dale.obj (log, function (v, k) {
+      var sv = type (v) === 'string' ? v : JSON.stringify (v);
+      var length = (sv || '').length;
+      if (length > 5000) v = sv.slice (0, 2500) + ' [' + (length - 5000) + ' CHARACTERS OMITTED ' + '] ' + sv.slice (-2500);
+      return [k, v];
+   });
+   log.application = 'ac;web';
+   log.environment = ENV;
+   return log;
+});
+
 var notify = function (s, message) {
-   if (type (message) !== 'object') return clog ('NOTIFY: message must be an object but instead is', message, s);
-   message.environment = ENV || 'local';
-   if (! ENV) {
+   if (! ENV || ! SECRET.aclog.username) {
       clog (new Date ().toUTCString (), message);
       return s.next ();
    }
-   SECRET.ping.send (message, function (error) {
+   aclog.send (message, function (error) {
       if (error) return s.next (null, error);
       else s.next ();
    });
@@ -411,14 +410,9 @@ var routes = [
 cicek.options.log.console  = false;
 
 cicek.apres = function (rs) {
-   if (rs.log.url.match (/^\/auth/)) {
-      if (rs.log.requestBody && rs.log.requestBody.password) rs.log.requestBody.password = 'OMITTED';
-   }
-
    if (rs.log.code >= 400) {
-      var priority = 'normal';
-      if (rs.log.code >= 500) priority = 'critical';
-      if (['/lib/normalize.min.css.map'].indexOf (rs.log.url) === -1) notify (a.creat (), {priority: priority, type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, ua: rs.log.requestHeaders ['user-agent'], body: rs.log.requestBody, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
+      var report = ! inc (['/lib/normalize.min.css.map'], rs.log.url);
+      if (report) notify (a.creat (), {priority: rs.log.code >= 500 ? 'critical' : 'important', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, userAgent: rs.log.requestHeaders ['user-agent'], headers: rs.log.requestHeaders, body: rs.log.requestBody, data: rs.log.data, user: rs.request.user ? rs.request.user.username : null, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
    }
 
    cicek.Apres (rs);
@@ -426,32 +420,66 @@ cicek.apres = function (rs) {
 
 cicek.log = function (message) {
    if (type (message) !== 'array' || message [0] !== 'error') return;
-   if (message [1] === 'Invalid signature in cookie') return;
+   var notification;
    if (message [1] === 'client error') {
       if (message [2] === 'Error: read ECONNRESET') return;
       if (message [2].match ('Error: Parse Error:')) return;
+      notification = {
+         priority: 'important',
+         type:    'client error in server',
+         from:    cicek.isMaster ? 'master' : 'worker' + require ('cluster').worker.id,
+         error:   message [2]
+      }
    }
-   notify (a.creat (), {
+   else if (message [1] === 'Invalid signature in cookie') {
+      return;
+      // TODO: re-add notification once cicek ignores attributes in cookies
+      /*
+      notification = {
+         priority: 'important',
+         type: 'invalid signature in cookie',
+         from:    cicek.isMaster ? 'master' : 'worker' + require ('cluster').worker.id,
+         error:   message [2]
+      }
+      */
+   }
+   else if (message [1] === 'worker error') notification = {
       priority: 'critical',
       type:    'server error',
       subtype: message [1],
       from:    cicek.isMaster ? 'master' : 'worker' + require ('cluster').worker.id,
       error:   message [2]
-   });
+   }
+   else notification = {
+      priority: 'critical',
+      type:    'server error',
+      subtype: message [1],
+      from:    cicek.isMaster ? 'master' : 'worker' + require ('cluster').worker.id,
+      error:   message [2]
+   }
+
+   notify (a.creat (), notification);
 }
 
 cicek.cluster ();
 
-cicek.listen ({port: CONFIG.port}, routes);
+var server = cicek.listen ({port: CONFIG.port}, routes);
 
-if (cicek.isMaster) notify (a.creat (), {priority: 'important', type: 'server start'});
+if (cicek.isMaster) a.seq ([
+   [k, 'git', 'rev-parse', 'HEAD'],
+   function (s) {
+      if (s.error) return notify (a.creat (), {priority: 'critical', type: 'server start', error: s.error});
+      notify (a.creat (), {priority: 'important', type: 'server start', sha: s.last.stdout.slice (0, -1)});
+   }
+]);
 
 process.on ('uncaughtException', function (error, origin) {
-   a.seq ([
-      [notify, {priority: 'critical', type: 'server error', error: error, stack: error.stack, origin: origin}],
-      function () {
-         process.exit (1);
-      }
-   ]);
+   server.close (function () {
+      a.seq ([
+         [notify, {priority: 'critical', type: 'server error', error: error, stack: error.stack, origin: origin}],
+         function () {
+            process.exit (1);
+         }
+      ]);
+   });
 });
-

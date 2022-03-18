@@ -1,10 +1,10 @@
 {
-   "name": "altocode-web",
+   "name": "acweb",
    "private": true,
    "version": "0.0.0",
    "description": "Homepage for altocode",
    "dependencies": {
-      "cicek":     "3.4.1",
+      "cicek":     "3.4.2",
       "cocholate": "3.0.3",
       "dale":      "6.0.2",
       "gotob":     "2.1.1",

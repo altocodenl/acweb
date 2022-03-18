@@ -1,7 +1,7 @@
 // *** SETUP ***
 
-var dale  = window.dale, teishi = window.teishi, lith = window.lith, c = window.c, B = window.B;
-var type = teishi.t, clog = teishi.clog, media = lith.css.media, style = lith.css.style;
+var dale = window.dale, teishi = window.teishi, lith = window.lith, c = window.c, B = window.B;
+var type = teishi.type, clog = teishi.clog, media = lith.css.media, style = lith.css.style, inc = function (a, v) {return a.indexOf (v) > -1}
 
 // *** VIEWS OBJECT ***
 
