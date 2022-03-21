@@ -62,4 +62,5 @@ ssh $HOST apt-get clean
 ssh $HOST shutdown -r now
 
 # MANUAL STEP: add secret.js to /root/acweb
+# MANUAL STEP: add nginx configuration to /etc/nginx/sites-enabled/default
 # MANUAL STEP: HTTPS configuration, run the following command: certbot --nginx -d altocode.nl
