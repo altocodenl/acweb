@@ -1,10 +1,10 @@
 server {
-     server_name www.altocode.nl;
-     return 301 $scheme://altocode.nl$request_uri;
+   server_name www.altocode.nl;
+   return 301 $scheme://altocode.nl$request_uri;
 }
 
 server {
-	server_name blog.altocode.nl;
+   server_name blog.altocode.nl;
    rewrite ^/$ https://altocode.nl/blog permanent;
    rewrite ^/2019/11/$ https://altocode.nl/blog permanent;
    rewrite ^/category/uncategorized/$ https://altocode.nl/blog permanent;
@@ -16,7 +16,7 @@ server {
 
 server {
 
-	server_name altocode.nl;
+   server_name altocode.nl;
 
    location '/blog/Our why' {
       return 301 https://altocode.nl/blog/our-why;
@@ -40,68 +40,71 @@ server {
       return 301 https://altocode.nl/blog;
    }
 
-	location / {
+   location / {
       proxy_pass http://127.0.0.1:4040/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
 
-	location /blog/ {
+   location /blog/ {
       proxy_pass http://127.0.0.1:4040/blog/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
 
-	location /pic/ {
+   location /pic/ {
       proxy_pass http://127.0.0.1:4040/pic/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
 
-	location /pic/app/ {
-      proxy_pass http://136.243.174.166:1427/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
-	}
-
-	location /picdev/ {
+   location /pic/app/ {
       proxy_pass http://127.0.0.1:1427/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
 
-	location /pictest/ {
-      proxy_pass http://127.0.0.1:8000/;
+   location /picdev/ {
+      proxy_pass http://136.243.174.166:1427/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
 
-	location /aclog/ {
+   location /pictest/ {
+      proxy_pass http://136.243.174.166:8000/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /aclog/ {
       proxy_pass http://127.0.0.1:1121/;
       proxy_set_header X-Forwarded-For $remote_addr;
       client_max_body_size 2000M;
-	}
+   }
+
+   location /aclogdev/ {
+      proxy_pass http://136.243.174.166:1121/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
 
 
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/altocode.nl/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/altocode.nl/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
+   listen 443 ssl; # managed by Certbot
+   ssl_certificate /etc/letsencrypt/live/altocode.nl/fullchain.pem; # managed by Certbot
+   ssl_certificate_key /etc/letsencrypt/live/altocode.nl/privkey.pem; # managed by Certbot
+   include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+   ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 }
 
 
 server {
-    if ($host = altocode.nl) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
+   if ($host = altocode.nl) {
+      return 301 https://$host$request_uri;
+   } # managed by Certbot
 
 
 
-	server_name altocode.nl;
-    listen 80;
-    return 404; # managed by Certbot
-
-
+   server_name altocode.nl;
+   listen 80;
+   return 404; # managed by Certbot
 }
