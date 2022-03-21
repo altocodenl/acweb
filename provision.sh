@@ -17,8 +17,8 @@ ssh $HOST apt-get install redis-server -y
 ssh $HOST apt-get install -y nginx
 ssh $HOST apt-get install -y certbot python3-certbot-nginx
 
-ssh $HOST git clone https://github.com/altocodenl/altocode
-ssh $HOST 'cd altocode && npm i --no-save --production'
+ssh $HOST git clone https://github.com/altocodenl/acweb
+ssh $HOST 'cd acweb && npm i --no-save --production'
 
 # Allow up to 1024 simultaneous connection requests
 ssh $HOST 'echo "net.core.somaxconn=1024" >> /etc/sysctl.conf'
@@ -35,7 +35,7 @@ echo madvise > /sys/kernel/mm/transparent_hugepage/enabled
 service redis-server restart
 # Wait 5 seconds until DNS can be properly resolved
 sleep 5
-cd /root/altocode && mg restart
+cd /root/acweb && mg restart
 EOT
 EOF
 ssh $HOST chmod 777 /root/start.sh
@@ -46,7 +46,7 @@ cat << "EOT" >> ~/refresh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 apt-get update && DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --with-new-pkgs
 apt-get autoremove -y && apt-get clean
-cd /root/altocode && mg stop
+cd /root/acweb && mg stop
 service redis-server stop
 shutdown -r now
 EOT
@@ -61,4 +61,5 @@ ssh $HOST apt-get autoremove -y
 ssh $HOST apt-get clean
 ssh $HOST shutdown -r now
 
-# MANUAL STEP: add secret.js to /root/altocode
+# MANUAL STEP: add secret.js to /root/acweb
+# MANUAL STEP: HTTPS configuration, run the following command: certbot --nginx -d altocode.nl
