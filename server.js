@@ -454,7 +454,7 @@ cicek.options.log.console  = false;
 cicek.apres = function (rs) {
    if (rs.log.code >= 400) {
       var report = ! inc (['/lib/normalize.min.css.map'], rs.log.url);
-      if (report) notify (a.creat (), {priority: rs.log.code >= 500 ? 'critical' : 'important', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, userAgent: rs.log.requestHeaders ['user-agent'], headers: rs.log.requestHeaders, body: rs.log.requestBody, data: rs.log.data, user: rs.request.user ? rs.request.user.username : null, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
+      if (report) notify (a.creat (), {priority: rs.log.code >= 500 ? 'critical' : 'normal', type: 'response error', code: rs.log.code, method: rs.log.method, url: rs.log.url, ip: rs.log.origin, userAgent: rs.log.requestHeaders ['user-agent'], headers: rs.log.requestHeaders, body: rs.log.requestBody, data: rs.log.data, user: rs.request.user ? rs.request.user.username : null, rbody: teishi.parse (rs.log.responseBody) || rs.log.responseBody});
    }
 
    cicek.Apres (rs);
