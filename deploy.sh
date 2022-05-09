@@ -77,6 +77,7 @@ COPYFILE_DISABLE=true tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --e
 ssh $HOST rm -r $FOLDER/blog
 scp $TAR $HOST:
 ssh $HOST tar xzvf $TAR
+ssh $HOST chown -R root /root/$FOLDER
 echo "main = node server $1" | ssh $HOST "cat >> $FOLDER/mongroup.conf"
 ssh $HOST "cd $FOLDER && npm i --no-save && mg restart"
 ssh $HOST rm $TAR
