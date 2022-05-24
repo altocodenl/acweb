@@ -518,12 +518,13 @@ if (cicek.isMaster) a.seq ([
 ]);
 
 process.on ('uncaughtException', function (error, origin) {
-   server.close (function () {
-      a.seq ([
-         [notify, {priority: 'critical', type: 'server error', error: error, stack: error.stack, origin: origin}],
-         function () {
+   a.seq ([
+      [notify, {priority: 'critical', type: 'server error', error: error, stack: error.stack, origin: origin}],
+      function (s) {
+         if (! server) process.exit (1);
+         else server.close (function () {
             process.exit (1);
-         }
-      ]);
-   });
+         });
+      }
+   ]);
 });
