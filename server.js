@@ -286,7 +286,7 @@ var routes = [
       return makePage ([
          ['h1', 'Altocode\'s blog'],
          ['ul', dale.go (articles, function (article) {
-            return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: '/blog/' + article.filename}, article.title]]];
+            return ['li', [[article.date.slice (6, 8), article.date.slice (4, 6), article.date.slice (0, 4)].join ('-'), ['a', {class: 'title', href: article.filename}, article.title]]];
          })],
          ['br'],
          ['a', {href: '/'}, 'Back to the home page.'],
@@ -378,7 +378,7 @@ var routes = [
    ['get', '/', reply, makePage ([
       ['noscript', 'Javascript is deactivated in your browser. Please activate it in order to use this page.'],
       dale.go (['gotob/gotoB.min.js', 'client.js'], function (v) {
-         return ['script', {src: v}
+         return ['script', {src: (ENV === 'dev' ? 'dev/' : '') + v}
       ]})
    ], ['title', 'Altocode'], {url: '/', description: 'We create simple applications that everyone can understand and use. We focus on quality, not features.', title: 'Altocode', type: 'website'})],
    ['get', 'client.js', cicek.file],

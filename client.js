@@ -42,10 +42,10 @@ views.main = function () {
       ['br'],
       ['p', [
          'We create simple & useful software to empower humans. This is our ',
-         ['a', {href: 'http://federicopereiro.com/manifesto'}, 'manifesto'],
+         ['a', {href: 'blog/manifesto'}, 'manifesto'],
          '.',
          ' And this is our ',
-         ['a', {href: 'http://altocode.nl/blog'}, 'blog'],
+         ['a', {href: 'blog'}, 'blog'],
          '.',
       ]],
       ['p', 'What is different about us?'],

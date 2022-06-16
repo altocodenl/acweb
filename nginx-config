@@ -76,6 +76,18 @@ server {
       client_max_body_size 2000M;
    }
 
+   location /dev/client.js {
+      proxy_pass http://136.243.174.166:4040/client.js;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /dev/gotob/gotoB.min.js {
+      proxy_pass http://136.243.174.166:4040/gotob/gotoB.min.js;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
    location /dev/blog/ {
       proxy_pass http://136.243.174.166:4040/blog/;
       proxy_set_header X-Forwarded-For $remote_addr;
