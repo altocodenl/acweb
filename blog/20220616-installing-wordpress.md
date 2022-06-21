@@ -83,6 +83,6 @@ ssh $HOST shutdown -r now
 
 If you'd rather run the commands individually, you can copy and paste them one by one in the terminal of your server.
 
-Once the script is run, if you go to your domain name in a browser, you will be prompted to start the Wordpress configuration. The required DB credentials are `Wordpress` (for the user) and `PASSWORD` (the one you put at the top of the script) for your password.
+Once the script is run, if you go to your domain name in a browser, you will be prompted to start the Wordpress configuration. The required DB credentials are `wordpress` (for the user) and `PASSWORD` (the one you put at the top of the script) for your password.
 
 Enjoy!
