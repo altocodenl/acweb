@@ -13,7 +13,7 @@ Below is the bash script with which we did it. Feel free to borrow and adapt it.
 - You need to replace the three variables at the top of the script.
 - The script is intended to run in your computer and execute commands remotely in the server - for this reason you need to have SSH access to the server.
 - The script will install and configure nginx, mysql and php.
-- The script **will overwrite** any nginx configuration you may have in your server - you might have to instead copy and paste the config we put in the script. If you do this, replacd `try_files \$uri \$uri/ =404;` by `try_files $uri $uri/ =404;`.
+- The script **will overwrite** any nginx configuration you may have in your server - you might have to instead copy and paste the config we put in the script. If you do this, replacd `try_files \$uri \$uri/ /index.php?$args;` by `try_files $uri $uri/ /index.php?$args;`.
 - The part of the script that requires HTTPS will require interaction from you. It will also require that your server is reachable at a certain IP which is the same IP to which your domain name A DNS record points to.
 
 Here goes the script.
@@ -59,7 +59,7 @@ server {
    index index.php;
 
    location / {
-      try_files \$uri \$uri/ =404;
+      try_files \$uri \$uri/ /index.php?$args;
    }
 
    location ~ \.php$ {
