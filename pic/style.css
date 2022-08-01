@@ -101,7 +101,7 @@ font-weight: 600;
 	padding-top: 2%;
 }
 .demo {
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
   /* before it was #f2f2f2 */
 }
 .demo img {
@@ -167,6 +167,28 @@ font-weight: 600;
     background-color: #fff;
     color: #5b6eff;
   }
+.button-white {
+  outline: 0;
+  padding-left: 36px;
+  padding-right: 20px;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 100px;
+  border: 1px solid #5b6eff;
+  color: #5b6eff;
+  background-color: #ffffff; 
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+}
+.button-white:hover {
+  background-color: #5b6eff; 
+  color: #fff;
+}
 .mid-title, .comparison-title {
 	display: block;
 	margin-left: auto;
@@ -201,24 +223,51 @@ font-weight: 600;
   margin-right: auto;
 }
 
-.table-description-header {
+.table-description-header{
   font-weight: 600;
   font-size: 22px;
 }
 
-.table-description {
+.table-description{
   margin-left: 10px;
   margin-right: 10px;
   font-size: 16px;
   vertical-align: text-top;
 }
 
-.table-description-header,.table-images, .table-description {
+.table-description-header,.table-images, .table-description{
   border-style: hidden;
   text-align: center;
   width: 300px;
 }
 
+.desktop-questions{
+   width: 900px;
+  /*display: none;*/
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-style: hidden; 
+  border-collapse: collapse;
+}
+.desktop-questions th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.desktop-questions td, .desktop-questions th {
+  border: none;
+  border-style: hidden; 
+  border-collapse: collapse;
+  padding:  1%;
+}
+
+.desktop-questions p{
+  text-align: left;
+  font-size: 16px;
+  vertical-align: text-top;
+}
 
 
 @media screen and (min-width: 1024px){
