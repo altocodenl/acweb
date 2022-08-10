@@ -94,25 +94,31 @@ ol{
   h3 {
     font-size: 1em;
   }
-}
-
-@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
   p {
-    font-size: 12px;
+    font-size: 20px;
     line-height: normal;
+  }
+  .description p {
+    font-size: 14px;
   }
 }
 .header {
   display: inline-flex;
   height: 90px;
-  width: 96%;
-  margin-left: 2%;
+  width: 98%;
   position: fixed;
   background-color: white;
   z-index: 2;
 }
+.logo{
+  margin-left: 2%;
+}
 .links-and-buttons{
-  display: inline-flex;
+  display: none;
   margin-left: auto;
 }
 .header-links{
@@ -129,21 +135,44 @@ ol{
   margin-top: 16px;
   padding-left: 30px;
 }
+@media screen and (min-width: 1024px){
+  .links-and-buttons {
+    display: inline-flex;
+  }
+}
 .top-titles{
   padding-top: 80px;
 }
-.top-titles, .mid-title, .comparison-title, .questions {
+.top-titles, .mid-title, .comparison-title, .desktop-questions {
 	text-align: center;
   display: block;
+}
+@media screen and (min-width: 1024px){
+  .top-titles, .mid-title, .comparison-title, .desktop-questions {
   margin-left: auto;
   margin-right: auto;
+  }
 }
+@media screen and (max-width: 767px) {
+.mid-title {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+.desktop-questions{
+  display: none;
+} 
 .demo img {
   max-width: 100%;
 	align-content: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1024px){
+  .demo img {
+    width: 80%;
+  }
 }
 .why-text{
   width: 900px;
@@ -152,9 +181,13 @@ ol{
   font-size: 20px;
   line-height: 2rem;
 }
-@media screen and (min-width: 1024px){
-  .demo img {
-    width: 80%;
+@media screen and (max-width: 767px) {
+.why-text {
+    font-size: 20px;
+    line-height: 1.8rem;
+    width: auto;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
 .header-button-white{
@@ -308,20 +341,17 @@ ol{
   margin-left: auto;
   margin-right: auto;
 }
-
 .desktop-description {
   width: 900px;
   display: none;
   margin-left: auto;
   margin-right: auto;
 }
-
 .desktop-description-table {
   border-collapse: collapse;
   border-style: hidden;
   margin-bottom: 5%;
 }
-
 .desktop-description-table-2 {
   border-collapse: collapse;
   border-style: hidden; 
@@ -353,9 +383,8 @@ ol{
 .cloud-providers-logo{
   height: 80px;
 }
-.desktop-questions, .devices-table, .cloud-providers-table{
+.desktop-questions-table, .devices-table, .cloud-providers-table{
    width: 900px;
-  /*display: none;*/
   margin-left: auto;
   margin-right: auto;
   border: none;
@@ -364,19 +393,29 @@ ol{
 }
 .cloud-providers-table{
   width: 700px;
+  display: none;
 }
-.desktop-questions th {
+.devices-table{
+  display: none;
+}
+.cloud-provider-mobile{
+  display: inline-flex;
+}
+.cloud-provider-mobile .cloud-providers-logo{
+  height: 50px;
+}
+.desktop-questions-table th {
   text-align: left;
   font-weight: 600;
   font-size: 22px;
 }
-.desktop-questions td, .desktop-questions th, .devices-table td, .cloud-providers-table td{
+.desktop-questions-table td, .desktop-questions-table th, .devices-table td, .cloud-providers-table td{
   border: none;
   border-style: hidden; 
   border-collapse: collapse;
   padding:  1%;
 }
-.desktop-questions p, .desktop-questions li{
+.desktop-questions-table p, .desktop-questions-table li{
   text-align: left;
   font-size: 20px;
   line-height: 2rem;
@@ -385,11 +424,34 @@ ol{
 .padding-row-questions-table{
   height: 40px;
 }
+.mobile-questions{
+  display: block;
+  margin-left: 6px;
+  margin-right: 6px;
+  text-align: center;
+  padding-bottom: 2%
+}
+.mobile-questions h2{
+  margin-bottom: -30px;
+}
+.mobile-questions-icon{
+  margin-top: 50px;
+}
+.mobile-questions-question h3{
+  font-size: 20px;
+}
+.mobile-questions-answer p{
+    line-height: 1.8rem;
+}
+.mobile-questions-button {
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px){
-  .description {
+  .description, .mobile-questions, .cloud-provider-mobile {
     display: none;
   }
-  .desktop-description {
+  .desktop-description, .desktop-questions, .cloud-providers-table, .devices-table {
     display: block;
   }
 }
@@ -401,7 +463,8 @@ ol{
 .organized,
 .share,
 .efficient,
-.safe {
+.safe, 
+.integrated {
   height: 400px;
   width: 100%;
   justify-content: center;
@@ -411,7 +474,8 @@ ol{
 .organized,
 .share,
 .efficient,
-.safe {
+.safe, 
+.integrated {
   height: auto;
   }
 }
@@ -470,7 +534,7 @@ ol{
   .description {
     display: table;
   }
-  .simple, .organized, .share, .efficient, .safe {
+  .simple, .organized, .share, .efficient, .safe, .integrated {
     display: table-row;
   }
 }
