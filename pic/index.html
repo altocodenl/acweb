@@ -3,10 +3,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/c090b78427.js" crossorigin="anonymous"></script>
-  <meta name="description" content="The photo organizer web app that helps you with how to organize digital photos. What's the best folder structure for pictures? None! Tags are the way to go.">
+  <meta name="description" content="ac;pic is the app that helps you to organize digital photos & videos. The best folder structure for photos? None! Tag them & always see what you have!">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Organize digital photos | ac;pic - A Home For Your Pictures</title>
+  <title>Organize Your Digital Photos & Videos: Free 5 GB | ac;pic</title>
   <link rel="canonical" href="https://altocode.nl/pic/">
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow”/>
@@ -14,10 +14,10 @@
   <!-- Open Graph Protocol -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="A digital home for your pictures" />
-  <meta property="og:description" content="The photo organizer web app that helps you with how to organize digital photos. What's the best folder structure for pictures? None! This is way better." />
+  <meta property="og:title" content="Organize Your Digital Photos & Videos: Free 5 GB" />
+  <meta property="og:description" content="ac;pic is the app that helps you to organize digital photos & videos. The best folder structure for photos? None! Tag them & always see what you have!" />
   <meta property="og:url" content="https://altocode.nl/pic/" />
-  <meta property="og:image" content="https://altocode.nl/pic/images/acpic-demo.gif" />
+  <meta property="og:image" content="https://altocode.nl/pic/img/devices/acpic-main-interface.png" />
   <meta property="og:image:alt" content="acpic" />
   <meta property="og:site_name" content="Altocode" />
 </head>
@@ -48,7 +48,22 @@
    }
    </script>
    <div class="header">
-      <h1>ac;pic</h1>
+      <div class="logo">
+         <a href="https://altocode.nl/pic"><h1>ac;pic</h1></a>
+      </div>
+      <div class="links-and-buttons">
+         <div class="header-links">
+            <a href="https://altocode.nl/" target="_blank" class="header-link-item">About Altocode</a>
+            <a href="https://altocode.nl/blog/" target="_blank" class="header-link-item">Blog</a>
+            <a href="" target="_blank" class="header-link-item">Pricing</a>
+         </div>
+         <div class="header-buttons">
+            <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-white">Log in</a>
+            <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-blue">Start for free</a>
+         </div>     
+      </div>    
+   </div>
+   <div class="top-titles">
       <h2>All your photos and videos in one place.</h2>
       <h4>ac;pic helps you make sense of your digital memories. Your life’s journey, organized.</h4>
    </div>
@@ -56,16 +71,17 @@
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="button">Try ac;pic</a>
    </div>
    <div class="demo">
-      <img src="img/Interface test.png" alt="acpic">
+      <img src="img/devices/acpic-main-interface.png" alt="acpic">
    </div>
    <div class="log-in-button">
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="button">Try ac;pic</a>
    </div>
    <div class="mid-title">
-      <h2>Why we built ac;pic</h2>
-      <p>Why make yet another photo and video organization tool?<br>Because we couldn’t find the tool we needed. A tool that allows us to see everything we have. That helps us stay organized. Simple, no complex interface, and no install. Where we can upload from our devices and cloud services. That eliminates duplicates, that respects the chronological order, that doesn’t compromise the quality of the images and videos. That requires minimal effort to use.<br>That’s why we built ac;pic.
+      <h2>Why we built <span style="color:#5b6eff; font-weight: bold;">ac;pic</span></h2>
+      <p class="why-text">Why make yet another photo and video organization tool?<br><br>Because we couldn’t find the tool we needed. A tool that allows us to see everything we have. That helps us stay organized. Simple, no complex interface, and no install. Where we can upload from our devices and cloud services. That eliminates duplicates, that respects the chronological order, that doesn’t compromise the quality of the images and videos. That requires minimal effort to use.<br><br>That’s why we built ac;pic.
       </p>
    </div>
+   <div class="log-in-button-desktop"><a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank" class="button-white">Learn more</a></div>
    <div class="mid-title">
       <h2>What is <span style="color:#5b6eff; font-weight: bold;">ac;pic</span> then?</h2>
    </div>
@@ -77,9 +93,9 @@
    			<th class="table-description-header">Easy Share</th>
    		</tr>
    		<tr>
-   			<td class="table-images"><img loading="lazy" src="img/simple-round-200x200.png" alt="simple"></td>
-   			<td class="table-images"><img loading="lazy" src="img/organized-round-200x200.png" alt="organized"></td>
-   			<td class="table-images"><img loading="lazy" src="img/share-round-200x200.png" alt="share"></td>
+   			<td class="table-images"><img loading="lazy" src="img/icons/round/simple-round-200x200.png" alt="simple"></td>
+   			<td class="table-images"><img loading="lazy" src="img/icons/round/organized-round-200x200.png" alt="organized"></td>
+   			<td class="table-images"><img loading="lazy" src="img/icons/round/share-round-200x200.png" alt="share"></td>
    		</tr>
    		<tr>
    			<td class="table-description">Super easy interface. No hidden features. No install required. Just your photos neatly organized.</td>
@@ -94,9 +110,9 @@
             <th class="table-description-header">Integrated</th>
    		</tr>
    		<tr>
-   			<td class="table-images"><img loading="lazy" src="img/efficient-round-200x200.png" alt="efficient"></td>
-   			<td class="table-images"><img loading="lazy" src="img/safe-round-200x200.png" alt="safe"></td>
-            <td class="table-images"><img loading="lazy" src="img/integrated-round-200x200.png" alt="integrated"></td>
+   			<td class="table-images"><img loading="lazy" src="img/icons/round/efficient-round-200x200.png" alt="efficient"></td>
+   			<td class="table-images"><img loading="lazy" src="img/icons/round/safe-round-200x200.png" alt="safe"></td>
+            <td class="table-images"><img loading="lazy" src="img/icons/round/integrated-round-200x200.png" alt="integrated"></td>
    		</tr>
    		<tr>
    			<td class="table-description">Photos are tagged on upload, so they're always organized. Duplicated photos are deleted, so your storage is optimized.</td>
@@ -108,7 +124,7 @@
    <div class="description">
       <div class="simple">
          <div class="image-left">
-            <img loading="lazy" src="img/simple.png" alt="simple">
+            <img loading="lazy" src="img/icons/square/simple.png" alt="simple">
          </div>
          <div class="text-right">
             <div class="benefits">
@@ -119,7 +135,7 @@
       </div>
       <div class="organized">
          <div class="image-right">
-            <img loading="lazy" src="img/organized.png" alt="organized">
+            <img loading="lazy" src="img/icons/square/organized.png" alt="organized">
          </div>
          <div class="text-left">
             <div class="benefits">
@@ -130,7 +146,7 @@
       </div>
       <div class="share">
          <div class="image-left">
-            <img loading="lazy" src="img/share.png" alt="share">
+            <img loading="lazy" src="img/icons/square/share.png" alt="share">
          </div>
          <div class="text-right">
             <div class="benefits">
@@ -141,7 +157,7 @@
       </div>
       <div class="efficient">
          <div class="image-right">
-            <img loading="lazy" src="img/efficient.png" alt="efficient">
+            <img loading="lazy" src="img/icons/square/efficient.png" alt="efficient">
          </div>
          <div class="text-left">
             <div class="benefits">
@@ -153,7 +169,7 @@
       </div>
       <div class="safe">
          <div class="image-left">
-            <img loading="lazy" src="img/safe.png" alt="safe">
+            <img loading="lazy" src="img/icons/square/safe.png" alt="safe">
          </div>
          <div class="text-right">
             <div class="benefits">
@@ -169,24 +185,53 @@
    <div class="mid-title">
       <h2>Your photos and videos in the same place.</h2>
       <p>Upload from your devices.</p>
+      <table class="devices-table">
+         <tr>
+            <td>
+               <img class="device-mobile" src="img/devices/acpic-screenshot-iPhone-13.png" alt="acpic-screenshot-iPhone-13">
+            </td>
+            <td>
+               <img class="device-desktop" src="img/devices/acpic-macbook-screenshot - 2000x1200.png" alt="acpic-macbook-screenshot">
+            </td>
+            <td>
+               <img class="device-mobile" src="img/devices/acpic-screenshot-Google Pixel 4-11.0.png" alt="acpic-screenshot-Google Pixel 4-11.0">
+            </td>
+         </tr>
+      </table>
       <p>Or import from other cloud providers.</p>
+      <table class="cloud-providers-table">
+         <tr>
+            <td>
+               <img class="cloud-providers-logo" src="img/cloud-providers/google-drive-logo.png" alt="google-drive-logo">
+            </td>
+            <td>
+               <img class="cloud-providers-logo" src="img/cloud-providers/dropbox-logo - 3000x800.png" alt="dropbox-logo">
+            </td>
+         </tr>
+         
+      </table>
    </div>
    <div class="questions">
       <h2>Of course you have questions…</h2>
       <table class="desktop-questions">
          <tr>
             <th>Tags instead of folders? Why?</th>
-            <td rowspan="2">ICON HERE</td>
+            <td rowspan="2">
+               <img src="img/icons/150x150/tags-icon - 150x150.png" alt="tags-icon">
+            </td>
          </tr>
          <tr>
             <td>
                <p>Think of folders as boxes. Each pic must fall into an existing box or a new one must be created. A picture cannot be in multiple folders, but it can be in multiple tags. It is less of a commitment to tag a picture than to put it in a folder. Tags allow for searching by more than one tag, so searching becomes additive and requires less structure from you.<br><br>Our brains don’t work well with boxes - we did the research. That’s why organizing with folders takes a lot of time or doesn’t even happen at all.<br>
                </p>
-               <div class="learn-more-button-bottom"><a href="" target="_blank" class="button-white">Learn more</a></div>
+               <div class="learn-more-question-button-bottom"><a href="https://altocode.nl/blog/we-remember-by-association" target="_blank" class="button-white">Learn more</a></div>
             </td>
          </tr>
+         <tr class="padding-row-questions-table"></tr>
          <tr>
-            <td rowspan="2">ICON HERE</td>
+            <td rowspan="2">
+               <img src="img/icons/150x150/questions - 150x150.png" alt="questions-icon">
+            </td>
             <th>Do I have to tag everything myself?</th>
          </tr>
          <tr>
@@ -194,12 +239,15 @@
                <p>
                   Thankfully not! ac;pic has a mix of automatic and manual tags. We automatically tag your photos and videos with the year, month, geolocation (optional), containing folder and source. And then, of course, you can add all the tags you want. You can even edit or delete some of the automatic tags if you want.<br><br>It doesn’t matter if you have 300 or 30,000 photos, ac;pic’s organization system is scalable. Your pics will always be tagged, organized and easy to find.
                </p>
-               <div class="log-in-button-bottom"><a href="https://altocode.nl/pic/app/#/login" target="_blank" class="button">Learn more</a></div>
+               <div class="learn-more-question-button-bottom"><a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank" class="button-white">Learn more</a></div>
             </td>
          </tr>
+         <tr class="padding-row-questions-table"></tr>
          <tr>
             <th>Have old photos or different formats?</th>
-            <td rowspan="2">ICON HERE</td>
+            <td rowspan="2">
+               <img src="img/icons/150x150/photos-icon - 150x150.png" alt="photos-icon">
+            </td>
          </tr>
          <tr>
             <td>
@@ -208,8 +256,11 @@
                </p>
             </td>
          </tr>
+         <tr class="padding-row-questions-table"></tr>
          <tr>
-            <td rowspan="2">ICON HERE</td>
+            <td rowspan="2">
+               <img src="img/icons/150x150/download - 150x150.png" alt="download-icon">
+            </td>
             <th>Can I download the original files?</th>
          </tr>
          <tr>
@@ -219,15 +270,19 @@
                </p>
             </td>
          </tr>
+         <tr class="padding-row-questions-table"></tr>
          <tr>
             <th>Is this free?</th>
-            <td rowspan="2">ICON HERE</td>
+            <td rowspan="2">
+               <img src="img/icons/150x150/money - 150x150.png" alt="money-icon">
+            </td>
          </tr>
          <tr>
             <td>
                <p>
                   We have a free and a paid plan. The free plan gives you 5 GB with all the features, we don’t limit what you can do.<br><br>If you need more space, with our paid plan you pay for the gigabytes you use above those free 5 GB, plus a fixed amount that enables us to maintain ac;pic.<br><br>We run a fully transparent pricing model. Our incentives and the users' incentives are 100% aligned. 
                </p>
+               <div class="learn-more-question-button-bottom"><a href="" target="_blank" class="button-white-price-page">See price page</a></div>
             </td>
          </tr>
 
@@ -248,7 +303,14 @@
          </tr>
          <tr>
             <td style="font-weight: bold;">Uses tags as organizing principle</td>
-            <td><a href="https://altocode.nl/blog/we-remember-by-association" target="_blank"><i class="fas fa-check"></i><span class="td-comment"><p class="hover-text">Tags! Your memories don't fit in a folder.</p></span></a></td>
+            <td>
+               <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">
+                  <i class="fas fa-check"></i>
+                  <span class="td-comment">
+                     <p class="hover-text">Tags! Your memories don't fit in a folder.</p>
+                  </span>
+               </a>
+            </td>
             <td><a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank"><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Albums.</p></span></a></td>
             <td><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Folders.</p></span></td>
             <td><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Albums.</p></span></td>
@@ -271,7 +333,7 @@
             <td style="font-weight: bold;">Detects duplicated pics and video</td>
             <td><a href="https://altocode.nl/blog/no-duplicates" target="_blank"><i class="fas fa-check"></i><span class="td-comment"><p class="hover-text">For identical pics and videos, regardless of filename or metadata.</p></a></td>
             <td><a href="https://support.google.com/photos/thread/3954223?hl=en" target="_blank"><i class="fas fa-exclamation"></i><span class="td-comment"><p class="hover-text">Click the icon for more info.</p></span></a></td>
-            <td><a href="https://help.dropbox.com/installs-integrations/sync-uploads/duplicate-files" target="_blank"><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Click the icon for more info.</p></span></a></td>
+            <td><a href="https://www.dropboxforum.com/t5/Delete-edit-and-organize/Removal-of-duplicate-photos-in-my-dropbox-photo-library/td-p/84989#:~:text=Unfortunately%2C%20there's%20currently%20no%20way,via%20the%20Dropbox%20desktop%20application." target="_blank"><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Click the icon for more info.</p></span></a></td>
             <td><a href="https://discussions.apple.com/thread/8477382" target="_blank"><i class="fas fa-times"></i><span class="td-comment"><p class="hover-text">Click the icon for more info.</p></span></a></td>
          </tr>
          <tr>
@@ -290,22 +352,22 @@
          </tr>
           <tr>
             <td style="font-weight: bold;">Free Plan</td>
-            <td>
+            <td class="table-text-align-top">
                <ul>
                   <li>5GB free.</li>
                </ul>
             </td>
-            <td>
+            <td class="table-text-align-top">
                <ul>
                   <li>15GB free (photos and videos compressed if above 16MP/1080p).</li>
                </ul>
             </td>
-            <td>
+            <td class="table-text-align-top">
                <ul>
                   <li>2GB free (individuals only).</li>
                </ul>
             </td>
-            <td>
+            <td class="table-text-align-top">
                <ul>
                   <li>5GB free.</li>
                </ul>
@@ -313,26 +375,30 @@
          </tr>
          <tr>
             <td style="font-weight: bold;">Paid Plan</td>
-            <td>
-               <p style="font-weight: bold;">Pay only for what you use.</p>
-               <ul>
-                  <li>European Union:<br>&euro;9/mo + &euro;0.0509 per GB/mo.</li>
-                  <li>Non-European Union:<br>&euro;7.75/mo + &euro;0.0625 per GB/mo.</li> 
-               </ul>
+            <td class="table-text-align-top">
+               <a href="https://altocode.nl/pic/pricing" target="_blank" style="text-decoration: none; color: #484848;">
+                  <p style="font-weight: bold;">Pay for what you use.</p>
+                  <ul>
+                     <li>European Union:<br>&euro;8.47/mo +<br>&euro;0.06165 per GB/mo.</li>
+                     <li>Non-EU:<br>&euro;7.14/mo +<br>&euro;0.05170 per GB/mo.</li> 
+                  </ul>
+               </a>
             </td>
-            <td>
+            <td class="table-text-align-top">
+               <p style="font-weight: bold;">Flat rate.</p>
                <ul>
                   <li>&#36;1.99/mo up to 100GB.</li>
                   <li>&#36;2.99/mo up to 200GB.</li>
                   <li>&#36;9.99/mo up to 2TB.</li>
                </ul>
             </td>
-            <td>
+            <td class="table-text-align-top">
+               <p style="font-weight: bold;">Flat rate.</p>
                <ul>
                   <li>&#36;19.99/mo or &#36;198.96/year for 3TB.</li>
                </ul>
             </td>
-            <td><a href="https://support.apple.com/en-us/HT201238" target="_blank"><p>Pricing depends on plan and country of residence.</p></a></td>
+            <td class="table-text-align-top"><a href="https://support.apple.com/en-us/HT201238" target="_blank"><p>Pricing depends on plan and country of residence.</p></a></td>
          </tr>
       </table>
    </div>
