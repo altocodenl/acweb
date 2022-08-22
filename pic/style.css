@@ -135,17 +135,102 @@ ol{
   margin-top: 16px;
   padding-left: 30px;
 }
+.mobile-menu {
+  display: none;
+  width: 100%;
+}
+.mobile-menu .checkbox {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 36px;
+  top: 12px;
+  left: 84%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.mobile-menu-hamburger {
+  display: flex;
+}
+.mobile-menu-hamburger i{
+  margin-left: auto;
+  margin-right: 30px;
+  color: #484848;
+  margin-top: 30px;
+}
+.hamburger {
+}
+.close {
+  display: none;
+}
+.mobile-menu-items {
+  background-color: white;
+  /*background-color: green;*/
+  margin-top: 30px;
+  /*box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);*/
+  height: 100vh;
+  width: 170%;
+  /*transform: translate(-150%);*/
+  transform: translate(150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -145px;
+  padding-top: 10px;
+  /*padding-left: 50px;*/
+  transition: transform 0.5s ease-in-out;
+  text-align: left;
+}
+.mobile-menu .mobile-menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+}
+.mobile-menu input[type="checkbox"]:checked ~ .mobile-menu-items {
+  transform: translateX(0);
+}
+.mobile-menu input[type="checkbox"]:checked ~ .mobile-menu-hamburger .hamburger {
+  display: none;
+}
+.mobile-menu input[type="checkbox"]:checked ~ .mobile-menu-hamburger .close {
+  display: block;
+  margin-right: 34px;
+}
 @media screen and (min-width: 1024px){
   .links-and-buttons {
     display: inline-flex;
   }
 }
+@media screen and (max-width: 767px) {
+  .header {
+    height: 66px;
+    width: 100%;
+  }
+  .logo {
+    margin-top: -10px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+
 .top-titles{
   padding-top: 80px;
 }
-.top-titles, .mid-title, .comparison-title, .desktop-questions {
+.top-titles, .mid-title, .desktop-questions {
 	text-align: center;
   display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.comparison-title {
+  text-align: center;
+  display: block;
+} 
+.mid-title, .comparison-title {
+  padding-bottom: 2%
 }
 @media screen and (min-width: 1024px){
   .top-titles, .mid-title, .comparison-title, .desktop-questions {
@@ -153,25 +238,31 @@ ol{
   margin-right: auto;
   }
 }
-@media screen and (max-width: 767px) {
-.mid-title {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-}
 .desktop-questions{
   display: none;
 } 
-.demo img {
-  max-width: 100%;
+.demo-mobile img {
+  max-width: 90%;
 	align-content: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+.demo-desktop img {
+  display: none;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 1024px){
-  .demo img {
+  .demo-desktop img {
+    display: block;
+  }
+  .demo-desktop img {
     width: 80%;
+  }
+  .demo-mobile{
+    display: none;
   }
 }
 .why-text{
@@ -186,8 +277,9 @@ ol{
     font-size: 20px;
     line-height: 1.8rem;
     width: auto;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
   }
 }
 .header-button-white{
@@ -328,12 +420,6 @@ ol{
   background-color: #5b6eff; 
   color: #fff;
 }
-.mid-title, .comparison-title {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-  padding-bottom: 2%
-}
 .description {
 	height: 100%;
   width: 100%;
@@ -374,17 +460,16 @@ ol{
   text-align: center;
   width: 300px;
 }
-.device-mobile{
-  height: 400px;
+.desktop-questions-table, .cloud-providers-table{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-style: hidden; 
+  border-collapse: collapse;
 }
-.device-desktop{
-  height: 400px;
-}
-.cloud-providers-logo{
-  height: 80px;
-}
-.desktop-questions-table, .devices-table, .cloud-providers-table{
-   width: 900px;
+.devices-table {
+  width: min-content;
   margin-left: auto;
   margin-right: auto;
   border: none;
@@ -392,17 +477,40 @@ ol{
   border-collapse: collapse;
 }
 .cloud-providers-table{
-  width: 700px;
+  width: min-content;
   display: none;
 }
 .devices-table{
   display: none;
 }
-.cloud-provider-mobile{
-  display: inline-flex;
+.device-mobile{
+  height: 400px;
 }
-.cloud-provider-mobile .cloud-providers-logo{
+.device-desktop{
+  height: 400px;
+}
+.devices-showcase-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .devices-showcase-mobile {
+    display: block;
+  }
+  .devices-showcase-mobile img {
+  height: 60%;
+ }
+  .devices-showcase-mobile .device-desktop {
+  height: 25%;
+ }
+}
+.cloud-providers-logo{
+  height: 80px;
+}
+.cloud-providers-logo-drive{
   height: 50px;
+}
+.cloud-providers-logo-dropbox{
+  height: 66px;
 }
 .desktop-questions-table th {
   text-align: left;
@@ -426,8 +534,8 @@ ol{
 }
 .mobile-questions{
   display: block;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   padding-bottom: 2%
 }
@@ -437,8 +545,14 @@ ol{
 .mobile-questions-icon{
   margin-top: 50px;
 }
+.mobile-questions-question{
+ text-align: left;
+}
 .mobile-questions-question h3{
   font-size: 20px;
+}
+.mobile-questions-answer{
+  text-align: left;
 }
 .mobile-questions-answer p{
     line-height: 1.8rem;
@@ -526,6 +640,30 @@ ol{
   padding-bottom: 5%;
   width: 100%;
   height: auto;
+}
+.mobile-footer{
+  display: none;
+  position: fixed;
+  background-color: white;
+  height: 66px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-top: 6px;
+}
+@media screen and (max-width: 767px) {
+  .mobile-footer {
+    display: inline-flex;
+  }
+  .mobile-footer .header-button-white, .mobile-footer .header-button-blue {
+    font-weight: 500;
+
+  } 
+  .altocode {
+    padding-bottom: 70px;
+  }
 }
 
 /* MOBILE GRID FOR DESCRIPTION SECTION*/
@@ -636,6 +774,12 @@ visibility: visible;
   td {
     padding: 0%;
   }
+  .td-comment {
+    display: none;
+  }
+  .comparison-table i {
+    font-size: 14px;
+  }
 }
 
 /*PRICING PAGE*/
@@ -690,6 +834,29 @@ visibility: visible;
 }
 .pricing-table-info-icon:hover + .pricing-table-info-comment .pricing-hover-text{
   visibility: visible;
+}
+@media screen and (max-width: 767px) {
+  .pricing-comparison {
+    width: 100%;
+    font-size: 12px;
+    display: block;
+  }
+  .pricing-comparison-col-1 {
+    padding-left: 6px;
+  }
+}
+.questions {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+@media screen and (min-width: 1024px){
+  .questions {
+    display: block;
+  } 
+}
+.questions h2 {
+  text-align: center;
 }
 .pricing-questions{
    width: 600px;
