@@ -90,7 +90,7 @@ p{
 ol{
   margin-left: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   h3 {
     font-size: 1em;
   }
@@ -145,7 +145,7 @@ ol{
   height: 40px;
   width: 36px;
   top: 12px;
-  left: 84%;
+  right:  30px;
   z-index: 2;
   opacity: 0;
   cursor: pointer;
@@ -202,7 +202,7 @@ ol{
     display: inline-flex;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .header {
     height: 66px;
     width: 100%;
@@ -214,7 +214,6 @@ ol{
     display: block;
   }
 }
-
 
 .top-titles{
   padding-top: 80px;
@@ -272,7 +271,7 @@ ol{
   font-size: 20px;
   line-height: 2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
 .why-text {
     font-size: 20px;
     line-height: 1.8rem;
@@ -492,7 +491,7 @@ ol{
 .devices-showcase-mobile {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .devices-showcase-mobile {
     display: block;
   }
@@ -500,7 +499,7 @@ ol{
   height: 60%;
  }
   .devices-showcase-mobile .device-desktop {
-  height: 25%;
+  height: 27%;
  }
 }
 .cloud-providers-logo{
@@ -583,7 +582,7 @@ ol{
   width: 100%;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
 .simple,
 .organized,
 .share,
@@ -597,7 +596,7 @@ ol{
 	height: 100%;
 	width: 50%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .image-left, .image-right {
     height: auto;
   }
@@ -653,7 +652,7 @@ ol{
   padding-left: 20px;
   padding-top: 6px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .mobile-footer {
     display: inline-flex;
   }
@@ -668,7 +667,7 @@ ol{
 
 /* MOBILE GRID FOR DESCRIPTION SECTION*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .description {
     display: table;
   }
@@ -679,7 +678,7 @@ ol{
 
 /* COMPARISON TABLE*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
 .comparison {
   width: 100%;
   }
@@ -700,7 +699,7 @@ ol{
 .table-text-align-top{
   vertical-align: text-top;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .comparison-table {
     width: 100%;
     font-size: 12px;
@@ -770,7 +769,7 @@ i {
 .comparison-table td:hover .td-comment .hover-text{
 visibility: visible;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   td {
     padding: 0%;
   }
@@ -835,7 +834,7 @@ visibility: visible;
 .pricing-table-info-icon:hover + .pricing-table-info-comment .pricing-hover-text{
   visibility: visible;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .pricing-comparison {
     width: 100%;
     font-size: 12px;
@@ -843,6 +842,7 @@ visibility: visible;
   }
   .pricing-comparison-col-1 {
     padding-left: 6px;
+    padding-right: 6px;
   }
   .pricing-comparison .pricing-table-info-icon {
     display: none;
