@@ -844,6 +844,12 @@ visibility: visible;
   .pricing-comparison-col-1 {
     padding-left: 6px;
   }
+  .pricing-comparison .pricing-table-info-icon {
+    display: none;
+  }
+  .pricing-comparison .pricing-hover-text {
+    display: none;
+  }
 }
 .questions {
   margin-left: auto;
