@@ -381,6 +381,7 @@ var routes = [
 
    // TODO: strip trailing slash in cicek
    ['get', /^\/pic\/$/, cicek.file, 'pic/index.html'],
+   ['get', /^\/pic\/pricing\/$/, cicek.file, 'pic/pricing.html'],
    ['get', 'pic/style.css', cicek.file, 'pic/style.css'],
    ['get', 'pic/img/(*)', function (rq, rs) {
       // cache-control required by search engines to not be penalized, despite having etags already.
