@@ -26,24 +26,28 @@ Altocode works in full transparency, which means everybody can see everything we
 
 We set salary milestones for different stages of the product. You can see them <a href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0" target="_blank">here.</a>
 
-Our first milestone will enable us to work full-time in Altocode. That's a salary of €3,000 a month after tax, per founder. That's around US $3,500 after tax. We're a 2-person team, so that's €6,000 after tax a month.
+Our first milestone will enable us to work full-time in Altocode. That’s a net salary of €5,000 a month, per founder. We’re a 2-person team, so that’s €10,000 in net salaries a month.
 
-The next question is 'how many paying users do we need to make €6,000 a month after tax?'
+The next question is ‘how many paying users do we need to make €10,000 a month after tax?’
 
 We built a simple table that takes into account:
-- Net income per user: how much should the company earn from each paying user after taxes and costs.
+- Net income per user: how much net money both founders get from each paying user after deducting taxes and costs.
 - Net salary per founder: monthly salary after tax per founder.
 - Amount of monthly paying users: amount of paying users needed for each net income and net salary.
 
 <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/monthly paying users required.png" alt="ac;pic monthly paying users required" style="max-width: 100%;height: auto;"></a>
 
-For each column of 'net income per user' we have the amount of paying users necessary to reach €3,000 of net monthly salary per founder.
+For each column of ‘net income per user’ we have the amount of paying users necessary to reach €5,000 of net monthly salary per founder.
 
-The next question is, 'what should be the target amount of users for the first milestone?'
+The next question is, ‘what should be the target amount of users for the first milestone?’
 
-It can't be very high, otherwise it might take too long to get there and - as a fully bootstrapped company - we only have so much runway. On the other hand, we can't go for a very low number of paying users, because prices might get too high (we haven't added operating costs and taxes yet) and prevent people from becoming paying users.
+It can’t be very high, otherwise it might take too long to get there and - as a fully bootstrapped company - we only have so much runway. On the other hand, we can’t go for a very low number of paying users, because prices might get too high (we haven’t added operating costs and taxes yet) and prevent people from becoming paying users.
 
-In the spirit of <a href="https://kk.org/thetechnium/1000-true-fans/" target="_blank">Kevin Kelly's '1,000 true fans' article,</a> we feel that around 1,500 to 2,000 paying users should allow us to reach our first milestone. If we can't get that amount of paying users in a few months, we have bigger issues than pricing. Still, we needed to continue our analysis to get to a price.
+The table above shows just how hard it is to bootstrap a startup. To earn a good salary, we need to get between 2,000 and 5,000 paying users, which is definitely a much taller order than working a normal (if challenging) job.
+
+In the end, whatever base price we set for users, we will still need thousands of paying users to make a living out of Altocode. A tall order, but one we’re eager to see through.
+
+In the end, we want to offer the lowest price that will not paint us into a financially inviable corner. Having to support 4,000 paying users so we can have a salary is tough, but perhaps at the edge of what’s viable. That yields a net €2.5 per paying user, on top of which we will add income taxes plus the remaining costs.
 
 #### 2. How much does it cost to maintain the service and the company?
 
@@ -77,9 +81,9 @@ Any company, and particularly a bootstrapped startup, needs to have working capi
 
 So, how do we take into account the infrastructure cost, product-related services, business-related services and working capital? **We set a cost budget per paying user**. Since all these costs are positively correlated to the size of the business, we can infer that the more users we have - especially in the beginning - the more costs we'll have to account for. Of course, these won't be linear, but in the early stages these costs can add up quickly and halt growth. As we grow we'll have to review this cost item, but now we have to ensure a solid service and business survival.
 
-We concluded that these items combined add €2 per paying user.
+We concluded that these items combined add €2.5 per paid user.
 
-An heuristic way to think about this is the following: if we have 100 paying users, it is reasonable to have about €200 of monthly expenses; at 1,000 paying users, it is reasonable to have a budget of €2,000.
+An heuristic way to think about this is the following: if we have 100 paying users, it is reasonable to have about €250 of monthly expenses besides our salaries; at 1,000 paying users, it is reasonable to have a budget of €2,500.
 
 f. Value Added Tax:
 We have to make a differentiation here.
@@ -109,17 +113,11 @@ With all this information we built another table, and built the price from the n
 
 <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/fixed price calculation.png" alt="ac;pic Fixed price calculation" style="max-width: 100%;height: auto;"></a>
 
-You'll note that in the costs line (those €2 per user) we affected half of it with Value Added Tax (VAT). We're estimating that half of our costs will be affected by VAT, so only €1 of the cost per user will incur VAT.
+So, the only difference between our European and non-European paying users is that of VAT (only for European paying users) and Stripe costs (slightly higher for non-European paid users). It’s important to note that we do not receive any benefits from any of those differences. What gets collected as taxes must go to the national tax agency, and the differences in credit card processing are entirely for Stripe. This makes European and non-European users equally profitable for us, hence avoiding any type of service or attention bias. 
 
-An interesting observation (that took us a while to figure out) is that we should charge an extra amount to non-European users for the VAT incurred by those €2 per user. These services accrue VAT, but because we don't have to pay VAT for non-European users, we cannot use their payment to offset the VAT incurred by those services. Hence, we need to charge them extra to keep things fair between European and non-European users. In addition to this, this fairness ensures that both European and non-European users will be equally profitable to us.
-
-Previously, we had circled between 1,500 and 2,000 paying users to reach our initial goal. That meant a net income per user between €3 and €4. With the numbers more clear, we concluded that our best choice is to go with €3 of net income per user.
-
-The fixed part of ac;pic's price will be:
-- €9 a month for European Union users.
-- €7.50 for non-European Union users.
-
-**We need 2,000 monthly paying users to reach the first milestone.**
+In summary, the fixed part of ac;pic's price will be:
+- €8.47 a month for European Union users.
+- €7.14 for non-European Union users.
 
 #### What about the storage?
 If you followed the cost breakdown you might have noticed that we haven't considered the storage cost for the paid accounts. We accounted for servers to keep the service up & running and the storage cost for free accounts, but the bulk of the cost for a photo and video organization service comes from storage.
@@ -132,11 +130,11 @@ So, considering all of the above, the price for storage in ac;pic is:
 
 <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/cost per gb of storage.png" alt="ac;pic cost per gb of storage" style="max-width: 100%;height: auto;"></a>
 
-**These prices apply to storage exceeding the free 2 GB.**
+**These prices apply to storage exceeding the free 5 GB.**
 
-So, let's say you're using 30 GB, your monthly payment would be: Fixed amount + (30 GB used - 2 GB free = 28 GB).
-- European Union users: €9 + ( €0.0509 * 28 GB ) = €10.42
-- Non-European Union users: €7.75 + ( €0.0625 * 28 GB) = €9.5
+So, let's say you're using 30 GB, your monthly payment would be: Fixed amount + (30 GB used - 5 GB free = 25 GB).
+- European Union users: €8.47 + ( €0.06165 * 25 GB ) = €10.01
+- Non-European Union users: €7.14 + ( €0.05170 * 25 GB) = €8.43
 
 ## 2. Is this a price our users will be willing to pay?
 
@@ -156,7 +154,7 @@ By splitting the price in 2 we align all the incentives:
 
 Also, this creates additional positive incentives:
 - The more space used, the better price per GB we can get from providers, which in turn will lower the prices per GB for users. More space used by more users rewards the users.
-- The fixed part of the price will also go down with more users and more usage: Altocode's employees will have a salary cap of €9,000 after tax a month. If and when we hit that cap, and of course considering all fixed and variable costs, as well as savings and necessary investments, all financial excess will impact the fixed price by lowering it.
+- The fixed part of the price will also go down with more users and more usage: Altocode’s employees will have a salary cap of €10,000 after tax a month. If and when we hit that cap, and of course considering all fixed and variable costs, as well as savings and necessary investments, all financial excess will impact the fixed price by lowering it.
 
 In the long run, the bigger we get, the cheaper the product gets: the economies of scale are distributed to our users.
 
@@ -167,7 +165,7 @@ Yes. Mainly the <a href="https://altocode.nl/blog/flat-rate-bias" target="_blank
 
 This price model will probably be harder to bootstrap at the beginning. We're not blind to the fact that not choosing the widely used all-you-can-eat flat-rate is a clear counterpoint to what's going on in the market. But, at the same time, that's exactly the point.
 
-Also, unless we're very good at communicating how much a user will be charged at the end of each month, it creates uncertainty. Users need to know how much they'll be charged way before the end of each cycle. Because of this, in ac;pic users can set a storage limiter, which by default will be at 100 GB. That information must be clearly displayed on the interface and with the corresponding alerts. Users have full control on how much storage they use.
+Also, unless we're very good at communicating how much a user will be charged at the end of each month, it creates uncertainty. Users need to know how much they'll be charged way before the end of each cycle. Because of this, **in ac;pic users can set a storage limiter, which by default will be at 100 GB.** That information must be clearly displayed on the interface and with the corresponding alerts. Users have full control on how much storage they use.
 
 ## Is this model the best option?
 
