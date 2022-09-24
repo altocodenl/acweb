@@ -328,7 +328,51 @@
          <div class="mobile-questions-answer">
             <p>Having a fixed + variable model might seem a bit odd, but you’ll see that - unless you’re using a huge amount of gigabytes -, ac;pic is cheaper than many subscription services. Also, <span style="font-weight: bold;">you’ll always have control to limit the amount of space you use and the amount you pay monthly.</span> Control is always on your side.
             </p>
+            <p>If you’d like to calculate how much it would be a month, here’s a calculator to help you with that.</p>
+            <h4 style="text-align: center;text-decoration: underline;">Monthly fee calculator</h4>
          </div>
+         <table class="price-calculator">
+            <tr>
+               <td class="price-calculator-location-container">
+                  <span class="price-calculator-location">I’m in the EU</span>
+                  <span>
+                     <input type="radio" checked="checked" class="radio" name="calc-eu" value="eu" onclick="calculatePrice ()">
+                  </span>
+               </td>
+               <td>
+                  <span class="price-calculator-location">I’m outside the EU</span>
+                  <span>
+                     <input type="radio" class="radio" name="calc-eu" value="not-eu" onclick="calculatePrice ()">
+                  </span>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <span class="price-calculator-line">Amount of gigabytes I’m using</span>
+                  <span class="price-calculator-input-container">
+                     <span class="price-calculator-input">
+                        <input type="text" class="amount-of-gb" id="calc-gb" name="amount-of-gb" placeholder="0" value="0" onchange="calculatePrice ()">
+                     </span>
+                  </span>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <span class="price-calculator-line">My free gigabytes</span>
+                  <span class="price-calculator-input-container">
+                     <span class="price-calculator-data">5</span>
+                  </span>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <span class="price-calculator-line">My total monthly fee</span>
+                  <span class="price-calculator-input-container">
+                     <span class="price-calculator-total" id="calc-price">€XX.XX</span>
+                  </span>
+               </td>
+            </tr>
+         </table>
       </div>
       <div class="mobile-questions-unit">
          <div class="mobile-questions-icon">
