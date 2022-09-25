@@ -259,7 +259,7 @@
                   <span class="price-calculator-line">Amount of gigabytes I’m using</span>
                   <span class="price-calculator-input-container">
                      <span class="price-calculator-input">
-                        <input type="text" class="amount-of-gb" id="calc-gb" name="amount-of-gb" placeholder="0" value="0" onchange="calculatePrice ()">
+                        <input type="text" class="amount-of-gb" id="calc-gb" name="amount-of-gb" placeholder="0" oninput="calculatePrice ()">
                      </span>
                   </span>
                </td>
@@ -336,13 +336,13 @@
                <td class="price-calculator-location-container">
                   <span class="price-calculator-location">I’m in the EU</span>
                   <span>
-                     <input type="radio" checked="checked" class="radio" name="calc-eu" value="eu" onclick="calculatePrice ()">
+                     <input type="radio" checked="checked" class="radio" name="calc-eu-mobile" value="eu" onclick="calculatePrice ()">
                   </span>
                </td>
                <td>
                   <span class="price-calculator-location">I’m outside the EU</span>
                   <span>
-                     <input type="radio" class="radio" name="calc-eu" value="not-eu" onclick="calculatePrice ()">
+                     <input type="radio" class="radio" name="calc-eu-mobile" value="not-eu" onclick="calculatePrice ()">
                   </span>
                </td>
             </tr>
@@ -351,7 +351,7 @@
                   <span class="price-calculator-line">Amount of gigabytes I’m using</span>
                   <span class="price-calculator-input-container">
                      <span class="price-calculator-input">
-                        <input type="text" class="amount-of-gb" id="calc-gb" name="amount-of-gb" placeholder="0" value="0" onchange="calculatePrice ()">
+                        <input type="text" class="amount-of-gb" id="calc-gb-mobile" name="amount-of-gb" placeholder="0" oninput="calculatePrice ()">
                      </span>
                   </span>
                </td>
@@ -368,7 +368,7 @@
                <td colspan="2">
                   <span class="price-calculator-line">My total monthly fee</span>
                   <span class="price-calculator-input-container">
-                     <span class="price-calculator-total" id="calc-price">€XX.XX</span>
+                     <span class="price-calculator-total" id="calc-price-mobile">€XX.XX</span>
                   </span>
                </td>
             </tr>
@@ -456,8 +456,9 @@
    </div>
    <script>
       var calculatePrice = function () {
-         var eu = document.getElementsByName ('calc-eu') [0].checked;
-         var gb = parseFloat (document.getElementById ('calc-gb').value);
+         var mobile = !! document.getElementsByClassName ('mobile-questions') [0].offsetParent;
+         var eu = document.getElementsByName (mobile ? 'calc-eu-mobile' : 'calc-eu') [0].checked;
+         var gb = parseFloat (document.getElementById (mobile ? 'calc-gb-mobile' : 'calc-gb').value);
          var round = function (n) {
             return Math.round (n * 100) / 100;
          }
@@ -465,7 +466,7 @@
          if (isNaN (gb)) price += 'XX.XX';
          else if (eu)    price += round (8.47 + Math.max (0, (gb - 5)) * 0.06165);
          else            price += round (7.14 + Math.max (0, (gb - 5)) * 0.05170);
-         document.getElementById ('calc-price').innerHTML = price;
+         document.getElementById (mobile ? 'calc-price-mobile' : 'calc-price').innerHTML = price;
       }
       calculatePrice ();
    </script>
