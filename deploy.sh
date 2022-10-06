@@ -72,13 +72,8 @@ if [ "$2" == "gotob" ] ; then
    exit 0
 fi
 
-cd ..
-COPYFILE_DISABLE=true tar --exclude="$FOLDER/arch" --exclude="$FOLDER/*.swp" --exclude="$FOLDER/node_modules" --exclude="$FOLDER/._*" -czvf $TAR $FOLDER
 ssh $HOST rm -r $FOLDER/blog
-scp $TAR $HOST:
-ssh $HOST tar xzvf $TAR
+rsync -av . $HOST:$FOLDER
 ssh $HOST chown -R root /root/$FOLDER
 echo "main = node server $1" | ssh $HOST "cat >> $FOLDER/mongroup.conf"
-ssh $HOST "cd $FOLDER && npm i --no-save && mg restart"
-ssh $HOST rm $TAR
-rm $TAR
+ssh $HOST "cd $FOLDER && npm i --no-save --omit=dev && mg restart"
