@@ -502,6 +502,27 @@ ol{
   height: 27%;
  }
 }
+.app-store-badge{
+  width: 140px;
+}
+.google-play-badge {
+  width: 160px;
+}
+.devices-table .google-play-badge {
+margin-top: -30px;
+margin-left: 16px;
+}
+.devices-table .app-store-badge {
+  margin-top: -30px;
+  margin-left: 20px;
+}
+.devices-showcase-mobile .app-store-badge {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.devices-showcase-mobile .google-play-badge {
+  height: 10%;
+}
 .cloud-providers-logo{
   height: 80px;
 }
