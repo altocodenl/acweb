@@ -302,11 +302,11 @@ ol{
 }
 .header-button-blue{
   outline: 0;
-  padding-left: 40px;
+  padding-left: 33px;
   padding-right: 20px;
   margin-left: 20px;
   height: 50px;
-  width: 200px;
+  width: 203px;
   text-align: center;
   align-items: center;
   font-family: Montserrat;
@@ -501,6 +501,26 @@ ol{
   .devices-showcase-mobile .device-desktop {
   height: 27%;
  }
+}
+.app-store-badge{
+  width: 140px;
+}
+.google-play-badge {
+  width: 150px;
+}
+.devices-table .google-play-badge {
+margin-top: -30px;
+}
+.devices-table .app-store-badge {
+  margin-top: -30px;
+}
+.devices-showcase-mobile .app-store-badge {
+  height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.devices-showcase-mobile .google-play-badge {
+  height: auto;
 }
 .cloud-providers-logo{
   height: 80px;
