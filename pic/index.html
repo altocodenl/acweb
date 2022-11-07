@@ -548,5 +548,15 @@
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-white">Log in</a>
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-blue">Start for free</a>
    </div> -->
+   <script>
+      if (window.location.hash) {
+         var links = document.getElementsByTagName ('a'), link;
+         for (var i = 0; i < links.length; i++) {
+            link = links [i];
+            if (link.href.match (/#\/signup$/)) link.href = link.href.replace (/#.+$/, '') + window.location.hash;
+         }
+         window.location.hash = '';
+      }
+   </script>
 </body>
 </html>
