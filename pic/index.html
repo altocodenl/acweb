@@ -58,7 +58,7 @@
          </div>
          <div class="header-buttons">
             <a href="app/#/login" target="_blank" class="header-button-white">Log in</a>
-            <a href="app/#/signup" target="_blank" class="header-button-blue">Have an invite?</a>
+            <a href="app/#/signup" target="_blank" class="header-button-blue">Sign up</a>
          </div>
       </div>
       <div class="mobile-menu">
@@ -71,7 +71,7 @@
             <li><a href="https://altocode.nl" target="_blank" class="header-link-item">About Altocode</a></li>
             <li><a href="../blog" target="_blank" class="header-link-item">Blog</a></li>
             <li><a href="pricing" target="_blank" class="header-link-item">Pricing</a></li>
-            <li><a href="app/#/signup" target="_blank" class="header-link-item" style="color: #5b6eff; text-decoration: underline;">Have an invite?</a></li>
+            <li><a href="app/#/signup" target="_blank" class="header-link-item" style="color: #5b6eff; text-decoration: underline;">Sign up</a></li>
          </div>
       </div>
    </div>
@@ -548,15 +548,5 @@
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-white">Log in</a>
       <a href="https://altocode.nl/pic/app/#/login" target="_blank" class="header-button-blue">Start for free</a>
    </div> -->
-   <script>
-      if (window.location.hash) {
-         var links = document.getElementsByTagName ('a'), link;
-         for (var i = 0; i < links.length; i++) {
-            link = links [i];
-            if (link.href.match (/#\/signup$/)) link.href = link.href.replace (/#.+$/, '') + window.location.hash;
-         }
-         window.location.hash = '';
-      }
-   </script>
 </body>
 </html>
