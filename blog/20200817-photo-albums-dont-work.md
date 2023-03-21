@@ -1,5 +1,5 @@
 Organization is finding what you want when you want it. Photos and videos are memories, they make a moment last forever. Memories deserve better. 
-# ac;pic: photo albums don’t work
+# tagaway: photo albums don’t work
 
 > “At one time, MTV was hip and suddenly it became outdated.” [1]
 
@@ -43,7 +43,7 @@ You’re trapped.
 ## Simple is organized
 The way to solve this is not by creating a better album system. It's by <a href="https://altocode.nl/blog/think-like-a-doctor" target="_blank">making it irrelevant</a> (ie: the solution to ‘expensive fuel’ is not ‘cheaper fuel’, but ‘electric car’).
 
-Organization has to be simple, otherwise it won’t work. With <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a> we asked ‘what does a <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">simple</a> product look like?’  
+Organization has to be simple, otherwise it won’t work. With <a href="https://altocode.nl/pic/" target="_blank">tagaway</a> we asked ‘what does a <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">simple</a> product look like?’  
 - Filenames don’t matter.
 - No lists. Photos are meant to be seen and videos to be played. 
 - No dead-ends (empty albums), nor ronin files (loose photos or videos that don’t belong to any place).
@@ -56,15 +56,15 @@ Organization is finding what you want when you want it. Photos and videos are me
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>
-- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of ac;pic</a>
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">tagaway: we remember by association</a> 
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">tagaway: no duplicates</a>
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">tagaway: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">tagaway: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>
+- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of tagaway</a>
  
 ---
 

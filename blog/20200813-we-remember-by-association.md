@@ -1,5 +1,5 @@
 Photos are triggers for memories. To organize memories we have to follow how the brain does it.
-# ac;pic: we remember by association
+# tagaway: we remember by association
 
 > “The physiological data, as well as computational models, suggest that the hippocampus is suited to promote more flexible associations by recognizing relations among items and differentiating overlapping patterns (separating where one sees the person from the places and times of the events). This could contribute to the encoding of each unique episode, as well as relating the context-free information into semantic knowledge.” [1]
 
@@ -65,19 +65,19 @@ Tagging pictures sounds like a lot of work. That’s when <a href="https://altoc
 
 The brain organizes memories by association. Association of places, people, context, moments. It only makes sense to have an organizational method for photos and videos - triggers for memories - similar to the brains’ method. 
 
-It only made sense to work with this principle when building <a href="https://altocode.nl/pic/" target="_blank">ac;pic.</a> 
+It only made sense to work with this principle when building <a href="https://altocode.nl/pic/" target="_blank">tagaway.</a> 
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
-- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>  
-- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of ac;pic</a>      
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">tagaway: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">tagaway: photo albums don’t work</a>
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">tagaway: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">tagaway: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>  
+- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of tagaway</a>      
 
 ---
 

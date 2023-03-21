@@ -1,11 +1,11 @@
 Photos and videos are personal memories. They are important. They must be treated as such.
-# ac;pic: controlled auto-tagging
+# tagaway: controlled auto-tagging
 
 With auto-tagging a system automatically adds tags to your photos and videos. When there are thousands of files, it helps. A lot. But, what kind of tags can be automated and which ones can’t?
 
-Some tags can be simple to add, like '2019' or 'Japan', which are taken from the file’s metadata. In <a href="https://altocode.nl/pic/" target="_blank">ac;pic</a>, the year is automatically tagged. For geo data (city and country), we ask you to opt-in. Geographical data is sensitive info, and providing it must be a choice for the user.
+Some tags can be simple to add, like '2019' or 'Japan', which are taken from the file’s metadata. In <a href="https://altocode.nl/pic/" target="_blank">tagaway</a>, the year is automatically tagged. For geo data (city and country), we ask you to opt-in. Geographical data is sensitive info, and providing it must be a choice for the user.
 
-What about tags to identify people automatically? Some cloud services use artificial intelligence (AI) to run facial recognition on your photos, and that’s great - if that’s what you want. But you have to be aware of the risks associated with face recognition. “If it can’t be used for evil, it’s not a superpower.” Face recognition is a superpower. And in ac;pic we don’t use it. Allowing a cloud service to use AI to tag your pictures is a personal choice and might be the right thing for you - we just suggest that you make that choice consciously.
+What about tags to identify people automatically? Some cloud services use artificial intelligence (AI) to run facial recognition on your photos, and that’s great - if that’s what you want. But you have to be aware of the risks associated with face recognition. “If it can’t be used for evil, it’s not a superpower.” Face recognition is a superpower. And in tagaway we don’t use it. Allowing a cloud service to use AI to tag your pictures is a personal choice and might be the right thing for you - we just suggest that you make that choice consciously.
 
 What about situational tags like 'vacations'? In those instances the classification is purely contextual - only you and the people who were there know you were on vacation -, no algorithm can be accurate enough.
 
@@ -25,12 +25,12 @@ Organization is also protection.
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
-- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>   
-- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of ac;pic</a>    
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">tagaway: we remember by association</a> 
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">tagaway: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">tagaway: photo albums don’t work</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">tagaway: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>   
+- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of tagaway</a>    

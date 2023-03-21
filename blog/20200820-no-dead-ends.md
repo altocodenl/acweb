@@ -1,5 +1,5 @@
 You wouldn’t store empty boxes in your house, why would you do it with your memories?
-# ac;pic: no dead-ends
+# tagaway: no dead-ends
 
 You wouldn’t store empty boxes in your house, why would you do it with your memories?
 
@@ -46,12 +46,12 @@ Organization is finding what you want when you want it. It's having full control
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a> 
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
-- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>
-- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of ac;pic</a>    
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">tagaway: we remember by association</a> 
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">tagaway: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">tagaway: photo albums don’t work</a>
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">tagaway: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>
+- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of tagaway</a>    

@@ -1,5 +1,5 @@
 Duplicated photos and videos must be eliminated automatically. It saves space and eliminates clutter.
-# ac;pic: no duplicates
+# tagaway: no duplicates
 
 > “Clutter comes with a price tag as well — you need a bigger home and bigger closets and other storage space for all the clutter.” [1]
 
@@ -13,21 +13,21 @@ Metadata doesn't help either. Sometimes copies of a file don’t carry the same 
 
 Deleting duplicates manually takes time, it's error-prone - deleting both copies and original of a file, or not deleting all copies -, it’s boring and unproductive.
 
-<a href="https://altocode.nl/pic/" target="_blank">ac;pic</a> identifies content duplicity of an image or video regardless of filename or metadata. The system asks: does this image have the same pixels as any other image in the account? If so, then it’s duplicated. It gets automatically deleted. 
+<a href="https://altocode.nl/pic/" target="_blank">tagaway</a> identifies content duplicity of an image or video regardless of filename or metadata. The system asks: does this image have the same pixels as any other image in the account? If so, then it’s duplicated. It gets automatically deleted. 
 
 Less space used, less clutter. 
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a> 
-- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a>
-- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don’t work</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>
-- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of ac;pic</a>         
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a> 
+- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">tagaway: we remember by association</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">tagaway: photo albums don’t work</a>
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">tagaway: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">tagaway: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>
+- <a href="https://altocode.nl/blog/how-we-calculated-the-price-of-acpic" target="_blank">How we calculated the price of tagaway</a>         
 
 ---
 

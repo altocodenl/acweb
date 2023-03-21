@@ -1,5 +1,5 @@
 How much should you charge for your product? What's the price model that makes sense to your users? Here's how we did it.
-# How we calculated the price of ac;pic
+# How we calculated the price of tagaway
 
 How much should we charge for our product? What's the price model that makes sense to our users? We had a long discussion about it and we looked to consider all the important aspects:
 1. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('1whatpricemakesourproductsustainable').scrollIntoView ()">What price makes our product sustainable?</a>
@@ -7,7 +7,7 @@ How much should we charge for our product? What's the price model that makes sen
 3. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('3thismodelservesourusers').scrollIntoView ()">What price model best serves our users?</a>
 4. <a style="text-decoration: underline; color: blue; cursor: pointer" onclick="document.getElementById ('4aretheredisadvantagestothismodel').scrollIntoView ()">Are there disadvantages to this model?</a>
 
-By answering these questions, we’ll be better equipped to have a solid pricing model to begin the journey of our first product: <a href="https://altocode.nl/pic/" target="_blank"> ac;pic</a>, a photo and video organization service.
+By answering these questions, we’ll be better equipped to have a solid pricing model to begin the journey of our first product: <a href="https://altocode.nl/pic/" target="_blank"> tagaway</a>, a photo and video organization service.
 
 Here's the entire process we went through.
 
@@ -35,7 +35,7 @@ We built a simple table that takes into account:
 - Net salary per founder: monthly salary after tax per founder.
 - Amount of monthly paying users: amount of paying users needed for each net income and net salary.
 
-<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/monthly paying users required.png" alt="ac;pic monthly paying users required" style="max-width: 100%;height: auto;"></a>
+<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/monthly paying users required.png" alt="tagaway monthly paying users required" style="max-width: 100%;height: auto;"></a>
 
 For each column of ‘net income per user’ we have the amount of paying users necessary to reach €5,000 of net monthly salary per founder.
 
@@ -111,24 +111,24 @@ Lastly, we decided that **we'll only bill in euros**. Our wages are in euros, ou
 
 With all this information we built another table, and built the price from the net income per user, adding all the costs and taxes. We built the price from the bottom up.
 
-<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/fixed price calculation.png" alt="ac;pic Fixed price calculation" style="max-width: 100%;height: auto;"></a>
+<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/fixed price calculation.png" alt="tagaway Fixed price calculation" style="max-width: 100%;height: auto;"></a>
 
 So, the only difference between our European and non-European paying users is that of VAT (only for European paying users) and Stripe costs (slightly higher for non-European paid users). It’s important to note that we do not receive any benefits from any of those differences. What gets collected as taxes must go to the national tax agency, and the differences in credit card processing are entirely for Stripe. This makes European and non-European users equally profitable for us, hence avoiding any type of service or attention bias. 
 
-In summary, the fixed part of ac;pic's price will be:
+In summary, the fixed part of tagaway's price will be:
 - €8.47 a month for European Union users.
 - €7.14 for non-European Union users.
 
 #### What about the storage?
 If you followed the cost breakdown you might have noticed that we haven't considered the storage cost for the paid accounts. We accounted for servers to keep the service up & running and the storage cost for free accounts, but the bulk of the cost for a photo and video organization service comes from storage.
 
-The cost we have as of today is €0.05 per GB. **We won't make any profit from storage cost. ac;pic's users will pay storage at cost.** If it's cheaper for us, it will be cheaper for our users.
+The cost we have as of today is €0.05 per GB. **We won't make any profit from storage cost. tagaway's users will pay storage at cost.** If it's cheaper for us, it will be cheaper for our users.
 
 This cost would incur VAT, but since the underlying server costs also pay VAT at the same rate, the VATs cancel each other out. That, however, assumes that our users are European. So, a bit paradoxically, we need to add VAT to the cost per GB for non-European users. The only other thing we have to account for is Stripe's fee - since Stripe doesn't discriminate and charges based on the total.
 
-So, considering all of the above, the price for storage in ac;pic is:
+So, considering all of the above, the price for storage in tagaway is:
 
-<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/cost per gb of storage.png" alt="ac;pic cost per gb of storage" style="max-width: 100%;height: auto;"></a>
+<a target="_blank" href="https://docs.google.com/spreadsheets/d/1XNd62OXI3dduxodI-9dBOUoxnAczPgm2yIk-jFFR6T4/edit#gid=0"><img loading="lazy" src="img/cost per gb of storage.png" alt="tagaway cost per gb of storage" style="max-width: 100%;height: auto;"></a>
 
 **These prices apply to storage exceeding the free 5 GB.**
 
@@ -165,7 +165,7 @@ Yes. Mainly the <a href="https://altocode.nl/blog/flat-rate-bias" target="_blank
 
 This price model will probably be harder to bootstrap at the beginning. We're not blind to the fact that not choosing the widely used all-you-can-eat flat-rate is a clear counterpoint to what's going on in the market. But, at the same time, that's exactly the point.
 
-Also, unless we're very good at communicating how much a user will be charged at the end of each month, it creates uncertainty. Users need to know how much they'll be charged way before the end of each cycle. Because of this, **in ac;pic users can set a storage limiter, which by default will be at 100 GB.** That information must be clearly displayed on the interface and with the corresponding alerts. Users have full control on how much storage they use.
+Also, unless we're very good at communicating how much a user will be charged at the end of each month, it creates uncertainty. Users need to know how much they'll be charged way before the end of each cycle. Because of this, **in tagaway users can set a storage limiter, which by default will be at 100 GB.** That information must be clearly displayed on the interface and with the corresponding alerts. Users have full control on how much storage they use.
 
 ## Is this model the best option?
 
@@ -175,12 +175,12 @@ And by aligning our incentives with our intentions, we make sure that we'll go a
 
 ---
 
-## Other posts about ac;pic
-- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">ac;pic: a simple product looks like this</a>
-- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">ac;pic: we remember by association</a>
-- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">ac;pic: no duplicates</a>
-- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">ac;pic: photo albums don't work</a>
-- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">ac;pic: controlled auto-tagging</a>
-- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">ac;pic: filling the gap</a>
-- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">ac;pic: no dead-ends</a>
-- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">ac;pic: the 30-second rule</a>
+## Other posts about tagaway
+- <a href="https://altocode.nl/blog/a-simple-product-looks-like-this" target="_blank">tagaway: a simple product looks like this</a>
+- <a href="https://altocode.nl/blog/we-remember-by-association" target="_blank">tagaway: we remember by association</a>
+- <a href="https://altocode.nl/blog/no-duplicates" target="_blank">tagaway: no duplicates</a>
+- <a href="https://altocode.nl/blog/photo-albums-dont-work" target="_blank">tagaway: photo albums don't work</a>
+- <a href="https://altocode.nl/blog/controlled-auto-tagging" target="_blank">tagaway: controlled auto-tagging</a>
+- <a href="https://altocode.nl/blog/filling-the-gap" target="_blank">tagaway: filling the gap</a>
+- <a href="https://altocode.nl/blog/no-dead-ends" target="_blank">tagaway: no dead-ends</a>
+- <a href="https://altocode.nl/blog/the-30-second-rule" target="_blank">tagaway: the 30-second rule</a>
