@@ -5,13 +5,13 @@
    "description": "Homepage for altocode",
    "dependencies": {
       "cicek":     "3.4.3",
-      "cocholate": "3.0.3",
+      "cocholate": "4.0.0",
       "dale":      "6.0.2",
-      "gotob":     "2.2.0",
+      "gotob":     "2.3.0",
       "hitit":     "1.2.7",
-      "lith":      "6.0.6",
-      "recalc":    "5.1.1",
-      "teishi":    "5.0.3",
+      "lith":      "6.0.7",
+      "recalc":    "5.1.2",
+      "teishi":    "5.1.0",
       "showdown":  "1.9.1"
    },
    "main": "server.js",
