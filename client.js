@@ -20,24 +20,44 @@ B.mrespond ([
 views.baseCSS = [
    ['body', {
       'font-family': '\'Montserrat\', sans-serif',
-      padding: 30,
+      'font-style': 'normal',
       'max-width': 1000,
+      'line-height': '1.5rem',
+      'color': '#484848',
+      'background': '#fff',
+      'padding-left': .01,
+      width: 1,
+      height: 1,
+   }],
+   ['.h1', {
+      'font-weight': '600',
+      'font-size': '2.5em',
+      'font-style': 'normal',
+      'color': '#5b6eff'
    }],
    ['p, li', {
       'line-height': '1.6em',
+      'font-size': 20,
+      'font-weight': 'normal',
    }],
    ['strong', {
      'font-weight': '600',
    }],
+   ['.logo-container', {
+      'margin-top': .02,
+   }],
+   ['.tagline', {
+      'text-align': 'center',
+   }]
 ];
 
 views.main = function () {
    return ['div', {style: style ({'margin-left': 3})}, [
       ['style', views.baseCSS],
-      ['div', {class: 'opaque', style: style ({'font-size': 36, 'font-weight': 'normal', 'font-family': '\'Montserrat\', monospace'})}, [
-         ['span', {style: style ({color: '#5b6eff', 'font-weight': ''})}, 'a'], 'lto;',
+      ['div', {class: 'logo-container'},[
+         ['span', {class: 'h1'}, 'altocode'],
          ['br'],
-         ['LITERAL', '&nbsp;'], ['span', {style: style ({color: '#5b6eff', 'font-weight': ''})}, 'c'], 'o', ['span', {style: style ({color: ''})}, 'de'],
+         ['span', {class: 'tagline'}, 'Commit to the future']
       ]],
       ['br'],
       ['p', [
@@ -50,16 +70,16 @@ views.main = function () {
       ]],
       ['p', 'What is different about us?'],
       ['ul', [
-         ['li', 'We create simple software that everyone can understand and use. We focus on quality, not features.'],
-         ['li', 'We treat our users as we like to be treated ourselves: we defend their privacy to the outmost; our users own their own data; and we only make money through charging reasonable fees for application usage.'],
-         ['li', [['a', {href: 'https://github.com/altocodenl'}, 'Our applications are 100% open source'], '. Anyone can see our source code, contribute their own, or start a competing product using it. We\'d rather share our knowledge instead of hoarding it in the hopes of preventing competition.']],
-         ['li', [['a', {href: 'https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p'}, 'We work in the open.'], ' Our internal documents, inasmuch as they don\'t refer to particular individuals outside of our team, are public.']],
+         ['li', [['strong', 'We create simple software'], ' that everyone can understand and use. We focus on quality, not features.']],
+         ['li', [['strong', 'We treat our users as we like to be treated ourselves:'], ' we defend their privacy to the outmost; our users own their own data; and we only make money through charging reasonable fees for application usage.']],
+         ['li', [['a', {target: '_blank', href: 'https://github.com/altocodenl'}, 'Our applications are 100% open source'], '. Anyone can see our source code, contribute their own, or start a competing product using it. We\'d rather share our knowledge instead of hoarding it in the hopes of preventing competition.']],
+         ['li', [['a', {target: '_blank', href: 'https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p'}, 'We work in the open.'], ' Our internal documents, inasmuch as they don\'t refer to particular individuals outside of our team, are public.']],
          ['li', ['Our business model is that of a ', ['strong', 'digital utility'], '. Our users pay to use our products based on how much space they use on our servers. Besides covering the server cost, users are also contributing to the development and maintenance of quality applications.']],
       ]],
       ['h3', 'Apps'],
       ['ul', [
          ['li', [
-            [['a', {target: '_blank', href: 'https://altocode.nl/pic'}, 'ac;pic'], ': '],
+            [['a', {target: '_blank', href: 'https://altocode.nl/pic'}, 'tagaway'], ': '],
             'A digital home for your pictures'
          ]],
       ]],
