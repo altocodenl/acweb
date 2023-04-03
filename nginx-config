@@ -55,15 +55,11 @@ server {
    }
 
    location /pic/ {
-      proxy_pass http://127.0.0.1:4040/pic/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
+      return 301 https://tagaway.nl;
    }
 
    location /pic/app/ {
-      proxy_pass http://127.0.0.1:1427/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
+      return 301 https://tagaway.nl/app;
    }
 
    location /log/ {
@@ -97,15 +93,11 @@ server {
    }
 
    location /dev/pic/ {
-      proxy_pass http://136.243.174.166:4040/pic/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
+      return 301 https://tagaway.nl/dev;
    }
 
    location /dev/pic/app/ {
-      proxy_pass http://136.243.174.166:1427/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
+      return 301 https://tagaway.nl/dev/app;
    }
 
    location /dev/log/ {
@@ -115,17 +107,15 @@ server {
    }
 
    location /test/pic/app/ {
-      proxy_pass http://136.243.174.166:8000/;
-      proxy_set_header X-Forwarded-For $remote_addr;
-      client_max_body_size 2000M;
+      return 301 https://tagaway.nl/test/app;
    }
 
 
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/altocode.nl/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/altocode.nl/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+   listen 443 ssl; # managed by Certbot
+   ssl_certificate /etc/letsencrypt/live/altocode.nl/fullchain.pem; # managed by Certbot
+   ssl_certificate_key /etc/letsencrypt/live/altocode.nl/privkey.pem; # managed by Certbot
+   include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+   ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
 }
 
