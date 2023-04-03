@@ -143,3 +143,61 @@ server {
 
 
 }
+
+
+server {
+
+   server_name tagaway.nl;
+
+   location / {
+      proxy_pass http://127.0.0.1:4040/pic/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /app/ {
+      proxy_pass http://127.0.0.1:1427/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /dev/ {
+      proxy_pass http://136.243.174.166:4040/pic/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /dev/app/ {
+      proxy_pass http://136.243.174.166:1427/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+   location /test/app/ {
+      proxy_pass http://136.243.174.166:8000/;
+      proxy_set_header X-Forwarded-For $remote_addr;
+      client_max_body_size 2000M;
+   }
+
+
+   listen 443 ssl; # managed by Certbot
+   ssl_certificate /etc/letsencrypt/live/tagaway.nl/fullchain.pem; # managed by Certbot
+   ssl_certificate_key /etc/letsencrypt/live/tagaway.nl/privkey.pem; # managed by Certbot
+   include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+   ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+}
+
+
+
+server {
+    if ($host = tagaway.nl) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+   server_name tagaway.nl;
+   listen 80;
+   return 404; # managed by Certbot
+
+}
