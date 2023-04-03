@@ -72,6 +72,12 @@ if [ "$2" == "gotob" ] ; then
    exit 0
 fi
 
+if [ "$2" == "nginx" ] ; then
+   scp nginx-config $HOST:/etc/nginx/sites-available/default
+   ssh $HOST "service nginx restart"
+   exit 0
+fi
+
 ssh $HOST rm -r $FOLDER/blog
 rsync -av . $HOST:$FOLDER
 ssh $HOST chown -R root /root/$FOLDER

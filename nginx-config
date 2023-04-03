@@ -3,6 +3,8 @@ server {
    return 301 $scheme://altocode.nl$request_uri;
 }
 
+error_log /var/log/nginx/error.log info;
+
 server {
    server_name blog.altocode.nl;
    rewrite ^/$ https://altocode.nl/blog permanent;
