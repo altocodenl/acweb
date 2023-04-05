@@ -79,7 +79,7 @@ views.main = function () {
       ['h3', 'Apps'],
       ['ul', [
          ['li', [
-            [['a', {target: '_blank', href: 'https://altocode.nl/pic'}, 'tagaway'], ': '],
+            [['a', {target: '_blank', href: 'https://tagaway.nl/dev'}, 'tagaway'], ': '],
             'A digital home for your pictures'
          ]],
       ]],
