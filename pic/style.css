@@ -258,7 +258,7 @@ ol{
     display: block;
   }
   .demo-desktop img {
-    width: 80%;
+    width: 20%;
   }
   .demo-mobile{
     display: none;
@@ -286,7 +286,7 @@ ol{
   padding-left: 40px;
   padding-right: 20px;
   height: 50px;
-  width: 140px;
+  width: 180px;
   text-align: center;
   align-items: center;
   font-family: Montserrat;
@@ -356,7 +356,7 @@ ol{
   padding-left: 26px;
   padding-right: 20px;
   height: 50px;
-  width: 150px;
+  width: 190px;
   text-align: center;
   align-items: center;
   font-family: Montserrat;
@@ -503,9 +503,11 @@ ol{
  }
 }
 .app-store-badge{
+  display: none;
   width: 140px;
 }
 .google-play-badge {
+  display: none;
   width: 150px;
 }
 .devices-table .google-play-badge {
