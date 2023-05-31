@@ -503,11 +503,9 @@ ol{
  }
 }
 .app-store-badge{
-  display: none;
   width: 140px;
 }
 .google-play-badge {
-  display: none;
   width: 150px;
 }
 .devices-table .google-play-badge {
