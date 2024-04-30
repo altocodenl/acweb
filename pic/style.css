@@ -437,6 +437,11 @@ ol{
   border-style: hidden;
   margin-bottom: 5%;
 }
+@media screen and (max-width: 1023px) {
+  .desktop-description-table {
+    display: none;
+  }
+}
 .desktop-description-table-2 {
   border-collapse: collapse;
   border-style: hidden; 
@@ -496,7 +501,9 @@ ol{
     display: block;
   }
   .devices-showcase-mobile img {
-  height: 60%;
+  height: 90%;
+  display: block;
+  margin: auto;
  }
   .devices-showcase-mobile .device-desktop {
   height: 27%;
@@ -551,7 +558,7 @@ margin-top: -30px;
 .padding-row-questions-table{
   height: 40px;
 }
-.mobile-questions{
+.mobile-questions, .mobile-title{
   display: block;
   margin-left: 20px;
   margin-right: 20px;
@@ -586,7 +593,7 @@ margin-top: -30px;
 }
 
 @media screen and (min-width: 1024px){
-  .description, .mobile-questions, .cloud-provider-mobile {
+  .description, .mobile-questions, .cloud-provider-mobile, .mobile-content {
     display: none;
   }
   .desktop-description, .desktop-questions, .cloud-providers-table, .devices-table {
