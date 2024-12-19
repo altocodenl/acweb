@@ -20,6 +20,15 @@ server {
 
    server_name altocode.nl;
 
+   location /todis/visual {
+      proxy_pass https://raw.githubusercontent.com/altocodenl/TODIS/refs/heads/main/visual.html;
+      proxy_set_header Host raw.githubusercontent.com;
+      proxy_set_header Accept-Encoding ""; # Prevents upstream compression issues
+      add_header Cache-Control "no-store";
+      proxy_hide_header Content-Type;
+      add_header Content-Type text/html;
+   }
+
    location '/blog/Our why' {
       return 301 https://altocode.nl/blog/our-why;
    }
