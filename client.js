@@ -79,26 +79,33 @@ views.main = function () {
       ['h3', 'Apps'],
       ['ul', [
          ['li', [
+            [['a', {target: '_blank', href: 'https://github.com/altocodenl/cell'}, 'cell'], ': '],
+            'A spreadsheet-like programming environment that you can use from any browser'
+         ]],
+      ]],
+      ['ul', [
+         ['li', [
             [['a', {target: '_blank', href: 'https://tagaway.nl'}, 'tagaway'], ': '],
             'A digital home for your pictures'
          ]],
       ]],
-      ['h3', 'Team'],
+      ['h3', 'Current team'],
       ['ul', [
          ['li', [
             [['a', {target: '_blank', href: 'http://federicopereiro.com'}, 'Federico Pereiro'], ': '],
             ['strong', ' Chef'],
             ', Leiden, Netherlands.'
          ]],
+      ]],
+      ['h3', 'Former, beloved team members'],
+      ['ul', [
          ['li', [
             [['a', {target: '_blank', href: 'https://about.me/tomsawada'}, 'Tom Sawada'], ': '],
             ['strong', ' Maître d\''],
-            ', St. Louis, Missouri, USA.'
          ]],
          ['li', [
             [['a', {target: '_blank', href: 'http://rubenmeines.com/'}, 'Ruben Meines'], ': '],
             ['strong', ' Saucier'],
-            ', Leiden, Netherlands.'
          ]]
       ]]
    ]];
