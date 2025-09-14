@@ -61,7 +61,9 @@ views.main = function () {
       ]],
       ['br'],
       ['p', [
-         'We create simple & useful software to empower humans. This is our ',
+         'We empower humans through digital systems.',
+      ]], ['p', [
+         'This is our ',
          ['a', {href: 'blog/manifesto'}, 'manifesto'],
          '.',
          ' And this is our ',
