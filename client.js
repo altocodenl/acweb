@@ -61,24 +61,22 @@ views.main = function () {
       ]],
       ['br'],
       ['p', [
-         'We empower humans through digital systems.',
-      ]], ['p', [
-         'This is our ',
-         ['a', {href: 'blog/manifesto'}, 'manifesto'],
-         '.',
-         ' And this is our ',
-         ['a', {href: 'blog'}, 'blog'],
-         '.',
+         'We empower humans through digital means.',
       ]],
       ['p', 'What is different about us?'],
       ['ul', [
          ['li', [['strong', 'We create simple software'], ' that everyone can understand and use. We focus on quality, not features.']],
-         ['li', [['strong', 'We treat our users as we like to be treated ourselves:'], ' we defend their privacy to the outmost; our users own their own data; and we only make money through charging reasonable fees for application usage.']],
-         ['li', [['a', {target: '_blank', href: 'https://github.com/altocodenl'}, 'Our applications are 100% open source'], '. Anyone can see our source code, contribute their own, or start a competing product using it. We\'d rather share our knowledge instead of hoarding it in the hopes of preventing competition.']],
-         ['li', [['a', {target: '_blank', href: 'https://drive.google.com/drive/folders/1otweqrARCHe2u6DeHW3FDZmug0L1Wd6p'}, 'We work in the open.'], ' Our internal documents, inasmuch as they don\'t refer to particular individuals outside of our team, are public.']],
-         ['li', ['Our business model is that of a ', ['strong', 'digital utility'], '. Our users pay to use our products based on how much space they use on our servers. Besides covering the server cost, users are also contributing to the development and maintenance of quality applications.']],
+         ['li', [['strong', 'We are open source:'], ' we work in the open.']],
+         ['li', [['strong', 'We are profit-bound:'], ' we\'re in it to make a change, not a pile.']],
       ]],
+      ['a', {href: 'blog'}, 'Read more'],
       ['h3', 'Apps'],
+      ['ul', [
+         ['li', [
+            [['a', {target: '_blank', href: 'https://buildwithvibey.com'}, 'Vibey'], ': '],
+            'Build with words, not code.'
+         ]],
+      ]],
       ['ul', [
          ['li', [
             [['a', {target: '_blank', href: 'https://github.com/altocodenl/cell'}, 'cell'], ': '],
