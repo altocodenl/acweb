@@ -312,10 +312,8 @@ var routes = [
       ], {url: '/blog', description: 'Altocode\'s blog', title: 'Altocode', type: 'website', breadcrumbs: [['Blog', '/blog']]});
    }) ()],
 
-   ['get', 'blog/img/(*)', function (rq, rs) {
-      // cache-control required by search engines to not be penalized, despite having etags already.
-      cicek.file (rq, rs, 'blog/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
-   }],
+   // cache-control required by search engines to not be penalized, despite having etags already.
+   ['get', 'blog/img/(*)', cicek.file, ['blog/img'], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)}],
 
    ['get', 'blog/style.css', cicek.file, 'blog/style.css'],
 
@@ -383,10 +381,8 @@ var routes = [
    ['get', /^\/pic\/$/, cicek.file, 'pic/index.html'],
    ['get', /^\/pic\/pricing$/, cicek.file, 'pic/pricing.html'],
    ['get', 'pic/style.css', cicek.file, 'pic/style.css'],
-   ['get', 'pic/img/(*)', function (rq, rs) {
-      // cache-control required by search engines to not be penalized, despite having etags already.
-      cicek.file (rq, rs, 'pic/img/' + rq.data.params [0], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)});
-   }],
+   // cache-control required by search engines to not be penalized, despite having etags already.
+   ['get', 'pic/img/(*)', cicek.file, ['pic/img'], {'cache-control': 'max-age=' + (60 * 60 * 24 * 365 * 10)}],
 
    // *** STATIC ASSETS ***
 
